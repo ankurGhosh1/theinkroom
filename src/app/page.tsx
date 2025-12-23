@@ -43,7 +43,7 @@ export default function Home() {
           preTitle="Testimonials"
           title="Here's what our customers said"
         >
-          We value our customers' feedback and are proud to share their
+          We value our customers&apos; feedback and are proud to share their
           testimonials. Their satisfaction is our top priority, and we strive to
           exceed their expectations with every tattoo we create.
         </SectionTitle>
