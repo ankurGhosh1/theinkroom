@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Dancing_Script } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
-
+import Analytics from "@/components/GoogleAnalytics";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 // import { PopupWidget }  from "@/components/PopupWidget";
@@ -23,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
+        <Analytics />
         <ThemeProvider attribute="class">
           <Navbar />
           <div>{children}</div>
