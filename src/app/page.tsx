@@ -6,20 +6,36 @@ import { Video } from "@/components/Video";
 import { Testimonials } from "@/components/Testimonials";
 import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
-
+import { createPageMetadata } from "@/components/Metadata";
 import { benefitOne, benefitTwo } from "@/components/data";
+
+export const metadata = createPageMetadata({
+  title:
+    "Best Female Tattoo Artist in Kolkata | Tattoo Parlour Behala – The Ink Room",
+  description:
+    "Discover custom tattoos by Soniya, one of the best female tattoo artists in Kolkata. Safe, hygienic tattoo parlour in Behala offering unique designs for men & women. Book your appointment at theinkroom.in today!",
+  image: "/og-home.jpg",
+  url: "/",
+  keywords: [
+    "Best Female Tattoo Artist",
+    "tattoo parlour behala",
+    "behala tattoo",
+  ],
+});
+
 export default function Home() {
   return (
     <Container>
       <Hero />
       <div id="whyinkroom">
         <SectionTitle
-          preTitle="The Ink Room Benefits"
-          title=" Why should you choose the Ink Room?"
+          preTitle="The Ink Room Advantage"
+          title="Why Choose The Ink Room - Your Trusted Tattoo Parlour in Behala, Kolkata"
         >
-          The Ink Room is committed to providing top-notch tattoo services with
-          a focus on hygiene, creativity, and customer satisfaction. Here are
-          some key benefits of choosing us for your tattoo needs.
+          Looking for the <strong>best female tattoo artist in Kolkata</strong>?
+          Welcome to The Ink Room – a premium{" "}
+          <strong>tattoo parlour in Behala</strong>
+          where hygiene, creativity, and your comfort come first.
         </SectionTitle>
 
         <Benefits data={benefitOne} />

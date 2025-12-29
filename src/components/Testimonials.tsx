@@ -19,11 +19,11 @@ export const Testimonials = () => {
               recommend!
             </p>
 
-            <Avatar
+            {/* <Avatar
               image={userOneImg}
               name="Sarah Steiner"
               title="VP Sales at Google"
-            />
+            /> */}
           </div>
         </div>
         <div className="">
@@ -34,11 +34,11 @@ export const Testimonials = () => {
               clean and welcoming. I&apos;m thrilled with my new ink!
             </p>
 
-            <Avatar
+            {/* <Avatar
               image={userTwoImg}
               name="Dylan Ambrose"
               title="Lead marketer at Netflix"
-            />
+            /> */}
           </div>
         </div>
         <div className="">
@@ -50,11 +50,11 @@ export const Testimonials = () => {
               so happy with my tattoo!
             </p>
 
-            <Avatar
+            {/* <Avatar
               image={userThreeImg}
               name="Gabrielle Winn"
               title="Co-founder of Acme Inc"
-            />
+            /> */}
           </div>
         </div>
       </div>

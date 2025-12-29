@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Dancing_Script } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
@@ -8,6 +8,7 @@ import { Footer } from "@/components/Footer";
 // import { PopupWidget }  from "@/components/PopupWidget";
 
 const inter = Inter({ subsets: ["latin"] });
+const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "700" });
 
 export const metadata: Metadata = {
   title: "Create Next App",

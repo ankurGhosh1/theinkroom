@@ -3,26 +3,19 @@ import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
+import { Dancing_Script } from "next/font/google";
+
+const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "700" });
 
 export const Navbar = () => {
   const navigation = ["Why Ink Room", "Testimonials", "FAQs"];
 
   return (
     <div className="w-full">
-      <nav className="container relative flex flex-wrap items-center justify-between pb-8 mx-auto lg:justify-between xl:px-1">
+      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-1">
         {/* Logo  */}
         <Link href="/">
-          <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
-            <span>
-              <Image
-                src="/img/logow.png"
-                width="128"
-                alt="N"
-                height="128"
-                className="w-32"
-              />
-            </span>
-          </span>
+          <p className={`text-3xl ${dancingScript.className}`}>The Ink Room</p>
         </Link>
 
         {/* get started  */}
@@ -34,7 +27,7 @@ export const Navbar = () => {
               className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
               target="_blank"
             >
-              Get me a Tattoo
+              Contact Us
             </Link>
           </div>
         </div>
@@ -79,10 +72,10 @@ export const Navbar = () => {
                     </Link>
                   ))}
                   <Link
-                    href="/"
+                    href="https://wa.me/8961248160?text=Hey%20I%20need%20a%20tattoo"
                     className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
                   >
-                    Get Started
+                    Contact Us
                   </Link>
                 </>
               </Disclosure.Panel>

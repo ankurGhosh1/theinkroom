@@ -3,6 +3,10 @@ import Image from "next/image";
 import React from "react";
 import { Container } from "@/components/Container";
 
+import { Dancing_Script } from "next/font/google";
+
+const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "700" });
+
 export function Footer() {
   const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
   const legal = ["Terms", "Privacy", "Legal"];
@@ -17,13 +21,9 @@ export function Footer() {
                 href="/"
                 className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100"
               >
-                <Image
-                  src="/img/logow.png"
-                  alt="N"
-                  width="128"
-                  height="128"
-                  className="w-32"
-                />
+                <p className={`text-3xl ${dancingScript.className}`}>
+                  The Ink Room
+                </p>
               </Link>
             </div>
 
