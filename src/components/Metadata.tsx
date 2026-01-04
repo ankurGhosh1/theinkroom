@@ -78,7 +78,7 @@ export function createPageMetadata(props: MetadataProps): Metadata {
     twitterCreator = "@theinkroom_in", // change to your handle
   } = props;
 
-  const baseUrl = "https://theinkroom.in";
+  const baseUrl = "https://www.theinkroom.in";
   const canonical = url
     ? `${baseUrl}${url.startsWith("/") ? "" : "/"}${url}`
     : baseUrl;

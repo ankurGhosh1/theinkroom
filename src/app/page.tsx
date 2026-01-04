@@ -10,10 +10,9 @@ import { createPageMetadata } from "@/components/Metadata";
 import { benefitOne, benefitTwo } from "@/components/data";
 
 export const metadata = createPageMetadata({
-  title:
-    "Best Female Tattoo Artist in Kolkata | Tattoo Parlour Behala – The Ink Room",
+  title: "Best Female Tattoo Artist in Kolkata | The Ink Room",
   description:
-    "Discover custom tattoos by Soniya, one of the best female tattoo artists in Kolkata. Safe, hygienic tattoo parlour in Behala offering unique designs for men & women. Book your appointment at theinkroom.in today!",
+    "Discover custom tattoos by Soniya, one of the best female tattoo artists in Kolkata. Safe, hygienic tattoo parlour in Behala offering unique designs for men & women.",
   image: "/og-home.jpg",
   url: "/",
   keywords: [

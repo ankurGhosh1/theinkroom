@@ -19,10 +19,12 @@ export const Hero = () => {
       <Container className="flex flex-wrap ">
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
-            <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
-              Best Female Tattoo Artist in Kolkata – The Ink Room Tattoo Parlour
-              Behala
+            <h1 className="text-sm font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
+              Female Tattoo Artist in Kolkata
             </h1>
+            <h2 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-2xl lg:leading-tight xl:text-4xl xl:leading-tight dark:text-white">
+              The Ink Room Tattoo Parlour Behala
+            </h2>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
               A premier tattoo studio offering custom designs, skilled artists,
               and a welcoming atmosphere for all tattoo enthusiasts. Experience
@@ -37,7 +39,7 @@ export const Hero = () => {
                 rel="noopener"
                 className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md "
               >
-                Contact Us
+                Connect on Whatsapp
               </a>
             </div>
           </div>

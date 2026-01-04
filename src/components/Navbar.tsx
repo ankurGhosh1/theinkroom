@@ -27,7 +27,7 @@ export const Navbar = () => {
               className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
               target="_blank"
             >
-              Contact Us
+              Connect on Whatsapp
             </Link>
           </div>
         </div>
@@ -75,7 +75,7 @@ export const Navbar = () => {
                     href="https://wa.me/8961248160?text=Hey%20I%20need%20a%20tattoo"
                     className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
                   >
-                    Contact Us
+                    Connect on Whatsapp
                   </Link>
                 </>
               </Disclosure.Panel>
