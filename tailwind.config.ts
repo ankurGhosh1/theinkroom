@@ -16,10 +16,25 @@ const config: Config = {
       colors: {
         trueGray: colors.neutral,
       },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        "marquee-reverse": {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+      },
+      animation: {
+        marquee: "marquee 40s linear infinite",
+        "marquee-reverse": "marquee-reverse 45s linear infinite",
+      },
     },
     fontFamily: {
       sans: ["Inter", ...defaultTheme.fontFamily.sans],
       stock: [defaultTheme.fontFamily.sans],
+      serif: ["var(--font-playfair)", ...defaultTheme.fontFamily.serif],
     },
   },
   variants: {

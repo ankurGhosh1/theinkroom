@@ -45,11 +45,11 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
       >
         <div>
           <div className="flex flex-col w-full mt-4">
-            <h3 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
+            <h3 className="max-w-2xl mt-3 text-3xl font-bold font-serif leading-snug tracking-tight text-neutral-100 lg:leading-tight lg:text-4xl">
               {data.title}
             </h3>
 
-            <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
+            <p className="max-w-2xl py-4 text-lg leading-normal text-neutral-400 lg:text-xl xl:text-xl">
               {data.desc}
             </p>
           </div>
@@ -67,7 +67,7 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
               href="https://wa.me/8961248160?text=Hey%20I%20need%20a%20tattoo"
               target="_blank"
               rel="noopener"
-              className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md "
+              className="px-8 py-4 text-lg font-medium text-center text-white bg-red-600 hover:bg-red-700 transition-colors rounded-md"
             >
               Connect on Whatsapp
             </a>
@@ -81,16 +81,16 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
 function Benefit(props: any) {
   return (
     <div className="flex items-start mt-8 space-x-3">
-      <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-indigo-500 rounded-md w-11 h-11 ">
+      <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-red-600 rounded-md w-11 h-11">
         {React.cloneElement(props.icon, {
-          className: "w-7 h-7 text-indigo-50",
+          className: "w-7 h-7 text-white",
         })}
       </div>
       <div>
-        <h4 className="text-xl font-medium text-gray-800 dark:text-gray-200">
+        <h4 className="text-xl font-medium text-neutral-100">
           {props.title}
         </h4>
-        <p className="mt-1 text-gray-500 dark:text-gray-400">
+        <p className="mt-1 text-neutral-400">
           {props.children}
         </p>
       </div>
