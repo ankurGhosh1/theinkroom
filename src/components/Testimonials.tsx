@@ -1,100 +1,62 @@
-import Image from "next/image";
 import React from "react";
-import { Container } from "@/components/Container";
 
-import userOneImg from "../../public/img/user1.jpg";
-import userTwoImg from "../../public/img/user2.jpg";
-import userThreeImg from "../../public/img/user3.jpg";
+const testimonials = [
+  {
+    name: "Priya S.",
+    text: "I had an amazing experience at the Ink Room! Soniya is incredibly talented and made me feel comfortable throughout the entire process. Highly recommend!",
+  },
+  {
+    name: "Ritwik D.",
+    text: "The tattoo I got from the Ink Room exceeded my expectations. The artist was professional, and the studio was clean and welcoming. I'm thrilled with my new ink!",
+  },
+  {
+    name: "Ananya M.",
+    text: "If you're looking for a skilled tattoo artist, look no further than the Ink Room. The attention to detail and creativity displayed by Soniya is truly impressive.",
+  },
+  {
+    name: "Sourav B.",
+    text: "Booked an at-home session for a small script tattoo and it was seamless — Soniya carried full sterilized equipment and the result looked exactly like the reference I sent.",
+  },
+  {
+    name: "Ishita R.",
+    text: "As a first-timer I was nervous about the pain and hygiene, but Soniya walked me through every step. The studio felt spotless and the healing was smooth.",
+  },
+  {
+    name: "Arjun K.",
+    text: "Got a fine-line piece done here and the precision is unreal. Booking on WhatsApp was easy and Soniya was flexible with timing.",
+  },
+];
 
 export const Testimonials = () => {
   return (
-    <Container>
-      <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
-        <div className="lg:col-span-2 xl:col-auto">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              I had an amazing experience at{" "}
-              <Mark> the Ink Room! Soniya is incredibly talented</Mark> and made
-              me feel comfortable throughout the entire process. Highly
-              recommend!
-            </p>
+    <section className="py-24" id="testimonials">
+      {/* Section header — constrained */}
+      <div className="container mx-auto px-8 xl:px-0 mb-12 text-center">
+        <p className="text-red-500 uppercase tracking-widest text-sm font-bold mb-4">
+          Testimonials
+        </p>
+        <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-100">
+          Here&apos;s what our clients said
+        </h2>
+      </div>
 
-            {/* <Avatar
-              image={userOneImg}
-              name="Sarah Steiner"
-              title="VP Sales at Google"
-            /> */}
-          </div>
-        </div>
-        <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              The tattoo I got from <Mark>the Ink Room</Mark> exceeded my
-              expectations. The artist was professional, and the studio was
-              clean and welcoming. I&apos;m thrilled with my new ink!
-            </p>
-
-            {/* <Avatar
-              image={userTwoImg}
-              name="Dylan Ambrose"
-              title="Lead marketer at Netflix"
-            /> */}
-          </div>
-        </div>
-        <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              If you&apos;re looking for a skilled tattoo artist, look no
-              further than <Mark>the Ink Room</Mark>. The attention to detail
-              and creativity displayed by Soniya is truly impressive. I&apos;m
-              so happy with my tattoo!
-            </p>
-
-            {/* <Avatar
-              image={userThreeImg}
-              name="Gabrielle Winn"
-              title="Co-founder of Acme Inc"
-            /> */}
-          </div>
+      {/* Mobile: horizontal snap-scroll. Desktop: full-width grid */}
+      <div className="container mx-auto px-8 xl:px-0">
+        <div className="flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-4 -mx-8 px-8 md:mx-0 md:px-0">
+          {testimonials.map((t, i) => (
+            <div
+              key={i}
+              className="w-80 md:w-auto flex-shrink-0 snap-start bg-neutral-900 border border-neutral-800 rounded-2xl p-8 flex flex-col"
+            >
+              <span className="text-5xl text-red-600 font-serif leading-none mb-4 select-none">&ldquo;</span>
+              <p className="text-neutral-200 text-lg leading-relaxed flex-grow">{t.text}</p>
+              <p className="mt-6 text-sm font-bold text-neutral-400 uppercase tracking-widest">
+                {t.name}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
-    </Container>
+    </section>
   );
 };
-
-interface AvatarProps {
-  image: any;
-  name: string;
-  title: string;
-}
-
-function Avatar(props: Readonly<AvatarProps>) {
-  return (
-    <div className="flex items-center mt-8 space-x-3">
-      <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
-        <Image
-          src={props.image}
-          width="40"
-          height="40"
-          alt="Avatar"
-          placeholder="blur"
-        />
-      </div>
-      <div>
-        <div className="text-lg font-medium">{props.name}</div>
-        <div className="text-gray-600 dark:text-gray-400">{props.title}</div>
-      </div>
-    </div>
-  );
-}
-
-function Mark(props: { readonly children: React.ReactNode }) {
-  return (
-    <>
-      {" "}
-      <mark className="text-indigo-800 bg-indigo-100 rounded-md ring-indigo-100 ring-4 dark:ring-indigo-900 dark:bg-indigo-900 dark:text-indigo-200">
-        {props.children}
-      </mark>{" "}
-    </>
-  );
-}
