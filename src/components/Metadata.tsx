@@ -1,154 +1,98 @@
-// components/SEO/Metadata.tsx
-import { Metadata } from "next";
-import { type ReactNode } from "react";
+import type { Metadata } from "next";
+import { siteConfig } from "@/data/site";
 
-// This is NOT a client component — keep it server-only
 type MetadataProps = {
-  // Required / most important fields
   title: string;
   description: string;
 
-  // Strongly recommended for social sharing & SEO
-  image?: string; // Absolute URL preferred (1200x630+)
+  /** Site-relative (e.g. "/img/x.jpg") or absolute. Used for OG + Twitter. */
+  image?: string;
   imageAlt?: string;
-  url?: string; // Canonical / current page URL
+  /** Canonical path, e.g. "/blog/first-tattoo-guide". */
+  url?: string;
 
-  // Optional but very useful
-  keywords?: string | string[];
-  type?: "website" | "article" | "profile"; // OpenGraph type
-  siteName?: string;
-  author?: string;
-  publishedTime?: string; // ISO format: 2025-12-29T...
+  type?: "website" | "article" | "profile";
+  publishedTime?: string;
   modifiedTime?: string;
 
-  // Control crawlers (rarely needed)
   noindex?: boolean;
   nofollow?: boolean;
-
-  // For very specific cases
-  twitterCard?: "summary" | "summary_large_image";
-  twitterCreator?: string; // @username
-};
-
-type MetadataProviderProps = {
-  children: ReactNode;
-  metadata: MetadataProps;
 };
 
 /**
- * Reusable Metadata component for App Router pages
- * Usage:
+ * Builds a page's Metadata object. `metadataBase` is set once in the root
+ * layout, so relative paths resolve correctly everywhere.
  *
- * <MetadataProvider metadata={{
- *   title: "Best Female Tattoo Artist in Kolkata",
- *   description: "Soniya at The Ink Room - Hygienic custom tattoos in Behala",
- *   image: "https://theinkroom.in/og-soniya.jpg",
- *   url: "https://theinkroom.in/about",
- * }}>
- *   <PageContent />
- * </MetadataProvider>
+ * Note: there is deliberately no `keywords` field. Google has ignored the
+ * keywords meta tag since 2009 and Bing does not use it as a ranking signal —
+ * curating those lists is wasted effort.
  */
-export function MetadataProvider({
-  children,
-  metadata,
-}: MetadataProviderProps) {
-  // This component exists only to make the API clean
-  // Real metadata is set in generateMetadata or page level
-  return <>{children}</>;
-}
-
-// ────────────────────────────────────────────────────────────────
-// Helper to generate proper Metadata object (use in page.tsx / layout.tsx)
 export function createPageMetadata(props: MetadataProps): Metadata {
   const {
     title,
     description,
-    image,
+    // TODO: replace with a purpose-made 1200x630 OG image once you have one —
+    // the current tattoo photos are portrait and get cropped by social platforms.
+    image = "/img/tattoo16.jpg",
     imageAlt = description,
-    url,
-    keywords,
+    url = "/",
     type = "website",
-    siteName = "The Ink Room",
-    author = "Soniya",
     publishedTime,
     modifiedTime,
     noindex = false,
     nofollow = false,
-    twitterCard = "summary_large_image",
-    twitterCreator = "@theinkroom_in", // change to your handle
   } = props;
 
-  const baseUrl = "https://www.theinkroom.in";
-  const canonical = url
-    ? `${baseUrl}${url.startsWith("/") ? "" : "/"}${url}`
-    : baseUrl;
+  const canonical = url.startsWith("/") ? url : `/${url}`;
+  const imageUrl = image.startsWith("http")
+    ? image
+    : `${siteConfig.url}${image}`;
 
   return {
     title,
     description,
-    keywords: Array.isArray(keywords) ? keywords.join(", ") : keywords,
 
-    // Canonical URL
     alternates: {
       canonical,
     },
 
-    // OpenGraph
     openGraph: {
       title,
       description,
-      url: canonical,
-      siteName,
-      images: image
-        ? [
-            {
-              url: image.startsWith("http") ? image : `${baseUrl}${image}`,
-              width: 1200,
-              height: 630,
-              alt: imageAlt,
-            },
-          ]
-        : undefined,
+      url: `${siteConfig.url}${canonical}`,
+      siteName: siteConfig.name,
+      locale: "en_IN",
       type,
-      publishedTime,
-      modifiedTime,
-      authors: author ? [author] : undefined,
+      // Dimensions are deliberately not declared: the source images are
+      // portrait, and advertising 1200x630 for them makes social previews
+      // crop badly. Platforms detect the real size when they fetch.
+      images: [{ url: imageUrl, alt: imageAlt }],
+      ...(type === "article"
+        ? {
+            publishedTime,
+            modifiedTime,
+            authors: [siteConfig.founder.name],
+          }
+        : {}),
     },
 
-    // Twitter (now X)
     twitter: {
-      card: twitterCard,
+      card: "summary_large_image",
       title,
       description,
-      images: image
-        ? [image.startsWith("http") ? image : `${baseUrl}${image}`]
-        : undefined,
-      creator: twitterCreator,
+      images: [imageUrl],
     },
 
-    // Robots
     robots: {
       index: !noindex,
       follow: !nofollow,
       googleBot: {
         index: !noindex,
         follow: !nofollow,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
       },
     },
   };
-}
-
-// ────────────────────────────────────────────────────────────────
-// Quick usage example (alternative simple version - most people use this)
-export function simpleMetadata({
-  title,
-  description,
-  image,
-}: Pick<MetadataProps, "title" | "description" | "image">): Metadata {
-  return createPageMetadata({
-    title,
-    description,
-    image,
-    type: "website",
-  });
 }
