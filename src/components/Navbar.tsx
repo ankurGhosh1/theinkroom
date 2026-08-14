@@ -8,11 +8,11 @@ const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "700" });
 
 export const Navbar = () => {
   const navigation = [
-    { label: "Why Ink Room", href: "/#whyinkroom" },
-    { label: "Testimonials", href: "/#testimonials" },
-    { label: "FAQs", href: "/#faqs" },
+    { label: "Portfolio", href: "/#portfolio" },
     { label: "Areas We Serve", href: "/tattoo-parlour-in-kolkata" },
     { label: "Tattoo Course", href: "/tattoo-course" },
+    { label: "Blog", href: "/blog" },
+    { label: "FAQs", href: "/#faqs" },
   ];
   const [scrolled, setScrolled] = useState(false);
 

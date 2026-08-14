@@ -25,7 +25,14 @@ export const ServiceAreasGrid = () => {
               <h3 className="text-xl font-serif font-bold text-neutral-100 mb-2">
                 Tattoo Parlour in {area.name}
               </h3>
-              <p className="text-neutral-400 leading-relaxed">{area.region}</p>
+              <p className="text-neutral-500 text-sm mb-3">
+                {area.region}
+                {area.travel.distanceKm > 0 &&
+                  ` · ~${area.travel.distanceKm} km from the studio`}
+              </p>
+              <p className="text-neutral-400 leading-relaxed">
+                {area.landmarks.slice(0, 3).join(", ")}
+              </p>
             </Link>
           ))}
         </div>

@@ -1,14 +1,23 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AreaHero, heroImages } from "@/components/AreaHero";
 import { AreaLandmarks } from "@/components/AreaLandmarks";
-import { WhyUs } from "@/components/WhyUs";
+import { AreaContent } from "@/components/AreaContent";
 import { Gallery } from "@/components/Gallery";
-import { Faq } from "@/components/Faq";
+import { FaqSection } from "@/components/FaqSection";
 import { Cta } from "@/components/Cta";
 import { Container } from "@/components/Container";
+import { JsonLd } from "@/components/JsonLd";
 import { createPageMetadata } from "@/components/Metadata";
 import { serviceAreas, getServiceAreaBySlug } from "@/data/serviceAreas";
 import { getAreaFaq } from "@/lib/areaFaq";
+import {
+  breadcrumbSchema,
+  businessAreaServed,
+  faqSchema,
+  jsonLdGraph,
+  webPageSchema,
+} from "@/lib/schema";
 
 export const dynamicParams = false;
 
@@ -23,16 +32,19 @@ export function generateMetadata({ params }: { params: { area: string } }) {
   const areaIndex = serviceAreas.findIndex((a) => a.slug === area.slug);
 
   return createPageMetadata({
-    title: `Tattoo Parlour in ${area.name}, Kolkata | The Ink Room`,
-    description: `Looking for a tattoo parlour in ${area.name}, Kolkata? The Ink Room offers custom, hygienic at-home tattoo appointments across ${area.name} by Soniya, a female tattoo artist based in Behala.`,
+    title: `Tattoo Parlour in ${area.name}, Kolkata`,
+    // Unique description per area, built from that area's own facts rather
+    // than a single template sentence with the name swapped in.
+    description:
+      area.travel.distanceKm === 0
+        ? `The Ink Room's tattoo studio is based in ${area.name}, Kolkata. Custom tattoos by Soniya — studio sessions or at-home appointments across ${area.landmarks
+            .slice(0, 3)
+            .join(", ")}.`
+        : `Custom tattoos in ${area.name}, Kolkata by Soniya. At-home appointments across ${area.landmarks
+            .slice(0, 3)
+            .join(", ")} — about ${area.travel.distanceKm} km from our Behala studio.`,
     image: heroImages[areaIndex % heroImages.length],
     url: `/tattoo-parlour-in/${area.slug}`,
-    keywords: [
-      `tattoo parlour in ${area.name.toLowerCase()}`,
-      `tattoo artist in ${area.name.toLowerCase()} kolkata`,
-      `at home tattoo ${area.name.toLowerCase()}`,
-      `female tattoo artist ${area.name.toLowerCase()}`,
-    ],
   });
 }
 
@@ -42,51 +54,68 @@ export default function AreaPage({ params }: { params: { area: string } }) {
 
   const areaIndex = serviceAreas.findIndex((a) => a.slug === area.slug);
   const faqItems = getAreaFaq(area);
+  const path = `/tattoo-parlour-in/${area.slug}`;
 
-  const areaJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "The Ink Room",
-    url: `https://www.theinkroom.in/tattoo-parlour-in/${area.slug}`,
-    telephone: "+91 8961248160",
-    areaServed: {
-      "@type": "Place",
-      name: `${area.name}, Kolkata`,
-    },
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Behala",
-      addressRegion: "West Bengal",
-      addressCountry: "IN",
-    },
-  };
+  const schema = jsonLdGraph(
+    webPageSchema({
+      name: `Tattoo Parlour in ${area.name}, Kolkata`,
+      path,
+      description: area.intro,
+    }),
+    businessAreaServed([
+      `${area.name}, Kolkata`,
+      ...area.landmarks.map((landmark) => `${landmark}, Kolkata`),
+    ]),
+    faqSchema(faqItems),
+    breadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Tattoo Parlour in Kolkata", path: "/tattoo-parlour-in-kolkata" },
+      { name: area.name, path },
+    ])
+  );
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(areaJsonLd) }}
-      />
+      <JsonLd data={schema} />
+
       <AreaHero area={area} imageIndex={areaIndex} />
+
+      <Container>
+        <nav aria-label="Breadcrumb" className="py-6">
+          <ol className="flex flex-wrap items-center gap-2 text-sm text-neutral-500">
+            <li>
+              <Link href="/" className="hover:text-red-500 transition-colors">
+                Home
+              </Link>
+            </li>
+            <li aria-hidden="true">/</li>
+            <li>
+              <Link
+                href="/tattoo-parlour-in-kolkata"
+                className="hover:text-red-500 transition-colors"
+              >
+                Kolkata
+              </Link>
+            </li>
+            <li aria-hidden="true">/</li>
+            <li className="text-neutral-300">{area.name}</li>
+          </ol>
+        </nav>
+      </Container>
+
       <AreaLandmarks area={area} />
-      <WhyUs />
+      <AreaContent area={area} />
       <Gallery />
 
-      <section className="py-16" id="area-faqs">
-        <Container>
-          <div className="text-center mb-10">
-            <p className="text-red-500 uppercase tracking-widest text-sm font-bold mb-4">FAQ</p>
-            <h2 className="text-4xl font-serif font-bold text-neutral-100">
-              Tattoos in {area.name} — Frequently Asked Questions
-            </h2>
-          </div>
-        </Container>
-        <Faq items={faqItems} />
-      </section>
+      <FaqSection
+        items={faqItems}
+        title={`Tattoos in ${area.name} — Frequently Asked Questions`}
+        id="area-faqs"
+      />
 
       <Cta
         title={`Ready for a tattoo in ${area.name}?`}
-        description={`Message us on WhatsApp to book an at-home tattoo appointment in ${area.name}.`}
+        description={`Message us on WhatsApp to book a session in ${area.name} — studio or at home.`}
         whatsappMessage={`Hey, I need a tattoo in ${area.name}`}
       />
     </>

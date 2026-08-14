@@ -2,37 +2,32 @@ import { CourseHero } from "@/components/CourseHero";
 import { CourseHighlights } from "@/components/CourseHighlights";
 import { CourseCurriculum } from "@/components/CourseCurriculum";
 import { CourseInstructor } from "@/components/CourseInstructor";
-import { Faq } from "@/components/Faq";
+import { FaqSection } from "@/components/FaqSection";
 import { Cta } from "@/components/Cta";
-import { Container } from "@/components/Container";
+import { JsonLd } from "@/components/JsonLd";
 import { createPageMetadata } from "@/components/Metadata";
+import type { FaqItem } from "@/components/Faq";
+import { siteConfig } from "@/data/site";
+import { breadcrumbSchema, faqSchema, jsonLdGraph } from "@/lib/schema";
 
 export const metadata = createPageMetadata({
-  title: "Tattoo Course in Kolkata | Learn Tattoo Making at The Ink Room",
+  title: "Tattoo Course in Kolkata — Learn Tattoo Making",
   description:
-    "Learn tattoo making in Kolkata under Soniya, an experienced female tattoo artist. Hands-on training in machine handling, hygiene protocols, line work, shading and more.",
+    "Learn tattoo making in Kolkata under Soniya, an experienced female tattoo artist. Hands-on training in machine handling, hygiene protocols, line work, shading and portfolio building.",
   image: "/img/tattoo3.jpg",
   url: "/tattoo-course",
-  keywords: [
-    "tattoo course in kolkata",
-    "learn tattoo making kolkata",
-    "tattoo training institute kolkata",
-    "tattoo classes for beginners kolkata",
-    "become a tattoo artist kolkata",
-    "tattoo workshop kolkata",
-  ],
 });
 
-const courseFaqData = [
+const courseFaqData: FaqItem[] = [
   {
     question: "Do I need any prior experience to join?",
     answer:
-      "No. The course is designed for beginners and starts from the fundamentals — machine parts, hand control, and hygiene basics — before moving to skin practice.",
+      "No. The course is designed for beginners and starts from the fundamentals — machine parts, hand control, and hygiene basics — before moving to practice skins and then real skin.",
   },
   {
     question: "What will I need to bring for the course?",
     answer:
-      "We provide practice skins and studio equipment for training sessions. Any specific items you should bring will be shared with you when you enroll.",
+      "Practice skins and studio equipment are provided for training sessions. Anything specific you should bring is shared with you when you enroll.",
   },
   {
     question: "Is there a certificate after completion?",
@@ -42,7 +37,12 @@ const courseFaqData = [
   {
     question: "Can this course help me become a professional tattoo artist?",
     answer:
-      "Yes. Along with hands-on technique, we cover hygiene standards, portfolio building, and guidance on taking on your first clients.",
+      "That is what it is built for. Alongside hands-on technique, the course covers hygiene and safety standards, portfolio building, and practical guidance on pricing and taking on your first clients — the parts that usually get skipped.",
+  },
+  {
+    question: "How big are the batches?",
+    answer:
+      "Small, deliberately. Tattooing is taught by watching hand position and correcting it in real time, which does not work in a large classroom. Message on WhatsApp for current batch size and seat availability.",
   },
   {
     question: "How do I check batch schedule and fees?",
@@ -51,48 +51,52 @@ const courseFaqData = [
   },
 ];
 
-const courseJsonLd = {
-  "@context": "https://schema.org",
+/**
+ * ⚠️ TODO: add `hasCourseInstance` (with courseMode, courseWorkload, start
+ * date) and `offers` (with price) once the batch format and fees are fixed.
+ * Google needs both for Course rich results — they are left out rather than
+ * guessed at, since inventing them risks a structured-data penalty.
+ */
+const courseSchema = {
   "@type": "Course",
   name: "Tattoo Making Course",
   description:
     "Hands-on tattoo making course in Behala, Kolkata covering machine handling, hygiene protocols, line work, shading, and portfolio building.",
-  provider: {
-    "@type": "LocalBusiness",
-    name: "The Ink Room",
-    sameAs: "https://www.theinkroom.in",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Behala, Kolkata",
-      addressRegion: "West Bengal",
-      addressCountry: "IN",
-    },
-  },
+  url: `${siteConfig.url}/tattoo-course`,
+  inLanguage: "en-IN",
+  provider: { "@id": `${siteConfig.url}/#business` },
+  instructor: { "@id": `${siteConfig.url}/#soniya` },
+  educationalLevel: "Beginner",
+  teaches: [
+    "Tattoo machine handling",
+    "Hygiene and sterilisation protocols",
+    "Line work",
+    "Shading technique",
+    "Stencil application",
+    "Portfolio building",
+  ],
 };
 
 export default function TattooCourse() {
+  const schema = jsonLdGraph(
+    courseSchema,
+    faqSchema(courseFaqData),
+    breadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Tattoo Course", path: "/tattoo-course" },
+    ])
+  );
+
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseJsonLd) }}
-      />
+      <JsonLd data={schema} />
+
       <CourseHero />
       <CourseHighlights />
       <CourseCurriculum />
       <CourseInstructor />
 
-      <section className="py-16" id="course-faqs">
-        <Container>
-          <div className="text-center mb-10">
-            <p className="text-red-500 uppercase tracking-widest text-sm font-bold mb-4">FAQ</p>
-            <h2 className="text-4xl font-serif font-bold text-neutral-100">
-              Frequently Asked Questions
-            </h2>
-          </div>
-        </Container>
-        <Faq items={courseFaqData} />
-      </section>
+      <FaqSection items={courseFaqData} id="course-faqs" />
 
       <Cta
         title="Ready to start learning tattoo making?"
