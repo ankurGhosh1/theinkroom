@@ -2,12 +2,14 @@ import Link from "next/link";
 import React from "react";
 import { Container } from "@/components/Container";
 import { Dancing_Script } from "next/font/google";
+import { PhoneIcon } from "@heroicons/react/24/solid";
 import {
   siteConfig,
   formattedAddress,
   whatsappLink,
   type OpeningHours,
 } from "@/data/site";
+import { serviceAreas } from "@/data/serviceAreas";
 
 const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "700" });
 
@@ -72,7 +74,7 @@ export function Footer() {
   return (
     <footer className="relative">
       <Container>
-        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-12 mx-auto mt-5 border-t border-neutral-800 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-12 mx-auto mt-5 border-t border-neutral-800 sm:grid-cols-2 lg:grid-cols-5">
           {/* Brand + NAP — the visible counterpart to the LocalBusiness schema */}
           <div>
             <Link href="/" className="flex items-center space-x-2">
@@ -114,9 +116,10 @@ export function Footer() {
               <p>
                 <a
                   href={`tel:${siteConfig.phone}`}
-                  className="hover:text-red-500 transition-colors"
+                  className="inline-flex items-center gap-2 hover:text-red-500 transition-colors"
                 >
-                  {siteConfig.phoneDisplay}
+                  <PhoneIcon className="w-4 h-4" aria-hidden="true" />
+                  Call {siteConfig.phoneDisplay}
                 </a>
               </p>
 
@@ -192,6 +195,22 @@ export function Footer() {
                     className="text-neutral-400 hover:text-red-500 transition-colors"
                   >
                     {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <p className="text-neutral-100 font-bold mb-4">Areas We Serve</p>
+            <ul className="space-y-2">
+              {serviceAreas.map((area) => (
+                <li key={area.slug}>
+                  <Link
+                    href={`/tattoo-parlour-in/${area.slug}`}
+                    className="text-neutral-400 hover:text-red-500 transition-colors"
+                  >
+                    {area.name}
                   </Link>
                 </li>
               ))}

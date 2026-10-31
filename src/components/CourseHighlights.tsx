@@ -3,7 +3,7 @@ import { Container } from "@/components/Container";
 const highlights = [
   {
     title: "Beginner Friendly",
-    desc: "No prior experience needed. We start from the fundamentals — machine parts, needle grouping, and basic hand control — before moving to skin practice.",
+    desc: "No prior experience needed. We start from the fundamentals (machine parts, needle grouping, and basic hand control) before moving to skin practice.",
   },
   {
     title: "Hands-On Training",
@@ -11,7 +11,7 @@ const highlights = [
   },
   {
     title: "Hygiene & Safety Protocols",
-    desc: "Learn hospital-grade sterilization, single-use needle handling, and cross-contamination prevention — the same standards used at The Ink Room.",
+    desc: "Learn hospital-grade sterilization, single-use needle handling, and cross-contamination prevention: the same standards used at The Ink Room.",
   },
   {
     title: "Small Batch Sizes",

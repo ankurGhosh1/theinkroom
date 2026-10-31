@@ -3,7 +3,7 @@ import { Container } from "@/components/Container";
 const features = [
   {
     title: "Best Female Tattoo Artist",
-    desc: "Soniya brings years of experience, artistic precision, and a deep understanding of what clients truly want — from delicate fine-line work to bold statement pieces.",
+    desc: "Soniya brings years of experience, artistic precision, and a deep understanding of what clients truly want, from delicate fine-line work to bold statement pieces.",
   },
   {
     title: "Hygiene & Safety First",
@@ -11,7 +11,7 @@ const features = [
   },
   {
     title: "100% Custom Designs",
-    desc: "No cookie-cutter tattoos. We collaborate closely with you — minimal, realism, traditional, geometric, floral, script — whatever speaks to your soul.",
+    desc: "No cookie-cutter tattoos. We collaborate closely with you on minimal, realism, traditional, geometric, floral, script or whatever speaks to your soul.",
   },
   {
     title: "At-Home Services",
@@ -19,7 +19,7 @@ const features = [
   },
   {
     title: "Multiple Styles Mastered",
-    desc: "Fine line, realism, neo-traditional, geometric, floral, script — executed with precision and refined until you're 100% in love with the result.",
+    desc: "Fine line, realism, neo-traditional, geometric, floral and script, executed with precision and refined until you're 100% in love with the result.",
   },
   {
     title: "Single-Use Equipment",

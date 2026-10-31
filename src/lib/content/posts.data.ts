@@ -28,7 +28,7 @@ export const posts: Post[] = [
     blocks: [
       {
         type: "p",
-        text: "A tattoo is an open wound. How it looks in five years depends far more on the two weeks after the session than on the session itself. Most aftercare advice online is written for temperate climates — Kolkata's combination of heat, humidity, dust and a genuinely punishing monsoon changes several things, so it is worth being specific.",
+        text: "A tattoo is an open wound. How it looks in five years depends far more on the two weeks after the session than on the session itself. Most aftercare advice online is written for temperate climates. Kolkata's combination of heat, humidity, dust and a genuinely punishing monsoon changes several things, so it is worth being specific.",
       },
       {
         type: "h2",
@@ -41,13 +41,13 @@ export const posts: Post[] = [
       {
         type: "ul",
         items: [
-          "Cling film or a simple wrap: keep it on for two to four hours, then remove it. Do not sleep in it — trapped plasma and sweat under plastic in Kolkata heat is exactly how infections start.",
+          "Cling film or a simple wrap: keep it on for two to four hours, then remove it. Do not sleep in it: trapped plasma and sweat under plastic in Kolkata heat is exactly how infections start.",
           "Second-skin adhesive film: this stays on for two to four days. Some fluid pooling under it is normal and expected. If it leaks or lifts at the edges, take it off, wash the area, and switch to the open-air method below.",
         ],
       },
       {
         type: "p",
-        text: "Once the wrap is off, wash the tattoo with clean lukewarm water and a fragrance-free soap, using your hand rather than a cloth or loofah. Pat it dry with a clean paper towel — not the family bath towel, which carries bacteria and lint. Let it air-dry for fifteen minutes before applying anything.",
+        text: "Once the wrap is off, wash the tattoo with clean lukewarm water and a fragrance-free soap, using your hand rather than a cloth or loofah. Pat it dry with a clean paper towel, not the family bath towel, which carries bacteria and lint. Let it air-dry for fifteen minutes before applying anything.",
       },
       {
         type: "h2",
@@ -55,11 +55,11 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "The tattoo will feel like a sunburn, look slightly raised, and start to scab lightly. This is normal. Wash it twice a day — three times if you have been out in traffic and dust — and apply a very thin layer of unscented moisturiser after each wash.",
+        text: "The tattoo will feel like a sunburn, look slightly raised, and start to scab lightly. This is normal. Wash it twice a day (three times if you have been out in traffic and dust) and apply a very thin layer of unscented moisturiser after each wash.",
       },
       {
         type: "note",
-        text: "Thin is the key word. A thick layer of ointment suffocates the skin and traps humidity against it. If the tattoo looks shiny or greasy, you have used too much — blot the excess off with a clean tissue.",
+        text: "Thin is the key word. A thick layer of ointment suffocates the skin and traps humidity against it. If the tattoo looks shiny or greasy, you have used too much, so blot the excess off with a clean tissue.",
       },
       {
         type: "p",
@@ -86,7 +86,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Two local factors matter more here than the standard advice accounts for. The first is sweat: high humidity means you are sweating onto a healing wound most of the year. Loose cotton clothing over the area, and an extra wash after any time spent outdoors, handles this. The second is road dust, which is unavoidable if you commute. Keeping the tattoo covered with loose, breathable fabric while travelling — not plastic — is worth the minor inconvenience.",
+        text: "Two local factors matter more here than the standard advice accounts for. The first is sweat: high humidity means you are sweating onto a healing wound most of the year. Loose cotton clothing over the area, and an extra wash after any time spent outdoors, handles this. The second is road dust, which is unavoidable if you commute. Keeping the tattoo covered with loose, breathable fabric while travelling (not plastic) is worth the minor inconvenience.",
       },
       {
         type: "p",
@@ -101,7 +101,7 @@ export const posts: Post[] = [
         items: [
           "Days 1–3: Redness, swelling, some plasma weeping. Wash and moisturise lightly.",
           "Days 4–7: Flaking and itching begins. Do not scratch.",
-          "Days 8–14: Most flaking finishes. The tattoo may look dull or cloudy — this is normal.",
+          "Days 8–14: Most flaking finishes. The tattoo may look dull or cloudy. This is normal.",
           "Weeks 3–4: The cloudy layer clears and the true colour settles in.",
           "Months 2–3: Deeper skin layers finish healing. This is when a touch-up, if needed, can be assessed properly.",
         ],
@@ -126,7 +126,7 @@ export const posts: Post[] = [
       },
       {
         type: "note",
-        text: "Any of the above means see a doctor promptly rather than messaging your artist and waiting. A tattoo infection is a medical issue, not an art issue — and it is treatable easily when caught early.",
+        text: "Any of the above means see a doctor promptly rather than messaging your artist and waiting. A tattoo infection is a medical issue, not an art issue, and it is treatable easily when caught early.",
       },
       {
         type: "h2",
@@ -141,7 +141,7 @@ export const posts: Post[] = [
       {
         question: "Can I shower after getting a tattoo?",
         answer:
-          "Yes, showering is fine from day one — just keep it brief and avoid blasting the tattoo directly with high-pressure hot water. What you need to avoid is soaking: baths, pools and ponds are out for two to three weeks.",
+          "Yes, showering is fine from day one. Just keep it brief and avoid blasting the tattoo directly with high-pressure hot water. What you need to avoid is soaking: baths, pools and ponds are out for two to three weeks.",
       },
       {
         question: "Why does my tattoo look faded and cloudy after a week?",
@@ -151,7 +151,7 @@ export const posts: Post[] = [
       {
         question: "How do I protect a new tattoo during monsoon?",
         answer:
-          "Keep it covered with loose, breathable cotton while travelling, and wash it properly with clean water and fragrance-free soap as soon as you get home if it has been exposed to rain or street water. Never wrap it in plastic to keep the rain off — that traps moisture against the wound.",
+          "Keep it covered with loose, breathable cotton while travelling, and wash it properly with clean water and fragrance-free soap as soon as you get home if it has been exposed to rain or street water. Never wrap it in plastic to keep the rain off, as that traps moisture against the wound.",
       },
       {
         question: "When can I go back to the gym after a tattoo?",
@@ -170,7 +170,7 @@ export const posts: Post[] = [
     ],
     title: "What Does a Tattoo Cost in Kolkata?",
     metaTitle: "Tattoo Price in Kolkata: How Pricing Actually Works",
-    description: `Small tattoos start at ${siteConfig.startingPrice.display} at The Ink Room, Kolkata. An honest breakdown of what actually drives tattoo pricing — size, detail, placement and session time — and why the cheapest quote is usually the most expensive one.`,
+    description: `Small tattoos start at ${siteConfig.startingPrice.display} at The Ink Room, Kolkata. An honest breakdown of what actually drives tattoo pricing (size, detail, placement and session time) and why the cheapest quote is usually the most expensive one.`,
     excerpt: `Pieces start at ${siteConfig.startingPrice.display}. Why two artists quote wildly different prices for the same design, what actually drives the cost, and how to read a quote properly.`,
     readingMinutes: 6,
     publishedAt: "2026-08-15",
@@ -192,7 +192,7 @@ export const posts: Post[] = [
       {
         type: "ul",
         items: [
-          "Design time. A custom piece is drawn before you arrive — often revised two or three times. That work happens whether or not you eventually book.",
+          "Design time. A custom piece is drawn before you arrive, often revised two or three times. That work happens whether or not you eventually book.",
           "Session time. The actual tattooing, which is the most visible part but rarely the largest cost on small pieces.",
           "Consumables. Needles, ink, grips, tips, barrier film, and stencil supplies are single-use. All of it is discarded after your session.",
           "Skill and risk. Fine line work, script and lettering, and anything on difficult skin or awkward placement demand a level of control that takes years to build and cannot be rushed.",
@@ -224,7 +224,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Ribs, sternum, feet, hands, elbows and the inside of the arm are slower to work on — the skin moves, it is thinner, and the client needs more breaks. A forearm or outer shoulder piece of identical design will usually cost less than the same thing on the ribs.",
+        text: "Ribs, sternum, feet, hands, elbows and the inside of the arm are slower to work on: the skin moves, it is thinner, and the client needs more breaks. A forearm or outer shoulder piece of identical design will usually cost less than the same thing on the ribs.",
       },
       {
         type: "h3",
@@ -252,11 +252,11 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Cover-ups and laser removal both cost several times what the original tattoo did, and laser is a multi-session process that is painful and never guaranteed to be complete. A badly done tattoo is not a small loss you can absorb — it is a permanent problem on your body that costs far more to solve than to avoid.",
+        text: "Cover-ups and laser removal both cost several times what the original tattoo did, and laser is a multi-session process that is painful and never guaranteed to be complete. A badly done tattoo is not a small loss you can absorb. It is a permanent problem on your body that costs far more to solve than to avoid.",
       },
       {
         type: "p",
-        text: "The realistic risks at the very bottom of the market are blown-out lines that spread and blur within a year, patchy healing from poor needle depth, wobbly linework that no amount of touch-up fixes, and — the serious one — hygiene shortcuts. Reused needles and unsterilised equipment carry genuine bloodborne infection risk.",
+        text: "The realistic risks at the very bottom of the market are blown-out lines that spread and blur within a year, patchy healing from poor needle depth, wobbly linework that no amount of touch-up fixes, and (the serious one) hygiene shortcuts. Reused needles and unsterilised equipment carry genuine bloodborne infection risk.",
       },
       {
         type: "h2",
@@ -282,17 +282,17 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: `At The Ink Room, small minimal pieces start at ${siteConfig.startingPrice.display}. From there the number scales with everything covered above — a large, detailed custom piece running across multiple sittings sits at the opposite end of the range entirely. That spread is not evasiveness; it genuinely is the difference between a two-inch script tattoo and a full sleeve.`,
+        text: `At The Ink Room, small minimal pieces start at ${siteConfig.startingPrice.display}. From there the number scales with everything covered above. A large, detailed custom piece running across multiple sittings sits at the opposite end of the range entirely. That spread is not evasiveness; it genuinely is the difference between a two-inch script tattoo and a full sleeve.`,
       },
       {
         type: "p",
-        text: "We quote per piece rather than on a fixed rate card, because the same design can be a very different job depending on size and placement. Message us on WhatsApp with your reference or idea, a rough size in inches, and where on the body you want it — that is enough to give you a real number rather than a vague range. The quote covers the design, the session and the consumables, and nothing is added afterwards.",
+        text: "We quote per piece rather than on a fixed rate card, because the same design can be a very different job depending on size and placement. Message us on WhatsApp with your reference or idea, a rough size in inches, and where on the body you want it. That is enough to give you a real number rather than a vague range. The quote covers the design, the session and the consumables, and nothing is added afterwards.",
       },
     ],
     faq: [
       {
         question: "How much does a small tattoo cost in Kolkata?",
-        answer: `At The Ink Room, small minimal pieces start at ${siteConfig.startingPrice.display} ${siteConfig.startingPrice.note}. Anything larger is quoted per piece, since size, detail density and placement change the job substantially — send your reference and a rough size on WhatsApp for a real number.`,
+        answer: `At The Ink Room, small minimal pieces start at ${siteConfig.startingPrice.display} ${siteConfig.startingPrice.note}. Anything larger is quoted per piece, since size, detail density and placement change the job substantially, so send your reference and a rough size on WhatsApp for a real number.`,
       },
       {
         question: "Why do tattoo artists charge a minimum price?",
@@ -307,12 +307,12 @@ export const posts: Post[] = [
       {
         question: "Do you charge extra for at-home tattoo sessions?",
         answer:
-          "Travel is factored into the quote for at-home appointments, and it depends on the area — Tollygunge is a very different trip from New Town. Whatever it comes to is confirmed on WhatsApp before you book, and nothing is added after the session.",
+          "Travel is factored into the quote for at-home appointments, and it depends on the area: Tollygunge is a very different trip from New Town. Whatever it comes to is confirmed on WhatsApp before you book, and nothing is added after the session.",
       },
       {
         question: "Are touch-ups charged separately?",
         answer:
-          "Message us to confirm for your specific piece. Touch-ups needed because of normal healing variation are treated differently from reworking a tattoo that was not cared for during healing — which is why the aftercare guidance matters.",
+          "Message us to confirm for your specific piece. Touch-ups needed because of normal healing variation are treated differently from reworking a tattoo that was not cared for during healing, which is why the aftercare guidance matters.",
       },
     ],
   },
@@ -328,7 +328,7 @@ export const posts: Post[] = [
     title: "Getting Your First Tattoo: What Nobody Tells You",
     metaTitle: "First Tattoo Guide: What to Expect in Kolkata",
     description:
-      "A straight guide to your first tattoo — choosing a design and placement, what to do before the session, what it actually feels like, and the mistakes first-timers make.",
+      "A straight guide to your first tattoo: choosing a design and placement, what to do before the session, what it actually feels like, and the mistakes first-timers make.",
     excerpt:
       "Design, placement, pain, and the practical things to sort out before you sit down. Written for people booking their first piece.",
     readingMinutes: 7,
@@ -346,7 +346,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "The most common regret is not a bad tattoo — it is a rushed one. A useful test: if you have wanted this design for more than six months, it is probably safe. If you decided on it last week because of something you saw online, sit with it a bit longer.",
+        text: "The most common regret is not a bad tattoo. It is a rushed one. A useful test: if you have wanted this design for more than six months, it is probably safe. If you decided on it last week because of something you saw online, sit with it a bit longer.",
       },
       {
         type: "ul",
@@ -354,7 +354,7 @@ export const posts: Post[] = [
           "Bring references, not a finished design. Three or four images showing the style, mood and level of detail you want give an artist far more to work with than one image you want copied exactly.",
           "Avoid copying another person's custom tattoo. Beyond it being someone else's piece, it will not fit your body the same way.",
           "Be careful with names and dates. Nobody talks you out of these, but it is worth an honest moment of thought.",
-          "Think about size honestly. Very small tattoos with fine detail do not age well — lines spread slightly over years, and detail packed too tightly eventually merges into a blur. Your artist may suggest going slightly larger for exactly this reason, and it is not an upsell.",
+          "Think about size honestly. Very small tattoos with fine detail do not age well: lines spread slightly over years, and detail packed too tightly eventually merges into a blur. Your artist may suggest going slightly larger for exactly this reason, and it is not an upsell.",
         ],
       },
       {
@@ -379,7 +379,7 @@ export const posts: Post[] = [
           "No alcohol for 24 hours. It thins the blood, which means more bleeding, ink that does not settle as cleanly, and a harder session for both of you.",
           "Sleep properly. Being tired makes pain substantially harder to sit through.",
           "Stay hydrated. Well-hydrated skin takes ink better.",
-          "Do not shave the area yourself. Your artist will handle it with a fresh razor — home shaving can leave micro-cuts that complicate the session.",
+          "Do not shave the area yourself. Your artist will handle it with a fresh razor, since home shaving can leave micro-cuts that complicate the session.",
           "Avoid blood-thinning painkillers like aspirin. Paracetamol is fine if you need something.",
         ],
       },
@@ -389,11 +389,11 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Eat a full meal within a couple of hours of the session. This matters more than any other single piece of advice here — low blood sugar is the main reason people feel faint during a tattoo, and it is entirely preventable. Bring a sugary drink and a snack for longer sessions.",
+        text: "Eat a full meal within a couple of hours of the session. This matters more than any other single piece of advice here: low blood sugar is the main reason people feel faint during a tattoo, and it is entirely preventable. Bring a sugary drink and a snack for longer sessions.",
       },
       {
         type: "p",
-        text: "Wear clothing that gives access to the placement without you having to undress awkwardly, and something you do not mind getting ink on. Bring photo ID confirming you are 18 or over — any reputable artist will ask, and one who does not is telling you something.",
+        text: "Wear clothing that gives access to the placement without you having to undress awkwardly, and something you do not mind getting ink on. Bring photo ID confirming you are 18 or over. Any reputable artist will ask, and one who does not is telling you something.",
       },
       {
         type: "h2",
@@ -401,7 +401,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Most people describe it as a hot scratch, or a cat scratching the same line repeatedly. It is uncomfortable rather than unbearable, and the anticipation is almost always worse than the reality. The first few minutes are the worst part — your body adjusts surprisingly quickly.",
+        text: "Most people describe it as a hot scratch, or a cat scratching the same line repeatedly. It is uncomfortable rather than unbearable, and the anticipation is almost always worse than the reality. The first few minutes are the worst part, and your body adjusts surprisingly quickly.",
       },
       {
         type: "p",
@@ -417,7 +417,7 @@ export const posts: Post[] = [
           "Choosing an artist on price alone. Look at healed work in the style you want.",
           "Going too small for the level of detail requested.",
           "Arriving on an empty stomach or hungover.",
-          "Not speaking up during stencil placement. This is your last easy chance to move it — say something if it looks off, even slightly.",
+          "Not speaking up during stencil placement. This is your last easy chance to move it, so say something if it looks off, even slightly.",
           "Ignoring aftercare in week two, once it stops looking dramatic and starts looking boring. That is exactly when picking at flakes ruins the result.",
         ],
       },
@@ -431,14 +431,14 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Your artist will wrap the tattoo and explain the aftercare. Follow it properly — the healing period determines how the tattoo looks permanently, and it is the part entirely within your control.",
+        text: "Your artist will wrap the tattoo and explain the aftercare. Follow it properly: the healing period determines how the tattoo looks permanently, and it is the part entirely within your control.",
       },
     ],
     faq: [
       {
         question: "How painful is a first tattoo, really?",
         answer:
-          "Most people find it far more manageable than expected — a hot scratching sensation rather than sharp pain. Placement matters enormously: outer forearm, outer arm and calf are among the easier spots, while ribs, sternum and feet are considerably more intense.",
+          "Most people find it far more manageable than expected: a hot scratching sensation rather than sharp pain. Placement matters enormously: outer forearm, outer arm and calf are among the easier spots, while ribs, sternum and feet are considerably more intense.",
       },
       {
         question: "What should I eat before getting a tattoo?",
@@ -484,7 +484,7 @@ export const posts: Post[] = [
       {
         type: "ul",
         items: [
-          "Distance from bone. Thin skin directly over bone — ribs, sternum, ankles, elbows, spine — transmits vibration straight into it. This is the single biggest factor.",
+          "Distance from bone. Thin skin directly over bone (ribs, sternum, ankles, elbows, spine) transmits vibration straight into it. This is the single biggest factor.",
           "Nerve density. Hands, feet, the inner arm and the neck carry far more nerve endings than the outer arm or thigh.",
           "Fat and muscle padding. Padding cushions the needle. Outer thigh and outer upper arm are comfortable largely for this reason.",
           "Session length. Anywhere hurts after four hours. Endurance matters as much as raw sensitivity.",
@@ -497,12 +497,12 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Good choices for a first tattoo — well padded, away from bone, and straightforward to heal.",
+        text: "Good choices for a first tattoo: well padded, away from bone, and straightforward to heal.",
       },
       {
         type: "ul",
         items: [
-          "Outer forearm — the classic first tattoo spot",
+          "Outer forearm: the classic first tattoo spot",
           "Outer upper arm and shoulder cap",
           "Outer thigh",
           "Calf",
@@ -520,7 +520,7 @@ export const posts: Post[] = [
       {
         type: "ul",
         items: [
-          "Inner forearm — thinner skin, more sensitive than the outer side",
+          "Inner forearm: thinner skin, more sensitive than the outer side",
           "Lower back",
           "Front of the thigh",
           "Wrist",
@@ -538,7 +538,7 @@ export const posts: Post[] = [
       {
         type: "ul",
         items: [
-          "Inner bicep — thin skin, high nerve density",
+          "Inner bicep: thin skin, high nerve density",
           "Elbow and the ditch of the elbow",
           "Knee and behind the knee",
           "Collarbone",
@@ -557,7 +557,7 @@ export const posts: Post[] = [
       {
         type: "ul",
         items: [
-          "Ribs and sternum — consistently reported as the hardest",
+          "Ribs and sternum: consistently reported as the hardest",
           "Spine",
           "Hands and fingers",
           "Feet and ankles",
@@ -578,7 +578,7 @@ export const posts: Post[] = [
         items: [
           "Eat a proper meal beforehand and stay hydrated. This makes a bigger difference than people expect.",
           "Do not drink alcohol the night before.",
-          "Sleep well — tiredness lowers pain tolerance measurably.",
+          "Sleep well, as tiredness lowers pain tolerance measurably.",
           "Breathe steadily rather than holding your breath. Tensing up makes it worse.",
           "Take breaks. Ask for one whenever you need it.",
           "Break large pieces across multiple sittings rather than pushing through one very long session.",
@@ -594,7 +594,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Partly, for a first tattoo — starting somewhere manageable teaches you how you personally handle it, which makes every decision afterwards easier. But for a piece you have wanted for years in a specific spot, a few hours of discomfort is a poor reason to compromise on something permanent.",
+        text: "Partly, for a first tattoo. Starting somewhere manageable teaches you how you personally handle it, which makes every decision afterwards easier. But for a piece you have wanted for years in a specific spot, a few hours of discomfort is a poor reason to compromise on something permanent.",
       },
     ],
     faq: [
@@ -606,7 +606,7 @@ export const posts: Post[] = [
       {
         question: "Where does a tattoo hurt the least?",
         answer:
-          "The outer forearm, outer upper arm, outer thigh and calf are the most comfortable placements — they have more muscle and fat padding and sit away from bone.",
+          "The outer forearm, outer upper arm, outer thigh and calf are the most comfortable placements, as they have more muscle and fat padding and sit away from bone.",
       },
       {
         question: "Can I use numbing cream for my tattoo?",
@@ -616,7 +616,7 @@ export const posts: Post[] = [
       {
         question: "Does a bigger tattoo hurt more?",
         answer:
-          "Not more intensely, but for longer — and endurance is a real factor. Any placement becomes difficult after several hours, which is why larger pieces are usually split across multiple sittings.",
+          "Not more intensely, but for longer, and endurance is a real factor. Any placement becomes difficult after several hours, which is why larger pieces are usually split across multiple sittings.",
       },
     ],
   },
@@ -627,9 +627,9 @@ export const posts: Post[] = [
     title: "Small Tattoo Ideas for Women That Actually Age Well",
     metaTitle: "Small Tattoo Ideas for Women: What Works Long-Term",
     description:
-      "Small tattoo ideas that still look good in ten years — which designs, line weights and placements survive at small scale, and which quietly turn into a blur.",
+      "Small tattoo ideas that still look good in ten years: which designs, line weights and placements survive at small scale, and which quietly turn into a blur.",
     excerpt:
-      "Not a list of images to copy. A guide to what genuinely works at small scale — and what looks perfect on day one and blurs by year three.",
+      "Not a list of images to copy. A guide to what genuinely works at small scale, and what looks perfect on day one and blurs by year three.",
     readingMinutes: 7,
     publishedAt: "2026-08-15",
     updatedAt: "2026-08-15",
@@ -637,7 +637,7 @@ export const posts: Post[] = [
     blocks: [
       {
         type: "p",
-        text: "Small tattoos are the most common first piece, and for good reason — they hurt less, cost less, heal faster, and you can place them somewhere easy to live with. But small is also where most of the bad ageing happens, because the thing that makes a tiny tattoo look crisp on day one is exactly what fails over a decade.",
+        text: "Small tattoos are the most common first piece, and for good reason: they hurt less, cost less, heal faster, and you can place them somewhere easy to live with. But small is also where most of the bad ageing happens, because the thing that makes a tiny tattoo look crisp on day one is exactly what fails over a decade.",
       },
       {
         type: "p",
@@ -649,7 +649,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Tattoo ink spreads slightly in the skin over years. This is normal, unavoidable, and happens to every tattoo by every artist. On a large piece it is invisible. On a small piece where two lines sit half a millimetre apart, that spread merges them into one thicker line — and the detail you paid for disappears.",
+        text: "Tattoo ink spreads slightly in the skin over years. This is normal, unavoidable, and happens to every tattoo by every artist. On a large piece it is invisible. On a small piece where two lines sit half a millimetre apart, that spread merges them into one thicker line, and the detail you paid for disappears.",
       },
       {
         type: "note",
@@ -665,7 +665,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "One stem, one sprig, one small bloom. Botanical work suits small scale because the shapes are organic — slight softening over time reads as natural rather than as damage. A single fern frond or a sprig of wildflower ages gracefully in a way a detailed rose at the same size does not.",
+        text: "One stem, one sprig, one small bloom. Botanical work suits small scale because the shapes are organic, so slight softening over time reads as natural rather than as damage. A single fern frond or a sprig of wildflower ages gracefully in a way a detailed rose at the same size does not.",
       },
       {
         type: "h3",
@@ -673,7 +673,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "A word, a short phrase, a date, a signature. Script works small provided the letterforms have room to breathe — the failure mode is cramming a full sentence into two inches, where the loops fill in and the whole thing becomes illegible. Fewer words at a larger size beats more words squeezed down, every time.",
+        text: "A word, a short phrase, a date, a signature. Script works small provided the letterforms have room to breathe. The failure mode is cramming a full sentence into two inches, where the loops fill in and the whole thing becomes illegible. Fewer words at a larger size beats more words squeezed down, every time.",
       },
       {
         type: "h3",
@@ -689,7 +689,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Solid shapes with no internal detail — a filled crescent, a small solid heart, a simple bird form. Solid black holds better than anything else over time, because there is no fine internal spacing to lose.",
+        text: "Solid shapes with no internal detail: a filled crescent, a small solid heart, a simple bird form. Solid black holds better than anything else over time, because there is no fine internal spacing to lose.",
       },
       {
         type: "h2",
@@ -717,12 +717,12 @@ export const posts: Post[] = [
       {
         type: "ul",
         items: [
-          "Inner forearm — low friction, easy to keep out of the sun, easy to see yourself",
-          "Back of the upper arm — very low friction, ages exceptionally well",
-          "Behind the ear or nape of the neck — discreet, low friction, though hair care products need keeping off it",
-          "Ankle (inner side rather than the bone) — good, provided footwear does not rub it",
-          "Collarbone — a popular placement for small script, and generally ages well",
-          "Ribs — works, but the skin stretches with weight change, so leave a little room in the design",
+          "Inner forearm: low friction, easy to keep out of the sun, easy to see yourself",
+          "Back of the upper arm: very low friction, ages exceptionally well",
+          "Behind the ear or nape of the neck: discreet, low friction, though hair care products need keeping off it",
+          "Ankle (inner side rather than the bone): good, provided footwear does not rub it",
+          "Collarbone: a popular placement for small script, and generally ages well",
+          "Ribs: works, but the skin stretches with weight change, so leave a little room in the design",
         ],
       },
       {
@@ -735,7 +735,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "As a rough working guide, most designs need at least an inch and a half to two inches in their longest dimension to hold their structure long-term, and simpler designs can go smaller than detailed ones. If an artist suggests going slightly bigger than you planned, it is almost always this — not an upsell.",
+        text: "As a rough working guide, most designs need at least an inch and a half to two inches in their longest dimension to hold their structure long-term, and simpler designs can go smaller than detailed ones. If an artist suggests going slightly bigger than you planned, it is almost always this, not an upsell.",
       },
       {
         type: "p",
@@ -749,7 +749,7 @@ export const posts: Post[] = [
         type: "ol",
         items: [
           "Sunscreen, once healed. UV is the main cause of fading and blurring, and Kolkata gets strong sun most of the year.",
-          "Follow the healing process properly — picking at flakes on a small tattoo can remove a meaningful proportion of it.",
+          "Follow the healing process properly, since picking at flakes on a small tattoo can remove a meaningful proportion of it.",
           "Keep it moisturised long-term. Dry skin makes any tattoo look duller.",
           "Expect to touch up high-friction placements. Budget for it rather than being surprised by it.",
         ],
@@ -763,7 +763,7 @@ export const posts: Post[] = [
       {
         question: "What is a good first small tattoo for a woman?",
         answer:
-          "Single-subject botanicals, a short word or date in script, or a simple line-drawn symbol — placed on the inner forearm, back of the upper arm or collarbone. All are low-pain, low-friction, and hold their shape well over time.",
+          "Single-subject botanicals, a short word or date in script, or a simple line-drawn symbol, placed on the inner forearm, back of the upper arm or collarbone. All are low-pain, low-friction, and hold their shape well over time.",
       },
       {
         question: "How small can a tattoo be?",
@@ -792,7 +792,7 @@ export const posts: Post[] = [
     description:
       "What fine line tattooing actually is, why it looks so good fresh, the trade-offs nobody mentions, and how to make one last in Indian conditions.",
     excerpt:
-      "The most requested style right now — and the one with the biggest gap between how it looks fresh and how it looks in ten years.",
+      "The most requested style right now, and the one with the biggest gap between how it looks fresh and how it looks in ten years.",
     readingMinutes: 6,
     publishedAt: "2026-08-15",
     updatedAt: "2026-08-15",
@@ -808,7 +808,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Fine line work uses very small needle groupings — often a single needle or a tight cluster of three — to lay down thin, consistent lines with little or no heavy shading. The result is delicate, precise and graphic, closer to a pen drawing than to traditional tattooing.",
+        text: "Fine line work uses very small needle groupings (often a single needle or a tight cluster of three) to lay down thin, consistent lines with little or no heavy shading. The result is delicate, precise and graphic, closer to a pen drawing than to traditional tattooing.",
       },
       {
         type: "p",
@@ -820,7 +820,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "A thin line is unforgiving. There is no bold outline hiding a wobble and no heavy shading covering an inconsistency — every hesitation shows. Needle depth matters enormously too: slightly too shallow and the line drops out during healing, slightly too deep and the ink spreads under the skin into a blurry, blown-out line that cannot be undone.",
+        text: "A thin line is unforgiving. There is no bold outline hiding a wobble and no heavy shading covering an inconsistency. Every hesitation shows. Needle depth matters enormously too: slightly too shallow and the line drops out during healing, slightly too deep and the ink spreads under the skin into a blurry, blown-out line that cannot be undone.",
       },
       {
         type: "note",
@@ -836,7 +836,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "All tattoo ink spreads slightly over the years. A 3mm traditional line spreading by 0.3mm is imperceptible. A 0.3mm fine line spreading by the same amount has doubled in width. Fine line tattoos genuinely do soften and lose crispness sooner than bold work — that is physics, not poor execution.",
+        text: "All tattoo ink spreads slightly over the years. A 3mm traditional line spreading by 0.3mm is imperceptible. A 0.3mm fine line spreading by the same amount has doubled in width. Fine line tattoos genuinely do soften and lose crispness sooner than bold work. That is physics, not poor execution.",
       },
       {
         type: "p",
@@ -848,7 +848,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "UV breaks down pigment, and there is less pigment in a fine line to begin with. In Kolkata's climate, an unprotected fine line piece on an exposed forearm will visibly soften faster than the same design would in a cooler, cloudier place. Sunscreen is not optional maintenance for this style — it is the single biggest factor in how long it stays sharp.",
+        text: "UV breaks down pigment, and there is less pigment in a fine line to begin with. In Kolkata's climate, an unprotected fine line piece on an exposed forearm will visibly soften faster than the same design would in a cooler, cloudier place. Sunscreen is not optional maintenance for this style. It is the single biggest factor in how long it stays sharp.",
       },
       {
         type: "h3",
@@ -867,7 +867,7 @@ export const posts: Post[] = [
         items: [
           "Choose an artist by their healed fine line work specifically, not their fresh photos. Fresh fine line always looks perfect. Healed fine line is the only honest evidence.",
           "Do not go too small. Fine line plus tiny size compounds both problems at once.",
-          "Leave more space between elements than looks necessary — that gap is what absorbs a decade of spread.",
+          "Leave more space between elements than looks necessary, because that gap is what absorbs a decade of spread.",
           "Sunscreen every time the tattoo is exposed, forever.",
           "Keep the skin moisturised. Dry, dehydrated skin makes thin lines look patchy.",
           "Accept a touch-up at some point as normal maintenance rather than a failure.",
@@ -879,7 +879,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Fine line work usually heals faster and more comfortably than heavy shading — less trauma to the skin means less swelling and a shorter weeping stage. The catch is that the flaking stage is more dangerous for the result. Picking a flake off a bold tattoo removes a fraction of a thick line; picking one off a fine line piece can remove a visible section of it. The standard aftercare rules apply with less room for error.",
+        text: "Fine line work usually heals faster and more comfortably than heavy shading: less trauma to the skin means less swelling and a shorter weeping stage. The catch is that the flaking stage is more dangerous for the result. Picking a flake off a bold tattoo removes a fraction of a thick line; picking one off a fine line piece can remove a visible section of it. The standard aftercare rules apply with less room for error.",
       },
       {
         type: "h2",
@@ -887,7 +887,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "It is a great choice if you want something delicate and understated, you are happy to protect it from sun, and you accept it will soften over time. It is the wrong choice if you want something that will look identical in twenty years with no maintenance — bold traditional work is genuinely better at that, and there is no shame in wanting it.",
+        text: "It is a great choice if you want something delicate and understated, you are happy to protect it from sun, and you accept it will soften over time. It is the wrong choice if you want something that will look identical in twenty years with no maintenance. Bold traditional work is genuinely better at that, and there is no shame in wanting it.",
       },
       {
         type: "p",
@@ -898,12 +898,12 @@ export const posts: Post[] = [
       {
         question: "Do fine line tattoos fade quickly?",
         answer:
-          "They soften sooner than bold work, which is a consequence of line thickness rather than poor execution — ink spreads slightly over years, and that spread is proportionally much larger on a thin line. Sun protection and sensible sizing make a substantial difference.",
+          "They soften sooner than bold work, which is a consequence of line thickness rather than poor execution: ink spreads slightly over years, and that spread is proportionally much larger on a thin line. Sun protection and sensible sizing make a substantial difference.",
       },
       {
         question: "Are fine line tattoos harder to do?",
         answer:
-          "Yes. There is no bold outline or heavy shading to hide inconsistencies, and needle depth has to be exact — too shallow and the line drops out while healing, too deep and it blows out permanently.",
+          "Yes. There is no bold outline or heavy shading to hide inconsistencies, and needle depth has to be exact: too shallow and the line drops out while healing, too deep and it blows out permanently.",
       },
       {
         question: "Do fine line tattoos hurt less?",
@@ -927,7 +927,7 @@ export const posts: Post[] = [
     description:
       "How to judge a tattoo artist's portfolio, the hygiene standards to insist on, the red flags worth walking away from, and the questions to ask before booking.",
     excerpt:
-      "Portfolios are marketing. Here is how to actually assess an artist — including the hygiene checks most people never think to make.",
+      "Portfolios are marketing. Here is how to actually assess an artist, including the hygiene checks most people never think to make.",
     readingMinutes: 8,
     publishedAt: "2026-08-15",
     updatedAt: "2026-08-15",
@@ -935,7 +935,7 @@ export const posts: Post[] = [
     blocks: [
       {
         type: "p",
-        text: "You are choosing something permanent, from someone whose work you can only judge by photographs they selected themselves. Here is how to narrow that gap — including the parts most people skip.",
+        text: "You are choosing something permanent, from someone whose work you can only judge by photographs they selected themselves. Here is how to narrow that gap, including the parts most people skip.",
       },
       {
         type: "h2",
@@ -986,16 +986,16 @@ export const posts: Post[] = [
         items: [
           "Needles come out of a sealed sterile package, opened in front of you. Not from a drawer, not pre-loaded before you arrive.",
           "Fresh gloves, put on in front of you, and changed if the artist touches anything outside the sterile field.",
-          "Ink poured into fresh single-use caps for your session, and discarded afterwards — never poured back into the bottle.",
+          "Ink poured into fresh single-use caps for your session, and discarded afterwards, never poured back into the bottle.",
           "Barrier film or disposable covering on the machine, clip cord, work surfaces, and anything that gets touched mid-session.",
           "Reusable tools (grips, tubes) sterilised in an autoclave, not just wiped or soaked in disinfectant.",
-          "A sharps container for needle disposal — not a bin.",
+          "A sharps container for needle disposal, not a bin.",
           "Clean, uncluttered workspace with a wipeable surface. Not a bedspread or a carpeted floor.",
         ],
       },
       {
         type: "p",
-        text: "You are entitled to ask about every one of these before booking, and a professional will answer without being defensive. This applies equally to at-home sessions — the setting changes, the protocol does not.",
+        text: "You are entitled to ask about every one of these before booking, and a professional will answer without being defensive. This applies equally to at-home sessions: the setting changes, the protocol does not.",
       },
       {
         type: "h2",
@@ -1005,11 +1005,11 @@ export const posts: Post[] = [
         type: "ul",
         items: [
           "No healed photos available, or evasiveness when asked.",
-          "A portfolio of images that look stylistically inconsistent — a common sign the work is not all theirs.",
+          "A portfolio of images that look stylistically inconsistent, a common sign the work is not all theirs.",
           "Pressure to book immediately, or to go bigger than you asked for without explaining why.",
           "Unwillingness to discuss hygiene practices.",
           "Quoting far below everyone else. That saving comes from somewhere, and it is usually consumables.",
-          "No consultation before the session for a custom piece — meaning the design is being improvised on the day.",
+          "No consultation before the session for a custom piece, meaning the design is being improvised on the day.",
           "Willingness to tattoo someone visibly drunk, or under 18.",
           "Dismissiveness when you ask to adjust the stencil placement.",
         ],
@@ -1047,7 +1047,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "A permanent studio is not automatically safer than an at-home artist, and an at-home artist is not automatically riskier. What matters is the protocol, not the postcode. The checklist above applies identically to both — ask the same questions and expect the same answers either way.",
+        text: "A permanent studio is not automatically safer than an at-home artist, and an at-home artist is not automatically riskier. What matters is the protocol, not the postcode. The checklist above applies identically to both, so ask the same questions and expect the same answers either way.",
       },
       {
         type: "p",
@@ -1058,7 +1058,7 @@ export const posts: Post[] = [
       {
         question: "How do I know if a tattoo artist is good?",
         answer:
-          "Look at healed photos of their work in the style you want, taken three to six months after the session — not fresh photos, which always look sharp. Consistency across many pieces in that style matters more than one impressive example.",
+          "Look at healed photos of their work in the style you want, taken three to six months after the session, not fresh photos, which always look sharp. Consistency across many pieces in that style matters more than one impressive example.",
       },
       {
         question: "What hygiene standards should a tattoo artist follow?",
@@ -1068,7 +1068,7 @@ export const posts: Post[] = [
       {
         question: "Is an at-home tattoo artist safe?",
         answer:
-          "It depends entirely on the protocol, not the location. The same hygiene standards apply to at-home sessions as to studios — single-use needles, barrier film, autoclave-sterilised tools and proper sharps disposal. Ask the same questions you would ask any studio.",
+          "It depends entirely on the protocol, not the location. The same hygiene standards apply to at-home sessions as to studios: single-use needles, barrier film, autoclave-sterilised tools and proper sharps disposal. Ask the same questions you would ask any studio.",
       },
       {
         question: "What are the warning signs of a bad tattoo artist?",
@@ -1085,9 +1085,9 @@ export const posts: Post[] = [
     title: "Covering Up or Removing a Tattoo: Your Real Options",
     metaTitle: "Tattoo Cover-Up vs Removal: What Actually Works",
     description:
-      "Cover-up, rework, laser removal or leaving it alone — an honest look at what each option can and cannot do, what makes a tattoo hard to cover, and how to decide.",
+      "Cover-up, rework, laser removal or leaving it alone: an honest look at what each option can and cannot do, what makes a tattoo hard to cover, and how to decide.",
     excerpt:
-      "What is genuinely possible with a tattoo you regret — and the constraints no one explains until you are already in the chair.",
+      "What is genuinely possible with a tattoo you regret, and the constraints no one explains until you are already in the chair.",
     readingMinutes: 7,
     publishedAt: "2026-08-15",
     updatedAt: "2026-08-15",
@@ -1103,7 +1103,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Sometimes the tattoo does not need replacing — it needs finishing. Faded linework can be redrawn, patchy shading can be evened out, and a design that was executed poorly can often be tightened up while keeping the original concept.",
+        text: "Sometimes the tattoo does not need replacing. It needs finishing. Faded linework can be redrawn, patchy shading can be evened out, and a design that was executed poorly can often be tightened up while keeping the original concept.",
       },
       {
         type: "p",
@@ -1115,7 +1115,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "A cover-up puts a new design over the old one. It is the most common solution, and a skilled artist can do genuinely impressive things with it — but it works within hard physical limits.",
+        text: "A cover-up puts a new design over the old one. It is the most common solution, and a skilled artist can do genuinely impressive things with it, but it works within hard physical limits.",
       },
       {
         type: "h3",
@@ -1124,7 +1124,7 @@ export const posts: Post[] = [
       {
         type: "ul",
         items: [
-          "It is light — thin lines, faded ink, minimal solid black",
+          "It is light: thin lines, faded ink, minimal solid black",
           "It is small relative to the space available",
           "It sits somewhere with room to expand around it",
           "It has no heavy dark saturation",
@@ -1137,7 +1137,7 @@ export const posts: Post[] = [
       {
         type: "ul",
         items: [
-          "Heavy solid black. Ink does not lift ink — you cannot put a light colour over dark and have it show. The new design must be at least as dark in those areas.",
+          "Heavy solid black. Ink does not lift ink: you cannot put a light colour over dark and have it show. The new design must be at least as dark in those areas.",
           "Large size. A cover-up almost always needs to be bigger than the original, often significantly.",
           "Scarring from the original tattoo. Scar tissue takes ink unevenly and limits what is possible.",
           "Hands, fingers and feet, where skin quality and space both work against you.",
@@ -1145,7 +1145,7 @@ export const posts: Post[] = [
       },
       {
         type: "note",
-        text: "The rule that surprises people most: a cover-up is a design constrained by what is already there. You are not choosing freely from everything you might want — you are choosing from what will successfully hide the existing piece. Going in flexible about the design gets a far better result than arriving fixed on one idea.",
+        text: "The rule that surprises people most: a cover-up is a design constrained by what is already there. You are not choosing freely from everything you might want. You are choosing from what will successfully hide the existing piece. Going in flexible about the design gets a far better result than arriving fixed on one idea.",
       },
       {
         type: "h2",
@@ -1158,12 +1158,12 @@ export const posts: Post[] = [
       {
         type: "ul",
         items: [
-          "It takes multiple sessions — commonly somewhere between six and twelve, sometimes more, spaced six to eight weeks apart.",
+          "It takes multiple sessions, commonly somewhere between six and twelve, sometimes more, spaced six to eight weeks apart.",
           "It is generally reported as more painful than getting the tattoo was.",
           "It is expensive. Full removal typically costs considerably more than the original tattoo did.",
           "Results vary by ink colour. Black responds best. Greens, light blues and some yellows are notably stubborn.",
           "Complete removal is not guaranteed. Faint ghosting often remains, and some tattoos never fully clear.",
-          "It carries real risks on Indian skin tones in particular — pigment changes, both lightening and darkening of the treated skin, are a genuine possibility. Choose a clinic experienced with your skin type, and insist on a patch test.",
+          "It carries real risks on Indian skin tones in particular: pigment changes, both lightening and darkening of the treated skin, are a genuine possibility. Choose a clinic experienced with your skin type, and insist on a patch test.",
         ],
       },
       {
@@ -1192,7 +1192,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Send a clear, well-lit photo of the existing tattoo, straight on, and say what you would ideally want instead. You will get a straight answer about which of the routes above is realistic — including being told that a cover-up will not work at the size you are hoping for, or that laser first is the sensible path.",
+        text: "Send a clear, well-lit photo of the existing tattoo, straight on, and say what you would ideally want instead. You will get a straight answer about which of the routes above is realistic, including being told that a cover-up will not work at the size you are hoping for, or that laser first is the sensible path.",
       },
       {
         type: "p",
@@ -1230,7 +1230,7 @@ export const posts: Post[] = [
     title: "The Best Time of Year to Get a Tattoo in Kolkata",
     metaTitle: "Best Time of Year to Get a Tattoo in Kolkata",
     description:
-      "Why season genuinely affects tattoo healing in Kolkata — the monsoon and summer problems, why winter is the sweet spot, and how to plan around Pujo and travel.",
+      "Why season genuinely affects tattoo healing in Kolkata: the monsoon and summer problems, why winter is the sweet spot, and how to plan around Pujo and travel.",
     excerpt:
       "Healing a tattoo in 90% humidity is a different job from healing one in January. Here is how to time it.",
     readingMinutes: 5,
@@ -1260,7 +1260,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "It is entirely doable — people get tattooed through the monsoon every year — but it demands more discipline. If you can be flexible, this is the window to avoid, especially for larger pieces or placements on the legs and feet.",
+        text: "It is entirely doable (people get tattooed through the monsoon every year), but it demands more discipline. If you can be flexible, this is the window to avoid, especially for larger pieces or placements on the legs and feet.",
       },
       {
         type: "h2",
@@ -1272,7 +1272,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "If you are getting tattooed in summer, favour placements you can keep covered with loose cotton — upper arm rather than forearm, thigh rather than calf — and use air conditioning during the first week if you have it.",
+        text: "If you are getting tattooed in summer, favour placements you can keep covered with loose cotton (upper arm rather than forearm, thigh rather than calf), and use air conditioning during the first week if you have it.",
       },
       {
         type: "h2",
@@ -1301,9 +1301,9 @@ export const posts: Post[] = [
       {
         type: "ul",
         items: [
-          "Durga Pujo. If you want a tattoo healed and looking its best for Pujo, book at least four to six weeks ahead. A tattoo done the week before will still be flaking, cannot be shown off properly, and will be dealing with crowds, sweat and long days out — none of which help.",
+          "Durga Pujo. If you want a tattoo healed and looking its best for Pujo, book at least four to six weeks ahead. A tattoo done the week before will still be flaking, cannot be shown off properly, and will be dealing with crowds, sweat and long days out, none of which help.",
           "Weddings and events. Same logic. Four weeks minimum between the session and any event where the tattoo needs to look settled, and longer if it is somewhere the outfit will rub.",
-          "Travel. Do not fly within a day or two of a session, and avoid getting tattooed right before a beach holiday — no swimming, no sun, no sea water for two to three weeks.",
+          "Travel. Do not fly within a day or two of a session, and avoid getting tattooed right before a beach holiday: no swimming, no sun, no sea water for two to three weeks.",
         ],
       },
       {
@@ -1317,10 +1317,10 @@ export const posts: Post[] = [
       {
         type: "ul",
         items: [
-          "Feet, ankles and lower legs — most affected by monsoon. Puddles and wet footwear are a genuine problem. Save these for the dry months.",
-          "Forearms and hands — most affected by summer sun. Hard to keep covered when it is 38 degrees.",
-          "Upper arm, shoulder, back, thigh — least affected. These can be done year-round with sensible clothing.",
-          "Ribs and torso — fine in any season, though summer sweat under clothing needs more frequent washing.",
+          "Feet, ankles and lower legs: most affected by monsoon. Puddles and wet footwear are a genuine problem. Save these for the dry months.",
+          "Forearms and hands: most affected by summer sun. Hard to keep covered when it is 38 degrees.",
+          "Upper arm, shoulder, back, thigh: least affected. These can be done year-round with sensible clothing.",
+          "Ribs and torso: fine in any season, though summer sweat under clothing needs more frequent washing.",
       ],
       },
       {
@@ -1329,7 +1329,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "November to February is the easiest time to heal a tattoo in Kolkata, and the best window for anything large. The rest of the year is perfectly workable with a bit more care — cover it with loose cotton, wash it after being outdoors, keep it out of the sun, and do not swim. If you have waited years for a design, do not wait another six months for the weather. Just follow the aftercare properly.",
+        text: "November to February is the easiest time to heal a tattoo in Kolkata, and the best window for anything large. The rest of the year is perfectly workable with a bit more care: cover it with loose cotton, wash it after being outdoors, keep it out of the sun, and do not swim. If you have waited years for a design, do not wait another six months for the weather. Just follow the aftercare properly.",
       },
     ],
     faq: [

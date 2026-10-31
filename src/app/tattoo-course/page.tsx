@@ -11,7 +11,7 @@ import { siteConfig } from "@/data/site";
 import { breadcrumbSchema, faqSchema, jsonLdGraph } from "@/lib/schema";
 
 export const metadata = createPageMetadata({
-  title: "Tattoo Course in Kolkata — Learn Tattoo Making",
+  title: "Tattoo Course in Kolkata | Learn Tattoo Making",
   description:
     "Learn tattoo making in Kolkata under Soniya, an experienced female tattoo artist. Hands-on training in machine handling, hygiene protocols, line work, shading and portfolio building.",
   image: "/img/tattoo3.jpg",
@@ -22,7 +22,7 @@ const courseFaqData: FaqItem[] = [
   {
     question: "Do I need any prior experience to join?",
     answer:
-      "No. The course is designed for beginners and starts from the fundamentals — machine parts, hand control, and hygiene basics — before moving to practice skins and then real skin.",
+      "No. The course is designed for beginners and starts from the fundamentals (machine parts, hand control, and hygiene basics) before moving to practice skins and then real skin.",
   },
   {
     question: "What will I need to bring for the course?",
@@ -37,7 +37,7 @@ const courseFaqData: FaqItem[] = [
   {
     question: "Can this course help me become a professional tattoo artist?",
     answer:
-      "That is what it is built for. Alongside hands-on technique, the course covers hygiene and safety standards, portfolio building, and practical guidance on pricing and taking on your first clients — the parts that usually get skipped.",
+      "That is what it is built for. Alongside hands-on technique, the course covers hygiene and safety standards, portfolio building, and practical guidance on pricing and taking on your first clients: the parts that usually get skipped.",
   },
   {
     question: "How big are the batches?",

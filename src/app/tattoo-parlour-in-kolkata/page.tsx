@@ -17,7 +17,7 @@ import {
 } from "@/lib/schema";
 
 export const metadata = createPageMetadata({
-  title: "Tattoo Parlour in Kolkata — Studio & At-Home Appointments",
+  title: "Tattoo Parlour in Kolkata | Studio & At-Home Appointments",
   description:
     "The Ink Room is a tattoo parlour based in Behala, Kolkata, with at-home appointments across Salt Lake, Gariahat, New Town, Howrah, Jadavpur and more. See every area we cover.",
   image: "/img/tattoo9.jpg",
@@ -43,7 +43,7 @@ const kolkataFaq: FaqItem[] = [
   {
     question: "Should I choose the studio or an at-home session?",
     answer:
-      "The studio is the better option for larger or longer pieces — the setup is purpose-built and everything is within reach. At-home works well for small to medium pieces and for anyone who would be more relaxed in their own space. If you are unsure, mention the design on WhatsApp and you will get a straight recommendation.",
+      "The studio is the better option for larger or longer pieces: the setup is purpose-built and everything is within reach. At-home works well for small to medium pieces and for anyone who would be more relaxed in their own space. If you are unsure, mention the design on WhatsApp and you will get a straight recommendation.",
   },
   {
     question: "Is an at-home tattoo as hygienic as a studio one?",
@@ -53,12 +53,12 @@ const kolkataFaq: FaqItem[] = [
   {
     question: "How far in advance should I book?",
     answer:
-      "For the Behala studio or nearby areas like Tollygunge, a couple of days is usually enough. For the further areas — New Town, Dum Dum, Salt Lake — book several days ahead, since those are blocked out as full appointments including travel.",
+      "For the Behala studio or nearby areas like Tollygunge, a couple of days is usually enough. For the further areas (New Town, Dum Dum, Salt Lake), book several days ahead, since those are blocked out as full appointments including travel.",
   },
   {
     question: "Do you travel outside Kolkata?",
     answer:
-      "The listed areas cover the city and Howrah. If you are outside that range, message on WhatsApp anyway — it depends on the piece and the distance, and you will get an honest answer rather than a maybe.",
+      "The listed areas cover the city and Howrah. If you are outside that range, message on WhatsApp anyway. It depends on the piece and the distance, and you will get an honest answer rather than a maybe.",
   },
 ];
 
@@ -97,7 +97,7 @@ export default function TattooParlourKolkata() {
             <p className="text-neutral-300 text-lg md:text-xl leading-relaxed mb-6">
               The Ink Room is a custom tattoo studio based in Behala, run by{" "}
               {siteConfig.founder.name}. You can book a session at the studio,
-              or have the full setup brought to you at home — we cover{" "}
+              or have the full setup brought to you at home. We cover{" "}
               {serviceAreas.length} areas across Kolkata and Howrah.
             </p>
             <a
@@ -122,7 +122,7 @@ export default function TattooParlourKolkata() {
             <p className="text-neutral-300 text-lg leading-relaxed mb-10">
               Both use the same artist, the same equipment and the same
               sterilisation protocol. The difference is practical, not one of
-              quality — here is how to pick.
+              quality. Here is how to pick.
             </p>
 
             <div className="grid gap-8 sm:grid-cols-2">
@@ -153,7 +153,7 @@ export default function TattooParlourKolkata() {
 
             <p className="text-neutral-400 leading-relaxed mt-10">
               Not sure which suits your piece? Message the design and placement
-              over on WhatsApp and you will get a straight recommendation —
+              over on WhatsApp and you will get a straight recommendation,
               including being told the studio is the better call if it is.{" "}
               <Link
                 href="/blog/first-tattoo-guide"
@@ -171,7 +171,7 @@ export default function TattooParlourKolkata() {
 
       <FaqSection
         items={kolkataFaq}
-        title="Tattoos in Kolkata — Frequently Asked Questions"
+        title="Tattoos in Kolkata | Frequently Asked Questions"
         id="kolkata-faqs"
       />
 

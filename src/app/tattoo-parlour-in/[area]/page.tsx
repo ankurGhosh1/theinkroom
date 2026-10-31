@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { AreaHero, heroImages } from "@/components/AreaHero";
 import { AreaLandmarks } from "@/components/AreaLandmarks";
 import { AreaContent } from "@/components/AreaContent";
+import { AreaStyles } from "@/components/AreaStyles";
 import { Gallery } from "@/components/Gallery";
 import { FaqSection } from "@/components/FaqSection";
 import { Cta } from "@/components/Cta";
@@ -37,12 +38,12 @@ export function generateMetadata({ params }: { params: { area: string } }) {
     // than a single template sentence with the name swapped in.
     description:
       area.travel.distanceKm === 0
-        ? `The Ink Room's tattoo studio is based in ${area.name}, Kolkata. Custom tattoos by Soniya — studio sessions or at-home appointments across ${area.landmarks
+        ? `The Ink Room's tattoo studio is based in ${area.name}, Kolkata. Custom tattoos by Soniya: studio sessions or at-home appointments across ${area.landmarks
             .slice(0, 3)
             .join(", ")}.`
         : `Custom tattoos in ${area.name}, Kolkata by Soniya. At-home appointments across ${area.landmarks
             .slice(0, 3)
-            .join(", ")} — about ${area.travel.distanceKm} km from our Behala studio.`,
+            .join(", ")}, about ${area.travel.distanceKm} km from our Behala studio.`,
     image: heroImages[areaIndex % heroImages.length],
     url: `/tattoo-parlour-in/${area.slug}`,
   });
@@ -105,17 +106,18 @@ export default function AreaPage({ params }: { params: { area: string } }) {
 
       <AreaLandmarks area={area} />
       <AreaContent area={area} />
-      <Gallery />
+      <AreaStyles area={area} />
+      <Gallery images={area.gallery} />
 
       <FaqSection
         items={faqItems}
-        title={`Tattoos in ${area.name} — Frequently Asked Questions`}
+        title={`Tattoos in ${area.name} | Frequently Asked Questions`}
         id="area-faqs"
       />
 
       <Cta
         title={`Ready for a tattoo in ${area.name}?`}
-        description={`Message us on WhatsApp to book a session in ${area.name} — studio or at home.`}
+        description={`Message us on WhatsApp to book a session in ${area.name}, studio or at home.`}
         whatsappMessage={`Hey, I need a tattoo in ${area.name}`}
       />
     </>

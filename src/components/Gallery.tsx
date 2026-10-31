@@ -19,10 +19,28 @@ const allImages = [
   "/img/tattoo16.jpg",
 ];
 
-// Row 2 starts from the middle for visual variety
-const row2 = [...allImages.slice(8), ...allImages.slice(0, 8)];
+type GalleryImage = { src: string; alt?: string };
 
-export const Gallery = () => {
+interface GalleryProps {
+  /** A curated subset. Defaults to the full portfolio. */
+  images?: GalleryImage[];
+}
+
+export const Gallery = ({ images }: Readonly<GalleryProps>) => {
+  // A short custom set is repeated until it is at least as long as the full
+  // portfolio, so each half of the marquee still spans the screen and loops
+  // without a gap.
+  const reel: GalleryImage[] = images
+    ? Array.from(
+        { length: Math.ceil(allImages.length / images.length) },
+        () => images
+      ).flat()
+    : allImages.map((src) => ({ src }));
+
+  // Row 2 starts from the middle for visual variety
+  const half = Math.floor(reel.length / 2);
+  const row2 = [...reel.slice(half), ...reel.slice(0, half)];
+
   return (
     <section className="py-24 overflow-hidden" id="portfolio">
       <div className="container mx-auto px-8 xl:px-0 text-center mb-12">
@@ -36,14 +54,17 @@ export const Gallery = () => {
 
       {/* Row 1 — scrolls left */}
       <div className="flex gap-4 mb-4 w-max animate-marquee">
-        {[...allImages, ...allImages].map((src, i) => (
+        {[...reel, ...reel].map((image, i) => (
           <div
             key={i}
             className="relative flex-shrink-0 w-64 h-72 overflow-hidden rounded-lg"
           >
             <Image
-              src={src}
-              alt={`Custom tattoo design ${i + 1} by Soniya, female tattoo artist in Behala, Kolkata`}
+              src={image.src}
+              alt={
+                image.alt ??
+                `Custom tattoo design ${i + 1} by Soniya, female tattoo artist in Behala, Kolkata`
+              }
               fill
               className="object-cover hover:scale-105 transition-transform duration-500"
               sizes="256px"
@@ -54,14 +75,17 @@ export const Gallery = () => {
 
       {/* Row 2 — scrolls right */}
       <div className="flex gap-4 w-max animate-marquee-reverse">
-        {[...row2, ...row2].map((src, i) => (
+        {[...row2, ...row2].map((image, i) => (
           <div
             key={i}
             className="relative flex-shrink-0 w-64 h-72 overflow-hidden rounded-lg"
           >
             <Image
-              src={src}
-              alt={`Custom tattoo design ${i + 1} by Soniya, female tattoo artist in Behala, Kolkata`}
+              src={image.src}
+              alt={
+                image.alt ??
+                `Custom tattoo design ${i + 1} by Soniya, female tattoo artist in Behala, Kolkata`
+              }
               fill
               className="object-cover hover:scale-105 transition-transform duration-500"
               sizes="256px"

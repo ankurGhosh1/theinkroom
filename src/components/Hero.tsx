@@ -37,7 +37,7 @@ export const Hero = () => {
           Female Tattoo<br />Artist in<br />Kolkata
         </h1>
         <p className="text-neutral-300 text-lg md:text-xl mb-10 max-w-xl mx-auto leading-relaxed">
-          Custom tattoos by Soniya — where your vision becomes permanent art.
+          Custom tattoos by Soniya, where your vision becomes permanent art.
         </p>
         <a
           href="https://wa.me/8961248160?text=Hey%20I%20need%20a%20tattoo"

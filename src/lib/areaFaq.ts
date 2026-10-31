@@ -1,7 +1,35 @@
 import type { ServiceArea } from "@/data/serviceAreas";
 import type { FaqItem } from "@/components/Faq";
 
+const hygieneAnswer =
+  "Yes. Every at-home session uses single-use needles and fresh ink caps opened in front of you, disposable barrier film on all surfaces, and autoclave-sterilised reusable tools. Nothing that touches your skin is reused, and sharps are carried out and disposed of properly rather than left behind.";
+
+const customDesignFaq: FaqItem = {
+  question: "Can I get a fully custom design done?",
+  answer:
+    "Yes, and that is the default. Every piece is drawn for the individual client after a conversation about the idea, placement and size. We do not work from a pre-made flash catalogue, though you are welcome to bring references to build from.",
+};
+
+/** Questions that apply everywhere, worded without an area name. */
+const sharedFaq: FaqItem[] = [
+  {
+    question: "Are at-home tattoo sessions hygienic?",
+    answer: hygieneAnswer,
+  },
+  customDesignFaq,
+  {
+    question: "How do I book a studio or at-home appointment?",
+    answer:
+      "Message us on WhatsApp with your design idea, a rough size, where on the body you want it, and your preferred date. You will get a quote and a slot before anything is confirmed. There is no deposit taken over chat before the design is agreed.",
+  },
+];
+
 export function getAreaFaq(area: ServiceArea): FaqItem[] {
+  // Areas with their own extra questions skip the name-swapped templates below.
+  if (area.extraFaq) {
+    return [area.localFaq, ...area.extraFaq, ...sharedFaq];
+  }
+
   return [
     {
       question: `Do you offer tattoo services in ${area.name}?`,
@@ -20,8 +48,7 @@ export function getAreaFaq(area: ServiceArea): FaqItem[] {
     },
     {
       question: `Is the at-home tattoo service in ${area.name} hygienic?`,
-      answer:
-        "Yes. Every at-home session uses single-use needles and fresh ink caps opened in front of you, disposable barrier film on all surfaces, and autoclave-sterilised reusable tools. Nothing that touches your skin is reused, and sharps are carried out and disposed of properly rather than left behind.",
+      answer: hygieneAnswer,
     },
     {
       question: `What do I need to arrange for a session in ${area.name}?`,
@@ -29,12 +56,8 @@ export function getAreaFaq(area: ServiceArea): FaqItem[] {
     },
     {
       question: `How do I book a tattoo appointment in ${area.name}?`,
-      answer: `Message us on WhatsApp with your design idea, a rough size, where on the body you want it, and your preferred date. You will get a quote and a slot before anything is confirmed — there is no deposit taken over chat before the design is agreed.`,
+      answer: `Message us on WhatsApp with your design idea, a rough size, where on the body you want it, and your preferred date. You will get a quote and a slot before anything is confirmed. There is no deposit taken over chat before the design is agreed.`,
     },
-    {
-      question: "Can I get a fully custom design done?",
-      answer:
-        "Yes, and that is the default. Every piece is drawn for the individual client after a conversation about the idea, placement and size. We do not work from a pre-made flash catalogue, though you are welcome to bring references to build from.",
-    },
+    customDesignFaq,
   ];
 }
