@@ -3,7 +3,7 @@ import { siteConfig } from "@/data/site";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: `${siteConfig.name} — ${siteConfig.tagline}`,
+    name: `${siteConfig.name} | ${siteConfig.tagline}`,
     short_name: siteConfig.name,
     description:
       "Custom tattoo studio in Behala, Kolkata. Studio sessions and at-home appointments across the city.",

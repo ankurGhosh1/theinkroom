@@ -24,7 +24,7 @@ export const CourseHero = () => {
         </h1>
         <p className="text-neutral-300 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
           Train under Soniya, an experienced female tattoo artist, and learn
-          machine handling, hygiene protocols, line work, shading and more —
+          machine handling, hygiene protocols, line work, shading and more,
           hands-on, in small batches.
         </p>
         <a

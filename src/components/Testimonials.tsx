@@ -15,7 +15,7 @@ const testimonials = [
   },
   {
     name: "Sourav B.",
-    text: "Booked an at-home session for a small script tattoo and it was seamless — Soniya carried full sterilized equipment and the result looked exactly like the reference I sent.",
+    text: "Booked an at-home session for a small script tattoo and it was seamless. Soniya carried full sterilized equipment and the result looked exactly like the reference I sent.",
   },
   {
     name: "Ishita R.",

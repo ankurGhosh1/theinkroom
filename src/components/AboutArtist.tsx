@@ -35,7 +35,7 @@ export const AboutArtist = () => {
               <p>
                 The Ink Room is a one-artist studio, and that is deliberate.
                 Every piece that leaves here is designed, drawn and tattooed by{" "}
-                {siteConfig.founder.name} — there is no handing your idea to
+                {siteConfig.founder.name}. There is no handing your idea to
                 whoever happens to be free that afternoon.
               </p>
               <p>
@@ -50,7 +50,7 @@ export const AboutArtist = () => {
               <p>
                 The work spans fine line, script, floral, geometric and
                 minimal styles, all designed from scratch. Nothing is picked
-                off a flash sheet — you bring the idea, and it gets drawn for
+                off a flash sheet. You bring the idea, and it gets drawn for
                 your body and your placement.
               </p>
             </div>

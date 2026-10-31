@@ -12,7 +12,7 @@ import { breadcrumbSchema, jsonLdGraph } from "@/lib/schema";
 export const metadata = createPageMetadata({
   title: "Tattoo Blog: Aftercare, Pricing, Styles & Advice",
   description:
-    "Practical tattoo advice from The Ink Room, Kolkata — aftercare for Indian weather, how tattoo pricing works, choosing an artist, fine line styles, cover-ups and first-tattoo guidance.",
+    "Practical tattoo advice from The Ink Room, Kolkata: aftercare for Indian weather, how tattoo pricing works, choosing an artist, fine line styles, cover-ups and first-tattoo guidance.",
   image: "/img/tattoo2.jpg",
   url: "/blog",
 });
@@ -76,7 +76,7 @@ export default async function BlogHub() {
               Everything worth knowing before you get inked
             </h1>
             <p className="text-neutral-300 text-lg md:text-xl leading-relaxed">
-              Straight answers to the questions people actually ask us — what a
+              Straight answers to the questions people actually ask us: what a
               tattoo costs and why, how to heal one properly in Kolkata&apos;s
               weather, which designs survive at small scale, and how to tell a
               good artist from a risky one.
@@ -128,7 +128,7 @@ export default async function BlogHub() {
 
       <Cta
         title="Still have a question?"
-        description="Message us on WhatsApp — we would rather answer it before you book than after."
+        description="Message us on WhatsApp. We would rather answer it before you book than after."
       />
     </>
   );

@@ -3,6 +3,7 @@ import { Stats } from "@/components/Stats";
 import { Gallery } from "@/components/Gallery";
 import { AboutArtist } from "@/components/AboutArtist";
 import { WhyUs } from "@/components/WhyUs";
+import { Pricing } from "@/components/Pricing";
 import { Testimonials } from "@/components/Testimonials";
 import { BlogTeaser } from "@/components/BlogTeaser";
 import { FaqSection } from "@/components/FaqSection";
@@ -11,13 +12,13 @@ import { JsonLd } from "@/components/JsonLd";
 import { createPageMetadata } from "@/components/Metadata";
 import type { FaqItem } from "@/components/Faq";
 import { faqSchema, jsonLdGraph } from "@/lib/schema";
+import { siteConfig } from "@/data/site";
 
 export const metadata = createPageMetadata({
   // The root segment does not inherit the layout's title template, so the
   // brand is written out in full here.
-  title: "Soniya — Female Tattoo Artist in Kolkata | The Ink Room",
-  description:
-    "The Ink Room is a one-artist custom tattoo studio in Behala, Kolkata. Every piece designed and tattooed by Soniya — fine line, script, floral and minimal work, studio or at home.",
+  title: "Soniya | Female Tattoo Artist in Kolkata | The Ink Room",
+  description: siteConfig.description,
   image: "/img/tattoo16.jpg",
   url: "/",
 });
@@ -56,12 +57,12 @@ const homeFaq: FaqItem[] = [
   {
     question: "Is there a minimum age?",
     answer:
-      "Yes — 18 and over, with photo ID. This applies regardless of parental consent.",
+      "Yes, 18 and over, with photo ID. This applies regardless of parental consent.",
   },
   {
     question: "Does getting a tattoo hurt?",
     answer:
-      "Most people describe it as a hot scratching sensation rather than sharp pain, and find it far more manageable than expected. It varies a lot by placement — our tattoo pain chart guide breaks down which spots are easiest and which are worth planning around.",
+      "Most people describe it as a hot scratching sensation rather than sharp pain, and find it far more manageable than expected. It varies a lot by placement, and our tattoo pain chart guide breaks down which spots are easiest and which are worth planning around.",
   },
 ];
 
@@ -75,12 +76,13 @@ export default function Home() {
       <Gallery />
       <AboutArtist />
       <WhyUs />
+      <Pricing />
       <Testimonials />
       <BlogTeaser />
 
       <FaqSection items={homeFaq} id="faqs" />
 
-      <Cta />
+      <Cta showContactOptions />
     </>
   );
 }

@@ -23,6 +23,10 @@ export const siteConfig = {
   name: "The Ink Room",
   url: "https://www.theinkroom.in",
   tagline: "Custom tattoo studio in Behala, Kolkata",
+  // Homepage meta description, reused verbatim as the business schema
+  // description so the two never drift apart.
+  description:
+    "The Ink Room is a one-artist custom tattoo studio in Behala, Kolkata. Every piece designed and tattooed by Soniya: fine line, script, floral and minimal work, studio or at home.",
 
   founder: {
     name: "Soniya",
@@ -85,6 +89,19 @@ export const siteConfig = {
     currency: "INR",
     display: "₹699",
     note: "for a small, minimal piece",
+  },
+
+  /**
+   * Homepage pricing section. ⚠️ TODO: fill in with the studio's real figures.
+   * Any value left blank is hidden on the page rather than shown empty.
+   */
+  pricing: {
+    minimumCharge: "",
+    small: "", // up to 3 inches
+    medium: "", // 3-6 inches
+    atHomeMinimum: "₹999",
+    deposit: "",
+    reschedule: "", // e.g. "48 hours notice"
   },
 
   social: [

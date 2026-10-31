@@ -3,6 +3,8 @@ import Link from "next/link";
 import { Disclosure } from "@headlessui/react";
 import { Dancing_Script } from "next/font/google";
 import { useState, useEffect } from "react";
+import { PhoneIcon } from "@heroicons/react/24/solid";
+import { siteConfig } from "@/data/site";
 
 const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "700" });
 
@@ -38,10 +40,17 @@ export const Navbar = () => {
 
         {/* CTA */}
         <div className="gap-3 nav__item mr-2 lg:flex ml-auto lg:ml-0 lg:order-2">
-          <div className="hidden mr-3 lg:flex nav__item">
+          <div className="hidden mr-3 lg:flex lg:items-center nav__item">
+            <a
+              href={`tel:${siteConfig.phone}`}
+              className="inline-flex items-center gap-2 px-5 py-2 text-neutral-200 border border-neutral-700 hover:border-red-600 hover:text-red-500 transition-colors rounded-md md:ml-5"
+            >
+              <PhoneIcon className="w-4 h-4" aria-hidden="true" />
+              Call
+            </a>
             <Link
               href="https://wa.me/8961248160?text=Hey%20I%20need%20a%20tattoo"
-              className="px-6 py-2 text-white bg-red-600 hover:bg-red-700 transition-colors rounded-md md:ml-5"
+              className="px-6 py-2 text-white bg-red-600 hover:bg-red-700 transition-colors rounded-md md:ml-3"
               target="_blank"
             >
               Connect on Whatsapp
@@ -81,6 +90,13 @@ export const Navbar = () => {
                 >
                   Connect on Whatsapp
                 </Link>
+                <a
+                  href={`tel:${siteConfig.phone}`}
+                  className="inline-flex items-center justify-center w-full gap-2 px-6 py-2 mt-3 text-neutral-200 border border-neutral-700 hover:border-red-600 hover:text-red-500 transition-colors rounded-md"
+                >
+                  <PhoneIcon className="w-4 h-4" aria-hidden="true" />
+                  Call
+                </a>
               </Disclosure.Panel>
             </>
           )}

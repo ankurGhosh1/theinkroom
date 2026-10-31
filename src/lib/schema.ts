@@ -78,7 +78,7 @@ export function tattooParlorSchema({ images = [] }: BusinessSchemaOptions = {}) 
     "@type": "TattooParlor",
     "@id": `${siteConfig.url}/#business`,
     name: siteConfig.name,
-    description: siteConfig.founder.bio,
+    description: siteConfig.description,
     url: siteConfig.url,
     telephone: siteConfig.phone,
     email: siteConfig.email,
