@@ -1,4 +1,3 @@
-import { siteConfig } from "@/data/site";
 import type { Post } from "./types";
 
 /**
@@ -10,6 +9,1828 @@ import type { Post } from "./types";
  * (e.g. first-tattoo-guide); only the URL directory changed to /blog.
  */
 export const posts: Post[] = [
+  {
+    slug: "bohemian-tattoo-ideas",
+    category: "Styles",
+    related: [
+      "fine-line-tattoos-guide",
+      "small-tattoo-ideas-for-women",
+      "small-tattoo-cost-kolkata",
+    ],
+    title: "Bohemian Tattoo Ideas: Boho Motifs, Placements and Sizing",
+    metaTitle: "Bohemian Tattoo Ideas: Motifs and Placements",
+    description:
+      "Bohemian tattoo ideas: the boho motifs that work, why they suit fine line, where to place them, and how to size them so the detail lasts for years.",
+    excerpt:
+      "Wildflowers, moons, feathers and fine dotwork. The boho motifs worth considering, where they sit well on the body, and how to size them so they age well.",
+    readingMinutes: 8,
+    publishedAt: "2026-11-01",
+    updatedAt: "2026-11-01",
+    // The hero's alt text is the post title, so the hero must be a genuinely
+    // boho piece: the crescent moon and stars.
+    image: "/img/tattoo9.jpg",
+    // Images: only tattoo9 (crescent moon and stars) and tattoo15 (moon over a
+    // floral garland) show boho motifs. tattoo16 is used only to illustrate
+    // fine line linework and is captioned as exactly that. There are no
+    // feathers, arrows, dreamcatchers or mandalas in /img, so none are shown.
+    //
+    // TODO: when /tattoo-prices-kolkata goes live (noindex removed), add a link
+    // to it in the final section, in the paragraph that begins "When you are ready".
+    blocks: [
+      {
+        type: "p",
+        text: "A bohemian tattoo borrows from nature, the night sky and hand-drawn pattern: wildflowers, moons, feathers, arrows and fine dotwork. Boho tattoos look loose and personal rather than bold and graphic, which is why the style pairs so naturally with fine line work. Here are the motifs worth considering, where they sit well on the body, and how to size them so they still look good years from now.",
+      },
+      {
+        type: "h2",
+        text: "What makes a tattoo boho",
+      },
+      {
+        type: "p",
+        text: "Boho is a mood more than a fixed set of rules, but a few things show up again and again:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Organic shapes: stems, leaves, petals and feathers rather than hard geometry.",
+          "Delicate linework, often with dotwork in place of heavy shading.",
+          "Motifs from nature and the sky, frequently combined, such as a moon with flowers.",
+          "Compositions that flow along the body, like a vine down the forearm or a garland across the collarbone.",
+          "Open space around the design, so it feels light rather than crowded.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Boho motifs to consider",
+      },
+      {
+        type: "h3",
+        text: "Wildflowers and botanicals",
+      },
+      {
+        type: "p",
+        text: "Single stems, sprigs, ferns and small bunches of wildflowers are the backbone of boho tattoos. They suit almost any placement, because a stem can be drawn to follow the line of a forearm, a rib or a spine. Simpler botanicals, with fewer petals and more space between lines, age better than dense ones.",
+      },
+      {
+        type: "h3",
+        text: "Moons, suns and stars",
+      },
+      {
+        type: "p",
+        text: "Celestial motifs are among the most flexible. A crescent moon works on its own at a small size, and it pairs easily with stars, dots or flowers. Suns tend to need a little more room, because their rays are fine lines set close together.",
+      },
+      {
+        type: "h3",
+        text: "Feathers",
+      },
+      {
+        type: "p",
+        text: "A single feather is a long, narrow shape, so it fits the forearm, the side of the ribs or along the spine. The fine barbs that give a feather its texture need room, so a feather drawn very small loses its detail first.",
+      },
+      {
+        type: "h3",
+        text: "Arrows",
+      },
+      {
+        type: "p",
+        text: "Arrows are simple and linear, which makes them one of the few boho motifs that genuinely work small. A plain arrow, or one with a little feathering at the tail, sits well on the inner forearm or along the side of a finger, though tattoos on fingers fade and blur faster than most placements.",
+      },
+      {
+        type: "h3",
+        text: "Dreamcatchers",
+      },
+      {
+        type: "p",
+        text: "The dreamcatcher comes from Indigenous North American cultures. If that history matters to you, a design inspired by its shape, such as a circle with hanging feathers or beads, or a different motif altogether, may sit better. Either way, the web inside a dreamcatcher is a set of fine crossing lines and needs real size to stay clear.",
+      },
+      {
+        type: "h3",
+        text: "Mandala and dotwork",
+      },
+      {
+        type: "p",
+        text: "Mandala and dotwork bring a geometric edge to boho, with symmetry and soft shading built from dots rather than solid fill. Both need room. A detailed mandala shrunk too far loses its pattern as the ink settles over the years, which our guide to when a small tattoo is a bad idea explains in more detail.",
+        links: [
+          {
+            text: "when a small tattoo is a bad idea",
+            href: "/blog/small-tattoo-cost-kolkata",
+          },
+        ],
+      },
+      {
+        type: "h3",
+        text: "Combining motifs",
+      },
+      {
+        type: "p",
+        text: "A boho design can mix two or three motifs: a moon over a garland of flowers, a feather crossed with an arrow, a sprig of wildflowers with a few stars. Keep the combination to a small number of elements, and let one lead while the others support it.",
+      },
+      {
+        type: "image",
+        src: "/img/tattoo15.jpg",
+        alt: "Crescent moon and floral garland tattoo on the back of the neck",
+        caption: "A crescent moon above a floral garland on the back of the neck: one celestial and one botanical motif combined.",
+      },
+      {
+        type: "h2",
+        text: "Why boho suits fine line work",
+      },
+      {
+        type: "p",
+        text: "Fine line work uses thin, precise lines with little or no heavy shading, closer to a pen drawing than to bold traditional tattooing. That lightness is exactly what boho motifs need. Petals, feathers and stars drawn in fine line look delicate and hand-made, and dotwork can add depth without the weight of solid shading.",
+      },
+      {
+        type: "image",
+        src: "/img/tattoo16.jpg",
+        alt: "Single-line fine line tattoo of a dancing couple on the ribs",
+        caption: "Single-line fine line work on the ribs. Boho motifs drawn in this kind of thin, continuous line keep the whole piece light.",
+      },
+      {
+        type: "p",
+        text: "The trade-off is that fine line softens over the years and needs protecting from the sun. Our fine line tattoo guide covers how to plan for that.",
+        links: [{ text: "fine line tattoo guide", href: "/blog/fine-line-tattoos-guide" }],
+      },
+      {
+        type: "h2",
+        text: "Where to place a boho tattoo",
+      },
+      {
+        type: "p",
+        text: "Boho designs follow the body, so the shape of the placement matters as much as the motif.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Forearm: long and fairly flat, so it suits stems, feathers, arrows and vines running lengthways.",
+          "Collarbone: a natural line for a garland or a short row of flowers.",
+          "Back of the neck: a small, central spot for a crescent moon or a compact botanical.",
+          "Shoulder blade: a broad, flat area with room for a larger floral or a mandala.",
+          "Ribs and side: long and curved, so a vine or a feather can run with the body.",
+          "Spine: a vertical line for a chain of small motifs, such as moon phases or a single stem.",
+          "Ankle and foot: suits a small sprig or a delicate band, though feet are a harder place for a tattoo to heal and hold.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Some of these, such as the ribs, hip and back, mean uncovering more than an arm or an ankle. If you would be more comfortable with a woman tattooing you, our page on finding a female tattoo artist in Kolkata explains how sessions run here.",
+        links: [
+          {
+            text: "female tattoo artist in Kolkata",
+            href: "/female-tattoo-artist-kolkata",
+          },
+        ],
+      },
+      {
+        type: "h2",
+        text: "Sizing a boho tattoo",
+      },
+      {
+        type: "p",
+        text: "Boho motifs are full of fine detail, so size is where they most often go wrong. As a rough guide:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Simple single motifs, such as a crescent moon or a plain arrow, can work from around an inch.",
+          "A small wildflower sprig or a feather needs a little more room to keep its detail, typically two to three inches.",
+          "Garlands, combined motifs and anything with dotwork need more, often three inches or longer.",
+          "Mandalas and dreamcatchers need the most room of all, because of the fine pattern inside them.",
+        ],
+      },
+      {
+        type: "p",
+        text: "If a design looks crowded on paper at the size you want, it will look more crowded on skin in a few years. Our guide to small tattoo cost in Kolkata covers what fits at each size in more detail, including a simple test to try before you commit.",
+        links: [
+          { text: "guide to small tattoo cost in Kolkata", href: "/blog/small-tattoo-cost-kolkata" },
+        ],
+      },
+      {
+        type: "h2",
+        text: "Getting a boho piece designed",
+      },
+      {
+        type: "p",
+        text: "Boho is personal, so it suits a custom design rather than a copy. Bring three or four references that show the motifs, the mood and the level of detail you like, rather than one image to reproduce exactly. A custom design can then be drawn to fit your placement, so the stems and lines follow your body rather than sitting flat on it.",
+      },
+      {
+        type: "p",
+        text: "When you are ready, send your references, a rough size in inches and the placement on WhatsApp. Our first tattoo guide covers what to expect if this is your first piece.",
+        links: [{ text: "first tattoo guide", href: "/blog/first-tattoo-guide" }],
+      },
+    ],
+    faq: [
+      {
+        question: "What is a bohemian tattoo?",
+        answer:
+          "A tattoo in a loose, hand-drawn style built from nature and sky motifs, such as wildflowers, moons, feathers, arrows and dotwork. Boho tattoos are usually delicate rather than bold, with plenty of open space around the design.",
+      },
+      {
+        question: "Do boho tattoos work in fine line?",
+        answer:
+          "Yes, and the two suit each other well. Fine line keeps boho motifs light and delicate. The trade-off is that fine line softens over time and needs protecting from the sun, so give the design enough size and space between its lines.",
+      },
+      {
+        question: "Which placements suit a boho tattoo?",
+        answer:
+          "Placements with a natural line work well: the forearm, collarbone, ribs, spine and shoulder blade. Small single motifs also suit the back of the neck or the ankle.",
+      },
+      {
+        question: "How big should a boho tattoo be?",
+        answer:
+          "It depends on the motif. A simple crescent moon or arrow can work from around an inch, while florals, feathers and anything with dotwork need more room to keep their detail. Mandalas and dreamcatchers need the most.",
+      },
+      {
+        question: "Can I combine several boho motifs in one tattoo?",
+        answer:
+          "Yes. Combinations like a moon with flowers suit the style well. Keep it to two or three elements and let one lead, so the design stays clear rather than crowded.",
+      },
+    ],
+  },
+
+  {
+    slug: "female-tattoo-artist-what-to-expect",
+    category: "Planning",
+    related: [
+      "first-tattoo-guide",
+      "how-to-choose-a-tattoo-artist-in-kolkata",
+      "tattoo-aftercare-guide-kolkata",
+    ],
+    title: "Booking a Female Tattoo Artist: What to Expect at Your Appointment",
+    metaTitle: "Female Tattoo Artist: What to Expect",
+    description:
+      "What to expect at an appointment with a female tattoo artist: consultation, design approval, stencil, what to wear for each placement, and aftercare.",
+    excerpt:
+      "Anxious about the appointment itself? Every step from the first message to the moment you leave, including what to wear for rib, hip, chest, back and thigh placements.",
+    readingMinutes: 9,
+    publishedAt: "2026-11-01",
+    updatedAt: "2026-11-01",
+    image: "/img/tattoo16.jpg",
+    // Supports /female-tattoo-artist-kolkata: that page explains why someone
+    // might want a female artist; this post walks through the appointment.
+    // Choosing an artist safely lives in how-to-choose-a-tattoo-artist-in-kolkata.
+    // Durations: only the small-piece range already published in the first
+    // tattoo guide is used. Anything else is marked <!-- TODO: Ankur to supply -->.
+    blocks: [
+      {
+        type: "p",
+        text: "If you have booked with a female tattoo artist, or are about to, and the appointment itself is what is making you anxious, this is what it looks like from the first message to the moment you leave. It follows how appointments run at The Ink Room with Soniya. Knowing each step in advance takes a lot of the uncertainty out of it.",
+      },
+      {
+        type: "p",
+        text: "Why you might want a female artist in the first place is covered on our female tattoo artist in Kolkata page. This guide is about the appointment itself.",
+        links: [{ text: "female tattoo artist in Kolkata", href: "/female-tattoo-artist-kolkata" }],
+      },
+      {
+        type: "h2",
+        text: "Before you book: choosing who tattoos you",
+      },
+      {
+        type: "p",
+        text: "Whoever you book with, the basics are the same: ask to see healed tattoos, not just fresh ones, and make sure needles and other single-use equipment are opened in front of you. Our guide to choosing a tattoo artist covers what to check in full, including the red flags worth walking away from.",
+        links: [
+          {
+            text: "guide to choosing a tattoo artist",
+            href: "/blog/how-to-choose-a-tattoo-artist-in-kolkata",
+          },
+        ],
+      },
+      {
+        type: "h2",
+        text: "The first message",
+      },
+      {
+        type: "p",
+        text: "You send your idea on WhatsApp: a reference or a description, a rough size in inches, and where on your body you want it. If you are not sure about the size or the placement yet, say so. Working that out is what the consultation is for.",
+      },
+      {
+        type: "h2",
+        text: "The consultation",
+      },
+      // <!-- TODO: Ankur to supply --> how long a consultation typically takes (same value as siteConfig.studio.consultationLength).
+      {
+        type: "p",
+        text: "The consultation is a conversation about the tattoo before anything is booked. It covers:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Your idea, and any references you have.",
+          "Size: whether the design has enough room to stay clear as it ages, and if not, why.",
+          "Placement: where the tattoo sits, how that area moves with your body, and what the placement means for the session, since some areas take longer or need more breaks.",
+          "Style: fine line, script, floral, geometric or minimal, and which suits the idea.",
+          "Timing: whether the piece fits in one sitting or needs more than one.",
+          "Price: a quote for your exact design.",
+        ],
+      },
+      {
+        type: "p",
+        text: "You can ask anything at this stage, including what it will feel like, what to wear and what happens if you want to stop. Nothing is booked until you decide.",
+      },
+      {
+        type: "h2",
+        text: "Approving the design",
+      },
+      // <!-- TODO: Ankur to supply --> how many rounds of changes are included (same value as siteConfig.pricing.designRevisions).
+      {
+        type: "p",
+        text: "Soniya draws the design from scratch after the consultation. You see it before the session and can ask for changes: thicker or thinner lines, a different size, a detail added or taken out. Nothing is tattooed until you have approved the final version.",
+      },
+      {
+        type: "p",
+        text: "If you are unsure about the size, print the approved design at its real size and hold it against the placement at home. It is a quick way to check before the day.",
+      },
+      {
+        type: "h2",
+        text: "What to wear for each placement",
+      },
+      {
+        type: "p",
+        text: "You uncover the placement and nothing else. Everything outside it stays covered by your own clothing for the whole session. What is moved, and when, is your decision, and you can stop at any point.",
+      },
+      {
+        type: "p",
+        text: "The fresh tattoo is covered when you leave, but clothing can still pick up ink or ointment, so wear something you do not mind marking. Loose, dark clothing is the most practical. If you are not sure what to wear for your placement, ask when you book.",
+      },
+      {
+        type: "h3",
+        text: "Ribs and side",
+      },
+      {
+        type: "p",
+        text: "Wear a top you can lift on one side, or take off, with a bra, crop top or sports top underneath. The placement has to be clear of fabric, so a band or strap that crosses it is moved above or below the area, or unclipped for the session. The rest of the torso stays covered.",
+      },
+      {
+        type: "h3",
+        text: "Hip",
+      },
+      {
+        type: "p",
+        text: "Wear loose trousers, shorts or a skirt with a waistband that folds down easily. Underwear stays on, and the waistband is folded or moved just clear of the placement. Avoid tight jeans, which are hard to fold down and rub the area afterwards.",
+      },
+      {
+        type: "h3",
+        text: "Chest and sternum",
+      },
+      {
+        type: "p",
+        text: "Wear a top that opens at the front, or one with a neckline you can lower. For collarbone and upper-chest placements, a strapless top or bandeau keeps everything below the placement covered. For sternum and under-bust placements, a bra or bandeau stays on and is moved just clear of the area.",
+      },
+      {
+        type: "h3",
+        text: "Back and shoulder blade",
+      },
+      {
+        type: "p",
+        text: "Wear a top you can put on back to front, or a halterneck or strapless top that leaves the back open. For upper-back placements, a bra strap that crosses the area is unclipped for the session. The front of the body stays covered throughout.",
+      },
+      {
+        type: "h3",
+        text: "Upper thigh",
+      },
+      {
+        type: "p",
+        text: "Wear loose shorts or a loose skirt that can be raised to the placement. Underwear stays on. As with the hip, avoid tight jeans.",
+      },
+      {
+        type: "h2",
+        text: "On the day",
+      },
+      {
+        type: "p",
+        text: "How to prepare, from eating properly to skipping alcohol the day before, is in our first tattoo guide. Bring photo ID showing you are 18 or over.",
+        links: [{ text: "first tattoo guide", href: "/blog/first-tattoo-guide" }],
+      },
+      {
+        type: "p",
+        text: "The station is prepared with barrier film on the surfaces, and the needle and ink caps are opened from sealed packaging in front of you. If the area needs shaving, it is done with a fresh disposable razor, and the skin is cleaned before the stencil goes on.",
+      },
+      {
+        type: "h2",
+        text: "The stencil, and moving it",
+      },
+      {
+        type: "p",
+        text: "The approved design is transferred onto your skin as a stencil, a temporary outline that shows exactly where the tattoo will go. You check it before anything else happens.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Look at it standing as well as sitting. Skin on the ribs, hip and stomach shifts as you move, so a design that looks straight while you sit can tilt when you stand.",
+          "Check it in a mirror, from the angle other people will see it.",
+          "If it is not right, say so. The stencil is wiped off and placed again, and resized if needed, until it sits where you want it.",
+        ],
+      },
+      {
+        type: "p",
+        text: "This is the last point at which the placement can change easily. Take as long as you need.",
+      },
+      {
+        type: "h2",
+        text: "During the session",
+      },
+      // <!-- TODO: Ankur to supply --> typical tattooing time for medium and larger pieces.
+      {
+        type: "p",
+        text: "How long the tattooing takes depends on the size, the detail and the placement. A small, simple piece typically takes around 30 to 60 minutes of needle time, though it varies, and the full appointment runs longer once the stencil and setup are included. Larger pieces take longer and may be split across sittings.",
+      },
+      {
+        type: "p",
+        text: "What it feels like is covered in our first tattoo guide. You can ask for a break whenever you need one: to stretch, drink water, eat something or simply rest.",
+        links: [{ text: "What it feels like", href: "/blog/first-tattoo-guide" }],
+      },
+      {
+        type: "p",
+        text: "If you feel light-headed or unwell, say so straight away. The needle stops and you rest, with something sweet to eat or drink. Low blood sugar is a common cause, which is why eating beforehand matters. If you still feel unwell after resting, see a doctor.",
+      },
+      {
+        type: "h2",
+        text: "If you need to stop",
+      },
+      {
+        type: "p",
+        text: "You can stop at any point, for any reason, and you do not have to explain why. When you say stop, the needle stops, and the area is cleaned and covered. What happens next depends on how far along the tattoo is.",
+      },
+      // <!-- TODO: Ankur to supply --> how an unfinished session is charged.
+      {
+        type: "ul",
+        items: [
+          "If it is nearly done, you can take a break and carry on when you are ready, or finish on another day.",
+          "If there is more to do, the finished part heals first, and the rest is completed in another sitting.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Whatever stage it is at, you leave with the area cleaned and covered, and with aftercare instructions, exactly as you would with a finished piece.",
+      },
+      {
+        type: "h2",
+        text: "The aftercare handover",
+      },
+      // <!-- TODO: Ankur to supply --> how aftercare instructions are given (same value as siteConfig.pricing.aftercareFormat).
+      {
+        type: "p",
+        text: "Before you leave, the tattoo is cleaned and covered, either with a wrap or with a breathable adhesive film. You are told how to look after it: when to take the covering off, how to wash it, what to put on it and what to avoid.",
+      },
+      {
+        type: "p",
+        text: "The full healing process is in our aftercare guide for Kolkata weather, and what to buy is in our guide to aftercare products.",
+        links: [
+          { text: "aftercare guide for Kolkata weather", href: "/blog/tattoo-aftercare-guide-kolkata" },
+          { text: "guide to aftercare products", href: "/blog/tattoo-aftercare-products-india" },
+        ],
+      },
+      {
+        type: "p",
+        text: "If you have a question once you are home, message on WhatsApp. If you notice spreading redness, heat, pus or a fever, see a doctor rather than waiting for a reply.",
+      },
+      {
+        type: "h2",
+        text: "If the session is at your home",
+      },
+      {
+        type: "p",
+        text: "Every step above is the same at home. What you need to set up, and the areas covered, are on our female tattoo artist page.",
+        links: [{ text: "female tattoo artist page", href: "/female-tattoo-artist-kolkata" }],
+      },
+    ],
+    faq: [
+      {
+        // <!-- TODO: Ankur to supply --> typical tattooing time for larger pieces, if wanted here.
+        question: "How long does a tattoo appointment take?",
+        answer:
+          "It varies with the size, detail and placement of the piece. A small, simple tattoo typically takes around 30 to 60 minutes of needle time, and the full appointment runs longer once the stencil and setup are included. Larger pieces take longer and may be split across sittings.",
+      },
+      {
+        question: "What should I wear for a rib tattoo?",
+        answer:
+          "A top you can lift on one side or take off, with a bra, crop top or sports top underneath. Anything that crosses the placement is moved clear of it, and the rest of the torso stays covered.",
+      },
+      {
+        question: "Can I move the stencil if I do not like where it is?",
+        answer:
+          "Yes. The stencil is wiped off and placed again until it sits where you want it. Check it standing as well as sitting, and in a mirror, before the needle starts.",
+      },
+      {
+        question: "What happens if I need to stop halfway?",
+        answer:
+          "The needle stops as soon as you say so. The area is cleaned and covered, and an unfinished piece can be completed in another sitting once the first part has healed.",
+      },
+      {
+        question: "Will I get aftercare instructions?",
+        answer:
+          "Yes. Before you leave, the tattoo is covered and you are told how to look after it. If you notice spreading redness, heat, pus or a fever at any point, see a doctor.",
+      },
+    ],
+  },
+
+  {
+    slug: "tattoo-aftercare-products-india",
+    category: "Aftercare",
+    related: [
+      "tattoo-aftercare-guide-kolkata",
+      "best-time-to-get-a-tattoo-in-kolkata",
+      "first-tattoo-guide",
+    ],
+    title: "Antibacterial Wash for Tattoos: What a New Tattoo Actually Needs",
+    metaTitle: "Antibacterial Wash for Tattoos, Explained",
+    description:
+      "Antibacterial wash for tattoos: why a plain fragrance-free cleanser is usually enough, what to buy in India, what to avoid, and a simple routine by stage.",
+    excerpt:
+      "Searching for an antibacterial wash for your new tattoo? You probably do not need one. What a healing tattoo needs, what to avoid, and why.",
+    readingMinutes: 7,
+    publishedAt: "2026-11-01",
+    updatedAt: "2026-11-01",
+    image: "/img/tattoo14.jpg",
+    // Health-adjacent post (see CLAUDE.md). No brand names, no antibiotic or
+    // antiseptic products named, no prescriptions, no healing timelines, and
+    // nothing on treating a possible infection beyond "see a doctor". This post
+    // is about products; the healing process lives in the aftercare guide.
+    // Any cost figure is marked <!-- TODO: Ankur to supply -->.
+    blocks: [
+      {
+        type: "p",
+        text: "If you are looking for an antibacterial wash for tattoos, you probably do not need one. A fresh tattoo is a healing wound, and what it typically needs is gentle cleaning with a plain, fragrance-free cleanser, a thin layer of unscented moisturiser, and protection from the sun. Strong antibacterial and antiseptic products are designed to do more than clean, and that strength can dry out and irritate skin that is trying to heal.",
+      },
+      {
+        type: "p",
+        text: "This guide is about the products: what to look for on the label, what to leave on the shelf and why, what you can realistically buy in India, and which product to use at each stage. For how a tattoo heals and the warning signs to watch for, see our tattoo aftercare guide.",
+        links: [{ text: "tattoo aftercare guide", href: "/blog/tattoo-aftercare-guide-kolkata" }],
+      },
+      {
+        type: "h2",
+        text: "Do you need an antibacterial wash for a new tattoo?",
+      },
+      {
+        type: "p",
+        text: "It is a fair assumption to make. A tattoo is an open wound, and you want to keep it clean. But clean is not the same as sterile. Washing with a mild cleanser and clean water lifts plasma, excess ink and dirt off the surface, and that is the whole job. You are not trying to kill every bacterium on your skin. You are keeping the area clean while your skin does the healing.",
+      },
+      {
+        type: "p",
+        text: "Some antibacterial and antiseptic products contain stronger ingredients, including alcohol, so that they do more than clean. On intact skin that may be fine. On a healing tattoo, the same strength can sting, strip moisture from the skin, and leave it tight and irritated, which is the opposite of what it needs.",
+      },
+      {
+        type: "note",
+        text: "If your tattoo artist gave you specific aftercare instructions, follow them. And if you notice spreading redness, heat, pus or a fever, see a doctor, not a tattoo artist. Do not try to treat a possible infection with any product in this guide.",
+      },
+      {
+        type: "h2",
+        text: "What a fresh tattoo actually needs",
+      },
+      {
+        type: "p",
+        text: "Three things, and none of them needs a special product.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Gentle cleansing: a mild, fragrance-free cleanser and clean, lukewarm water. The cleanser's only job is to lift what sits on the surface without irritating the skin around it.",
+          "Moisture, in moderation: a thin layer of unscented moisturiser stops the healing skin drying out and cracking. A heavy layer does the opposite of what you want, holding moisture and heat against the tattoo.",
+          "Protection from the sun: while the tattoo heals, that protection is loose clothing and shade. Sunscreen comes later, once the skin has fully closed.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What to look for in each product",
+      },
+      {
+        type: "p",
+        text: "You do not need a particular brand. You need the right kind of product, and the label tells you most of what you need to know. Read the ingredient list, not the front of the pack.",
+      },
+      {
+        type: "h3",
+        text: "Cleanser",
+      },
+      // <!-- TODO: Ankur to supply --> typical cost of a fragrance-free cleanser in India.
+      {
+        type: "ul",
+        items: [
+          "Fragrance-free or unscented on the label, and no fragrance in the ingredients. Words like fragrance, parfum, perfume or essential oil mean a scent has been added.",
+          "A mild liquid cleanser or a simple, plain bar. Either works if it is unscented.",
+          "No exfoliating beads, grains or scrubbing particles.",
+          "No antibacterial or antiseptic claim on the pack. A healing tattoo does not need it.",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Moisturiser",
+      },
+      // <!-- TODO: Ankur to supply --> typical cost of an unscented moisturiser in India.
+      {
+        type: "ul",
+        items: [
+          "An unscented lotion or light cream that spreads thinly. A lotion is easier to keep thin than a thick balm.",
+          "No added fragrance, colour, shimmer or glitter.",
+          "Alcohol not near the top of the ingredient list, since it dries the skin.",
+          "Something you have used before without a problem, if possible. A new tattoo is not the time to test a new product.",
+        ],
+      },
+      {
+        type: "p",
+        text: "If a product stings when you apply it, or the skin around the tattoo reacts, stop using it. If the reaction does not settle, see a doctor.",
+      },
+      {
+        type: "h3",
+        text: "Sunscreen, for later",
+      },
+      // <!-- TODO: Ankur to supply --> typical cost of a broad-spectrum sunscreen in India.
+      {
+        type: "p",
+        text: "Sunscreen goes on only once the tattoo has fully healed and the skin is no longer broken or flaking. Look for a broad-spectrum sunscreen, which protects against both types of UV, ideally fragrance-free. This is the product that matters most for how the tattoo looks in the long run.",
+      },
+      {
+        type: "h3",
+        text: "Dedicated tattoo aftercare products",
+      },
+      // <!-- TODO: Ankur to supply --> typical cost of a dedicated tattoo aftercare balm in India.
+      {
+        type: "p",
+        text: "You will also find balms and lotions sold specifically for tattoos, usually online. Some are perfectly good. They are not essential, though, and a plain unscented moisturiser does the same basic job. If you buy one, run the same label checks as above.",
+      },
+      {
+        type: "h2",
+        text: "What to avoid, and why",
+      },
+      {
+        type: "ul",
+        items: [
+          "Fragranced soaps and body washes. Fragrance adds ingredients that do nothing for healing and can irritate broken skin.",
+          "Thick layers of petroleum jelly or heavy ointment. They seal the surface, holding moisture and heat against the tattoo, which is a particular problem in humid weather.",
+          "Alcohol-based products, including hand sanitiser and surgical spirit. They sting and dry the skin, which can leave it tight and cracked.",
+          "Strong household antiseptic liquids, the kind kept for cuts and grazes. They are harsher than a healing tattoo needs, and gentle washing already does the job.",
+          "Antibiotic creams. These are medicines. Use one only if a doctor prescribes it.",
+          "Scrubs, exfoliants, loofahs and washcloths. They tear at flaking skin, and pulling flakes off early can take ink with them.",
+          "Kitchen and home remedies, such as turmeric paste, raw aloe from the plant, coconut oil or ghee. They are not made for open skin, they are not sterile, and turmeric can stain.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What is realistically available in India",
+      },
+      {
+        type: "p",
+        text: "You do not need to hunt for anything special. Everything this guide suggests is the kind of product sold at a local chemist, in a supermarket or online.",
+      },
+      {
+        type: "p",
+        text: "The catch is labelling. A product sold as gentle, herbal or Ayurvedic can still contain added fragrance or essential oils, which you want to keep off healing skin. Baby washes and lotions are worth a look, but check them too, because some are scented. The ingredient list is the only reliable guide.",
+      },
+      {
+        type: "p",
+        text: "If someone at the chemist suggests an antiseptic or an antibiotic cream for a new tattoo, it is fine to say no. A tattoo that is healing normally does not need medicine, and one that might be infected needs a doctor rather than an over-the-counter guess.",
+      },
+      // <!-- TODO: Ankur to supply --> typical total cost of the basic kit below.
+      {
+        type: "p",
+        text: "A basic kit does not need to be expensive. A fragrance-free cleanser, an unscented moisturiser and, later on, a sunscreen cover almost everything.",
+      },
+      {
+        type: "h2",
+        text: "A simple routine, stage by stage",
+      },
+      {
+        type: "p",
+        text: "Healing typically moves through a few stages, but how long each one lasts varies by person, by placement and by the piece itself. Go by what the tattoo looks and feels like, not by the calendar. Our aftercare guide covers each stage in detail; this is the product side of it.",
+        links: [{ text: "aftercare guide", href: "/blog/tattoo-aftercare-guide-kolkata" }],
+      },
+      {
+        type: "h3",
+        text: "While it is still weeping",
+      },
+      {
+        type: "p",
+        text: "A fresh tattoo seeps clear fluid and a little ink. Wash it gently with your fragrance-free cleanser and lukewarm water, dab it dry with a fresh sheet of paper towel, and let it air-dry before anything else goes on. Follow your artist's instructions on when to start moisturising.",
+      },
+      {
+        type: "h3",
+        text: "Once it feels tight and starts to dry",
+      },
+      {
+        type: "p",
+        text: "Keep washing gently, and after each wash apply a thin layer of unscented moisturiser, enough to stop the skin feeling tight but not so much that it looks shiny.",
+      },
+      {
+        type: "h3",
+        text: "Once it starts flaking",
+      },
+      {
+        type: "p",
+        text: "This is the itchy stage. Keep moisturising thinly, which helps with the itch, and keep using your hands rather than a loofah or washcloth. Let the flakes come away on their own in the shower rather than rubbing them off.",
+      },
+      {
+        type: "h3",
+        text: "Once it has healed",
+      },
+      {
+        type: "p",
+        text: "When the surface is smooth and no longer shiny or flaking, the cleanser and moisturiser can go back to being part of your normal routine. Sunscreen on any tattoo that sees the sun now becomes the habit that matters.",
+      },
+      {
+        type: "note",
+        text: "At any stage, spreading redness, heat, pus or a fever means see a doctor, not a tattoo artist.",
+      },
+      {
+        type: "h2",
+        text: "Your shopping list",
+      },
+      {
+        type: "ul",
+        items: [
+          "A mild, fragrance-free cleanser.",
+          "An unscented moisturising lotion or light cream.",
+          "A roll of clean paper towels for patting the tattoo dry.",
+          "Loose, clean cotton clothing to cover it while it heals.",
+          "A broad-spectrum sunscreen, for once it has healed.",
+        ],
+      },
+      {
+        type: "p",
+        text: "That is genuinely all. If this is your first tattoo, our first tattoo guide covers what to expect from the session itself.",
+        links: [{ text: "first tattoo guide", href: "/blog/first-tattoo-guide" }],
+      },
+    ],
+    faq: [
+      {
+        question: "Should I use antibacterial soap on a new tattoo?",
+        answer:
+          "It is usually not needed. A mild, fragrance-free cleanser and clean water keep a healing tattoo clean, and stronger antibacterial or antiseptic products can dry out and irritate healing skin. Follow your artist's instructions, and if you think the tattoo may be infected, see a doctor.",
+      },
+      {
+        question: "Can I put an antiseptic liquid on my tattoo?",
+        answer:
+          "It is best not to. Strong antiseptics and anything alcohol-based can sting and dry out healing skin, and gentle washing is enough for a tattoo that is healing normally. A tattoo that might be infected needs a doctor, not an antiseptic.",
+      },
+      {
+        question: "What moisturiser should I use on a new tattoo?",
+        answer:
+          "An unscented lotion or light cream with no added fragrance, colour or shimmer, applied in a thin layer. You do not need a specific brand or a specialist tattoo product.",
+      },
+      {
+        question: "Can I put coconut oil on a new tattoo?",
+        answer:
+          "It is better not to while it is healing. Kitchen products are not made for broken skin and are not sterile. A plain, unscented moisturiser does the job.",
+      },
+      {
+        question: "When can I use sunscreen on my tattoo?",
+        answer:
+          "Once it has fully healed and the skin is no longer broken or flaking. Until then, keep it covered with loose clothing and out of direct sun.",
+      },
+    ],
+  },
+
+  {
+    slug: "what-should-a-tattoo-cost",
+    category: "Pricing",
+    related: [
+      "how-to-choose-a-tattoo-artist-in-kolkata",
+      "small-tattoo-cost-kolkata",
+      "permanent-tattoo-cost-india",
+    ],
+    title: "What Should a Tattoo Cost? A Buyer's Guide to Tattoo Prices",
+    metaTitle: "Tattoo Prices: What Should a Tattoo Cost?",
+    description:
+      "Tattoo prices explained: how studios charge, what you are actually paying for, red and green flags in a quote, and the questions to ask before you book.",
+    excerpt:
+      "Minimum charge, per inch, hourly or a flat quote? How tattoo pricing works, what a fair quote includes, and the warning signs worth walking away from.",
+    readingMinutes: 11,
+    publishedAt: "2026-11-01",
+    updatedAt: "2026-11-01",
+    image: "/img/tattoo5.jpg",
+    // The pricing pillar: all generic pricing-model education lives here and
+    // only here. The prices page and the other pricing posts link to it.
+    //
+    // No price figures anywhere in this post. Each spot that needs one is
+    // marked <!-- TODO: Ankur to supply -->. A commented-out link to
+    // /tattoo-prices-kolkata waits at the end of the final section.
+    blocks: [
+      {
+        type: "p",
+        text: "Tattoo prices are not a fixed list. Every quote you get is a pricing model applied to a particular design, and once you know which model a studio is using and what it covers, you can tell whether the quote is fair. That tells you far more than any single number.",
+      },
+      // <!-- TODO: Ankur to supply --> a sourced national price range, if one is wanted here.
+      {
+        type: "p",
+        text: "If you have searched how much do tattoos cost and found answers that are wildly far apart, this is why. Studios charge in different ways, include different things, and price different amounts of risk. This guide explains how each pricing model works, what you are actually paying for, the red and green flags in a quote, and the questions to ask before you book. It is written for anyone comparing studios, wherever you are.",
+      },
+      {
+        type: "h2",
+        text: "How tattoo pricing models work",
+      },
+      {
+        type: "p",
+        text: "Here are five ways a studio can price a tattoo. Some studios combine two of them, for example a minimum charge with an hourly rate above it. For each one, here is how it works and what it means for you as the client.",
+      },
+      {
+        type: "h3",
+        text: "Minimum charge",
+      },
+      // <!-- TODO: Ankur to supply --> sourced typical minimum charge range.
+      {
+        type: "p",
+        text: "A minimum charge is the lowest amount a studio will take for any tattoo, however small. It covers the fixed cost of setting up and breaking down a sterile station. Above the minimum, the studio prices in one of the other ways below.",
+      },
+      {
+        type: "ul",
+        items: [
+          "In your favour: you know the smallest possible spend before you even ask.",
+          "Against you: a tiny tattoo can cost exactly the same as a slightly bigger one, so going smaller to save money may not save anything.",
+          "Worth asking: if you want two small pieces, can they be done in one sitting under one charge?",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Per-inch rate",
+      },
+      {
+        type: "p",
+        text: "A set price for each inch of tattoo, so a 4-inch piece costs four times the per-inch rate, sometimes with a minimum on top.",
+      },
+      {
+        type: "ul",
+        items: [
+          "In your favour: it is easy to estimate before you ask, and easy to compare on paper.",
+          "Against you: it ignores detail and placement. A simple design ends up paying for the time a complex one needs, and a complex design is underpriced, which puts pressure on the artist to rush it.",
+          "Against you: an inch is not a standard unit here. The longest side, height times width, or the area covered can give very different totals for the same design.",
+          "Worth asking: exactly how will my design be measured?",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Hourly rate",
+      },
+      // <!-- TODO: Ankur to supply --> sourced typical hourly rate range.
+      {
+        type: "p",
+        text: "You pay for the time the artist spends tattooing, at an agreed rate per hour.",
+      },
+      {
+        type: "ul",
+        items: [
+          "In your favour: you pay for the time actually used, not a padded estimate. For large work, where nobody can predict the time exactly, this can be the fairest option.",
+          "Against you: you do not know the total until the end, and a slower artist costs you more for the same tattoo.",
+          "Against you: it is not always clear whether stencil placement, setup and breaks are on the clock.",
+          "Worth asking: how many hours do you expect, what counts as billable time, and will you tell me when we are near the estimate?",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Per-session or day rate",
+      },
+      // <!-- TODO: Ankur to supply --> sourced typical half-day and full-day rates.
+      {
+        type: "p",
+        text: "You book a block of time, such as a half day or a full day, for a fixed price, and the artist works on your piece for as long as the session allows. It suits large work spread over several visits.",
+      },
+      {
+        type: "ul",
+        items: [
+          "In your favour: the cost of each visit is predictable, and the artist's whole session is yours.",
+          "Against you: you pay for the full block even if less gets done, for example if you need longer breaks or have to stop early. The number of sessions is an estimate, not a promise.",
+          "Worth asking: what happens if I need to stop early, and how many sessions do you expect?",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Flat quote per piece",
+      },
+      {
+        type: "p",
+        text: "The artist prices the whole tattoo after seeing your design, size and placement, and you agree one figure before the session.",
+      },
+      {
+        type: "ul",
+        items: [
+          "In your favour: you know the total before the needle starts, and the price reflects your actual design rather than a formula.",
+          "Against you: it is only as accurate as the consultation behind it. If the design changes, so does the quote.",
+          "Against you: flat quotes are harder to compare between studios, because each one is built differently.",
+        ],
+      },
+      {
+        type: "p",
+        text: "This is how we price at The Ink Room, because it ties the price to the work your particular design needs rather than to its size alone.",
+      },
+      {
+        type: "h3",
+        text: "When models are combined",
+      },
+      {
+        type: "p",
+        text: "A quote can mix models. A minimum charge with an hourly rate above it is one example. A flat quote with an hourly rate for anything beyond the agreed design is another, and a per-session price with the deposit held against the final session is a third. None of these is a problem in itself. The question to ask is which rule applies at which point, so you know what happens if the tattoo takes longer than planned or you add to it later.",
+      },
+      {
+        type: "h3",
+        text: "Cover-ups and reworks",
+      },
+      {
+        type: "p",
+        text: "Covering or reworking an existing tattoo is priced differently, because the artist has to work around ink that is already in your skin. The quote depends on how dark and dense the old tattoo is, and a fair one only comes after the artist has seen a clear photo or the tattoo itself. Our guide to cover-up and removal options explains what is possible.",
+        links: [
+          {
+            text: "guide to cover-up and removal options",
+            href: "/blog/tattoo-cover-up-and-removal-options",
+          },
+        ],
+      },
+      {
+        type: "h3",
+        text: "Which model is fairest?",
+      },
+      {
+        type: "p",
+        text: "None of them is fair or unfair on its own. A flat quote suits small and medium pieces, where the work can be judged in advance. Hourly or per-session pricing can suit large work that will take several visits. What matters most is that you know which model you are being quoted under, and exactly what it includes.",
+      },
+      {
+        type: "h2",
+        text: "What you are actually paying for",
+      },
+      {
+        type: "p",
+        text: "Whatever the model, the price has to cover the same things. Knowing them makes it easier to see why a quote is what it is.",
+      },
+      {
+        type: "h3",
+        text: "The artist's time in the chair",
+      },
+      {
+        type: "p",
+        text: "The hours spent tattooing are the part you see. They include the slow, careful passes that fine detail needs, and the breaks you will need on harder placements.",
+      },
+      {
+        type: "h3",
+        text: "Design time",
+      },
+      {
+        type: "p",
+        text: "Drawing a custom design, revising it with you, sizing it to your body and preparing the stencil. This happens before you arrive, and it is real work whether or not you see it.",
+      },
+      {
+        type: "h3",
+        text: "Equipment",
+      },
+      {
+        type: "p",
+        text: "Tattoo machines, power supplies, a proper chair, good lighting and sterilisation equipment such as an autoclave. These are bought up front, and their cost is spread across every tattoo the studio does.",
+      },
+      {
+        type: "h3",
+        text: "Consumables",
+      },
+      {
+        type: "p",
+        text: "Needles, ink, ink caps, gloves, barrier film, stencil supplies and wraps are used once and thrown away. Our guide to small tattoo cost explains why this weighs so heavily on tiny pieces.",
+        links: [{ text: "guide to small tattoo cost", href: "/blog/small-tattoo-cost-kolkata" }],
+      },
+      {
+        type: "h3",
+        text: "Studio overheads",
+      },
+      {
+        type: "p",
+        text: "Rent, electricity, cleaning, safe disposal of needles and clinical waste, and the hours spent answering messages, holding consultations and managing bookings. Location changes this part most, which our guide to permanent tattoo cost in India explains.",
+        links: [
+          {
+            text: "guide to permanent tattoo cost in India",
+            href: "/blog/permanent-tattoo-cost-india",
+          },
+        ],
+      },
+      {
+        type: "h3",
+        text: "Skill",
+      },
+      {
+        type: "p",
+        text: "Practice shows up in lines that stay sharp, shading that heals evenly, and a design that still reads well years later. You are paying for judgement as much as for hours.",
+      },
+      {
+        type: "h2",
+        text: "What makes one tattoo cost more than another",
+      },
+      {
+        type: "p",
+        text: "Whatever the pricing model, the same choices about your design push the price up or down.",
+      },
+      {
+        type: "h3",
+        text: "Size",
+      },
+      {
+        type: "p",
+        text: "Bigger costs more, but not in a straight line. Doubling the width and height of a design roughly quadruples the area to fill, so a piece twice as wide is not simply twice the price. At the small end it works the other way, and our guide on why tiny tattoos cost more per inch explains the reasons.",
+        links: [
+          {
+            text: "why tiny tattoos cost more per inch",
+            href: "/blog/small-tattoo-cost-kolkata",
+          },
+        ],
+      },
+      {
+        type: "h3",
+        text: "Detail",
+      },
+      {
+        type: "p",
+        text: "This often matters more than size. Fine lines, shading and tight spacing all add time, so a palm-sized piece packed with detail can take longer than a much larger, simpler design.",
+      },
+      {
+        type: "h3",
+        text: "Placement",
+      },
+      {
+        type: "p",
+        text: "Ribs, sternum, feet, hands, elbows and the inner arm are slower to work on. The skin is thinner or moves more, and you will need more breaks. The same design is a different job on the ribs than on the outer forearm, so tell the studio where it is going before they price it.",
+      },
+      {
+        type: "h3",
+        text: "Colour or black and grey",
+      },
+      {
+        type: "p",
+        text: "Colour can cost more, depending on the design. It usually takes longer, uses more ink and can need a second pass to look even. A design that is mostly linework may cost about the same either way.",
+      },
+      {
+        type: "h3",
+        text: "Custom design or flash",
+      },
+      {
+        type: "p",
+        text: "A design drawn from scratch for you takes drawing time, often with a revision or two. A pre-drawn design picked from a sheet on the wall does not, and that difference can show up in the price.",
+      },
+      {
+        type: "h3",
+        text: "Session time",
+      },
+      {
+        type: "p",
+        text: "Time in the chair sits underneath everything above. A design that fits into one sitting costs less than one that needs a long session or several visits, even at a similar size.",
+      },
+      {
+        type: "h2",
+        text: "Red flags in a quote",
+      },
+      {
+        type: "p",
+        text: "These are warning signs in the quote itself. For red flags about hygiene and an artist's portfolio, see our guide to choosing a tattoo artist.",
+        links: [
+          {
+            text: "guide to choosing a tattoo artist",
+            href: "/blog/how-to-choose-a-tattoo-artist-in-kolkata",
+          },
+        ],
+      },
+      {
+        type: "ul",
+        items: [
+          "A firm price for a custom piece before anyone has seen your design, size or placement.",
+          "No explanation of how the price was worked out, or which pricing model it uses.",
+          "A per-inch rate with no clear answer on how the inches are measured.",
+          "An hourly rate with no estimate of how many hours.",
+          "A large deposit demanded before any design has been shown, or a deposit with no clear terms on whether it is refundable or comes off the total.",
+          "Pressure to decide on the spot, such as a price that is only good for today.",
+          "Nothing in writing. Even a WhatsApp message confirming the price is better than a figure said out loud.",
+          "Extras that only appear once you ask, such as a separate design fee or a charge for the stencil.",
+          "A price far below every other quote you have for the same brief, with no explanation of where the saving comes from.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Green flags in a quote",
+      },
+      {
+        type: "ul",
+        items: [
+          "Questions before a number: the size, the placement, your reference, and whether it is your first tattoo.",
+          "A clear statement of the pricing model and of what the figure includes.",
+          "The quote in writing.",
+          "Honesty about your idea, such as being told the design needs to be bigger or simpler to age well, with the reason why.",
+          "Clear deposit terms: how much, when it is due, whether it comes off the total, and when it can be refunded.",
+          "No pressure to book. A fair quote is still fair tomorrow.",
+          "A straight answer when you ask what could change the price on the day.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Questions to ask before booking",
+      },
+      {
+        type: "p",
+        text: "These are about the price itself. Ask them of any studio, and expect plain answers.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Which pricing model is this: a flat quote, hourly, per inch or per session?",
+          "Is this figure the total, or could anything be added?",
+          "Does it include the design, and how many revisions?",
+          "Is there a deposit? How much is it, does it come off the total, and when can it be refunded?",
+          "If it is hourly or per session, how long do you expect it to take, and what counts as billable time?",
+          "What would make the price change on the day?",
+          "When is payment due, and how can I pay?",
+          "Can you confirm the price in writing?",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Why a quote can change between consultation and the chair",
+      },
+      {
+        type: "p",
+        text: "A quote is a price for a specific tattoo: the design, size and placement agreed at consultation. If any of those change, the work changes and so does the price. That is fair. A surprise is not.",
+      },
+      {
+        type: "h3",
+        text: "Fair reasons for a change",
+      },
+      {
+        type: "ul",
+        items: [
+          "You change the design on the day: bigger, more detail, added colour or a new element.",
+          "The placement moves, for example from the forearm to the ribs.",
+          "Once the stencil is on your skin, the design reads better at a different size on that part of the body.",
+          "On hourly or per-session pricing, the work takes longer or shorter than estimated.",
+          "The skin where the tattoo is going is sunburnt or irritated, so the plan has to change or the session has to move.",
+        ],
+      },
+      {
+        type: "h3",
+        text: "What should not change",
+      },
+      {
+        type: "p",
+        text: "If you arrive for the same design, size and placement you agreed, the price should be the one you agreed. Nothing should be added after the session for things that were known beforehand.",
+      },
+      {
+        type: "h3",
+        text: "How to protect yourself",
+      },
+      {
+        type: "ul",
+        items: [
+          "Confirm the final design, size, placement and price in writing before the day.",
+          "Ask the artist to tell you the new figure before starting if anything changes.",
+          "On hourly work, agree a point at which the artist checks in with you about time used.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Searching for tattoo prices near you",
+      },
+      {
+        type: "p",
+        text: "A search for tattoo prices near me gives you a list of studios, but it tells you little about price. To compare fairly, send the same brief to each: the same reference, the same size in inches and the same placement. Then compare like with like.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Which pricing model each quote uses.",
+          "What each quote includes: the design, revisions and any touch-ups.",
+          "The deposit terms.",
+          "Healed photos of work in the style you want.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The cheapest quote and the best value are not always the same thing. A tattoo that has to be fixed later costs far more than one done properly once, and our guide to permanent tattoo cost in India covers those hidden costs.",
+        links: [
+          {
+            text: "guide to permanent tattoo cost in India",
+            href: "/blog/permanent-tattoo-cost-india",
+          },
+        ],
+      },
+      {
+        type: "h2",
+        text: "Should you tip your tattoo artist?",
+      },
+      {
+        type: "p",
+        text: "If you have read advice written for the US, you may have seen tipping presented as expected, with a percentage attached. That convention does not carry over to India. Here, tipping a tattoo artist is not an established expectation. It is appreciated when you are happy with the work, but it is not assumed, and there is no standard amount.",
+      },
+      {
+        type: "p",
+        text: "If you want to say thank you in other ways, a review, a recommendation to a friend, or permission to share a photo of your healed tattoo can mean a great deal to an independent artist.",
+      },
+      {
+        type: "h2",
+        text: "Getting a quote from The Ink Room",
+      },
+      {
+        type: "p",
+        text: "We are a one-artist custom studio in Behala, Kolkata. Every piece is designed and tattooed by Soniya, a female tattoo artist in Kolkata, and priced as a flat quote per piece after a free consultation.",
+        links: [{ text: "female tattoo artist in Kolkata", href: "/" }],
+      },
+      {
+        type: "p",
+        text: "Send your reference, a rough size in inches and the placement on WhatsApp. You will get one figure for your exact design, what it includes, and a straight answer on whether the idea works at that size. Planning something small? Our guide to small tattoo cost in Kolkata explains which designs hold up at which sizes.",
+        links: [
+          {
+            text: "guide to small tattoo cost in Kolkata",
+            href: "/blog/small-tattoo-cost-kolkata",
+          },
+        ],
+      },
+      // TODO: uncomment when /tattoo-prices-kolkata goes live (noindex
+      // removed). Kept out until then so readers do not land on the unpriced
+      // page.
+      // {
+      //   type: "p",
+      //   text: "For what we charge, see our tattoo prices in Kolkata.",
+      //   links: [{ text: "tattoo prices in Kolkata", href: "/tattoo-prices-kolkata" }],
+      // },
+    ],
+    faq: [
+      {
+        // <!-- TODO: Ankur to supply --> sourced national price range, if wanted.
+        question: "How much do tattoos cost?",
+        answer:
+          "It depends on the design, the size, the placement and how the studio prices its work, so the useful question is what a specific design costs at a specific studio. Send the same brief to two or three studios and compare what each quote includes, not just the figure.",
+      },
+      {
+        question: "Is it better to pay hourly or a flat price for a tattoo?",
+        answer:
+          "A flat price gives you certainty and suits small and medium pieces, where the work can be judged in advance. Hourly can be fairer for large work spread over several sessions, as long as you get an estimate of the hours and know what counts as billable time.",
+      },
+      {
+        question: "Why do tattoo prices vary so much between studios?",
+        answer:
+          "Studios use different pricing models, include different things in the quote, and have different overheads depending on where they are. The artist's skill and how much demand there is for their work also play a part.",
+      },
+      {
+        question: "What does a tattoo deposit cover?",
+        answer:
+          "A deposit holds your appointment and covers design work done before the session. Before paying one, ask how much it is, whether it comes off the total, and when it can be refunded.",
+      },
+      {
+        question: "Should I tip my tattoo artist in India?",
+        answer:
+          "There is no expectation to. Tipping is not an established custom for tattoos in India. It is appreciated if you are happy with the work, but it is not assumed, and there is no standard amount.",
+      },
+      {
+        question: "Can a tattoo artist change the price on the day?",
+        answer:
+          "Only if the tattoo changes, for example a bigger size, more detail or a different placement, or if you are paying by the hour and the work takes longer than estimated. Either way, you should be told the new figure before the needle starts.",
+      },
+    ],
+  },
+
+  {
+    slug: "permanent-tattoo-cost-india",
+    category: "Pricing",
+    related: [
+      "small-tattoo-cost-kolkata",
+      "tattoo-cover-up-and-removal-options",
+      "tattoo-aftercare-guide-kolkata",
+    ],
+    title: "Permanent Tattoo Cost in India: What You Are Actually Paying For",
+    metaTitle: "Permanent Tattoo Cost in India Explained",
+    description:
+      "Permanent tattoo cost in India explained: permanent vs semi-permanent, what drives the price, metro vs smaller cities, studio tiers and the hidden costs.",
+    excerpt:
+      "How much do tattoos cost in India? What permanent really means, why city and studio change the price, and the costs that never appear in the quote.",
+    readingMinutes: 8,
+    publishedAt: "2026-11-01",
+    updatedAt: "2026-11-01",
+    image: "/img/tattoo6.jpg",
+    // No price figures anywhere in this post: there is no sourced national
+    // pricing data. Each spot that needs one is marked
+    // <!-- TODO: Ankur to supply -->.
+    //
+    // TODO: when /tattoo-prices-kolkata goes live (noindex removed), add a link
+    // to it in the Kolkata section, in the paragraph that ends "rather than a
+    // flat rate."
+    blocks: [
+      {
+        type: "p",
+        text: "If you are trying to work out the permanent tattoo cost in India, the honest answer is that there is no single national price. A small, simple tattoo and a large custom piece are very different amounts of money, and the same design can be priced differently in Mumbai, in Indore and in Kolkata. What stays the same everywhere is what you are paying for.",
+      },
+      // <!-- TODO: Ankur to supply --> a sourced national price range here.
+      {
+        type: "p",
+        text: "This guide explains what a permanent tattoo actually is, what drives the price anywhere in India, why big cities and smaller towns charge differently, what you get at different kinds of studio, and the costs that never show up in the quote.",
+      },
+      {
+        type: "h2",
+        text: "What a permanent tattoo actually is",
+      },
+      {
+        type: "p",
+        text: "A permanent tattoo is ink placed by needle into the dermis, the layer of skin beneath the surface that does not shed. That is why it lasts. It softens slightly over the years, but it does not fade away on its own. Removing it means laser treatment, which takes several sessions and is not guaranteed to clear it completely.",
+      },
+      {
+        type: "p",
+        text: "Several other things get called tattoos, and it is easy to mix them up:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Henna or mehndi: a plant dye that stains the top layer of skin and fades as that layer sheds. It is temporary decoration, not a tattoo.",
+          "Black henna: sold at some markets and beaches. It can contain a chemical dye that causes skin reactions in some people. If your skin reacts after black henna, see a doctor.",
+          "Plant-based surface inks, sometimes sold as semi-permanent: these stain the surface of the skin and wear off as it renews. They are a useful way to try out a design and placement.",
+          "Stick-on transfers and airbrush tattoos: printed or sprayed onto the surface, and gone in a matter of days.",
+          "Cosmetic tattooing, such as microblading for eyebrows: pigment placed shallowly so it fades over time. It is a cosmetic procedure with its own pricing, and this guide does not cover it.",
+        ],
+      },
+      {
+        type: "note",
+        text: "Be wary of anything sold as a semi-permanent tattoo that is applied with a needle. If ink goes into your skin with a needle, treat it as permanent. There is no reliable way to make needle-placed ink fade on schedule.",
+      },
+      {
+        type: "p",
+        text: "If you are not sure you want something for life, a surface option is an inexpensive way to live with a design and placement for a while first.",
+      },
+      {
+        type: "p",
+        text: "The factors that set the price of any tattoo, from size and detail to how a studio charges, are the same wherever you are. Our guide to tattoo prices covers them in full. The rest of this guide is about what changes across India.",
+        links: [{ text: "guide to tattoo prices", href: "/blog/what-should-a-tattoo-cost" }],
+      },
+      {
+        type: "h2",
+        text: "Why metro pricing differs from smaller cities",
+      },
+      {
+        type: "p",
+        text: "The same tattoo can be priced differently in a metro and in a smaller city. The figures vary, but the reasons behind them are worth understanding.",
+      },
+      // <!-- TODO: Ankur to supply --> sourced metro vs smaller-city price comparison.
+      {
+        type: "h3",
+        text: "Rent",
+      },
+      {
+        type: "p",
+        text: "A studio in a central metro neighbourhood usually pays more for its space than one in a smaller town, and that cost is spread across every tattoo it does. A hygienic studio also needs more room than you might think: a clean working area, storage, and somewhere to sterilise equipment.",
+      },
+      {
+        type: "h3",
+        text: "Artist supply",
+      },
+      {
+        type: "p",
+        text: "Metros have more artists, which means more choice and more competition. A smaller city may have only a handful of studios. That can work either way: an experienced artist there may face little pressure on price, or may keep prices low to draw enough clients.",
+      },
+      {
+        type: "h3",
+        text: "Demand",
+      },
+      {
+        type: "p",
+        text: "More people wanting tattoos means fuller appointment books. An artist with a waiting list has little reason to discount, while a studio with empty chairs may compete on price.",
+      },
+      {
+        type: "h3",
+        text: "What does not change",
+      },
+      {
+        type: "p",
+        text: "Needles, ink and other supplies do not get cheaper because a studio is in a smaller city, and a good tattoo takes the same time anywhere. So the difference between cities comes from rent, supply and demand, not from the tattoo itself.",
+      },
+      {
+        type: "h2",
+        text: "Studio tiers and what you actually get",
+      },
+      {
+        type: "p",
+        text: "Tattooing in India happens in a few broad kinds of setting. Price is only part of the difference. Here is what you are paying for at each.",
+      },
+      // <!-- TODO: Ankur to supply --> sourced typical price for each tier below.
+      {
+        type: "h3",
+        text: "Informal setups",
+      },
+      {
+        type: "p",
+        text: "Street stalls, fairs, beach shacks, or someone working from a room with no proper station. The price is low because so little is included: there may be no sterilisation equipment, no single-use setup and no design work. Reused needles and unsterilised equipment carry a real risk of infection. If a tattoo ever looks or feels infected, see a doctor.",
+      },
+      {
+        type: "h3",
+        text: "Walk-in flash shops",
+      },
+      {
+        type: "p",
+        text: "Shops in markets and malls that work from pre-drawn designs and take walk-ins. You get speed and a fixed menu of designs. What you give up is a design drawn for your body and time to talk it through. Hygiene standards can vary from shop to shop, so ask the questions below.",
+      },
+      {
+        type: "h3",
+        text: "Custom studios",
+      },
+      {
+        type: "p",
+        text: "Studios that draw each piece for the client after a consultation. You pay for design time, a booked appointment, a proper station, and an artist who will tell you if your idea needs to be bigger or simpler. This is the kind of studio we are.",
+      },
+      {
+        type: "h3",
+        text: "Artists with a waiting list",
+      },
+      {
+        type: "p",
+        text: "Artists with a recognisable style and more demand than appointments. You are paying for their particular hand and judgement, and you will usually need to book well ahead.",
+      },
+      {
+        type: "p",
+        text: "Whichever kind of studio you choose, ask:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Are the needles single-use, and will they be opened in front of me?",
+          "How is the equipment sterilised?",
+          "Can I see healed photos, not just fresh ones?",
+        ],
+      },
+      {
+        type: "h2",
+        text: "The costs that are not in the quote",
+      },
+      {
+        type: "p",
+        text: "The price of the tattoo is not the whole cost. Budget for these as well.",
+      },
+      {
+        type: "h3",
+        text: "Touch-ups",
+      },
+      // <!-- TODO: Ankur to supply --> sourced typical touch-up cost.
+      {
+        type: "p",
+        text: "Some tattoos need a small touch-up once healed, particularly fine line work and pieces on the hands, fingers and feet, which fade faster than anywhere else. Ask whether touch-ups are included and for how long. If they are not, that is an extra visit to plan and pay for.",
+      },
+      {
+        type: "h3",
+        text: "Aftercare products",
+      },
+      // <!-- TODO: Ankur to supply --> sourced cost of a basic aftercare kit.
+      {
+        type: "p",
+        text: "You will need a fragrance-free soap and an unscented moisturiser for the healing weeks, and sunscreen afterwards to protect the tattoo from fading. You may already have some of these. Plain, unscented products are what matter, not specialist branding.",
+      },
+      {
+        type: "h3",
+        text: "Time off swimming",
+      },
+      {
+        type: "p",
+        text: "A fresh tattoo cannot be soaked, so pools, ponds, the sea and long baths are out, usually for around two to three weeks. Healing varies from person to person, and our aftercare guide covers the details. If you swim regularly or have a beach holiday coming up, plan the tattoo around it.",
+        links: [{ text: "aftercare guide", href: "/blog/tattoo-aftercare-guide-kolkata" }],
+      },
+      {
+        type: "h3",
+        text: "Correcting cheap work later",
+      },
+      // <!-- TODO: Ankur to supply --> sourced typical cover-up and laser removal costs.
+      {
+        type: "p",
+        text: "This is the biggest hidden cost. A tattoo that heals with blurred lines, patchy shading or wobbly linework cannot simply be redone. The options are a cover-up, which has to be bigger and darker than the original, or laser removal, which takes several sessions and is not guaranteed to clear the ink. Either usually costs far more than doing it properly once. Our guide to cover-up and removal options explains both.",
+        links: [
+          {
+            text: "guide to cover-up and removal options",
+            href: "/blog/tattoo-cover-up-and-removal-options",
+          },
+        ],
+      },
+      {
+        type: "h2",
+        text: "Bringing it home: getting a tattoo in Kolkata",
+      },
+      {
+        type: "p",
+        text: "Everything above applies in Kolkata. The city has studios across these tiers, and where a studio sits, from the centre to the suburbs, shapes its costs like anywhere else.",
+      },
+      // <!-- TODO: Ankur to supply --> sourced Kolkata price context.
+      {
+        type: "p",
+        text: "The Ink Room is a custom studio in Behala, run by Soniya, a female tattoo artist in Kolkata. We quote per piece after a free consultation, so the price reflects your design, size and placement rather than a flat rate.",
+        links: [{ text: "female tattoo artist in Kolkata", href: "/" }],
+      },
+      {
+        type: "p",
+        text: "If you are planning a small first piece, our guide to small tattoo cost in Kolkata covers what fits at each size and why tiny tattoos cost more per inch than you might expect. For a figure for your own idea, send your reference, a rough size in inches and the placement on WhatsApp.",
+        links: [
+          {
+            text: "guide to small tattoo cost in Kolkata",
+            href: "/blog/small-tattoo-cost-kolkata",
+          },
+        ],
+      },
+    ],
+    faq: [
+      {
+        // <!-- TODO: Ankur to supply --> sourced national price range.
+        question: "How much do tattoos cost in India?",
+        answer:
+          "There is no single answer. The price depends on size, detail, placement, colour, the city and the kind of studio. Ask for a quote for your exact design rather than relying on an average.",
+      },
+      {
+        question: "Is there such a thing as a semi-permanent tattoo?",
+        answer:
+          "Not one placed with a needle. If ink goes into your skin with a needle, treat it as permanent. Surface options such as henna, plant-based inks and transfers are temporary and fade on their own.",
+      },
+      {
+        question: "Why do tattoos cost more in big cities?",
+        answer:
+          "Mostly rent, artist supply and demand. Studio space usually costs more in a central metro neighbourhood, and an artist with a full appointment book has little reason to discount. Supplies and the time a good tattoo takes stay much the same anywhere.",
+      },
+      {
+        question: "What extra costs should I budget for after a tattoo?",
+        answer:
+          "Possible touch-ups, basic aftercare products such as a fragrance-free soap, an unscented moisturiser and sunscreen, and a few weeks away from swimming. The biggest one to avoid is the cost of correcting a poorly done tattoo.",
+      },
+      {
+        question: "Is a cheaper tattoo worth the risk?",
+        answer:
+          "Weigh the saving against the cost of fixing a bad tattoo. Cover-ups and laser removal usually cost far more than the original, and hygiene shortcuts carry a real risk of infection. If a tattoo ever looks or feels infected, see a doctor.",
+      },
+    ],
+  },
+
+  {
+    slug: "small-tattoo-cost-kolkata",
+    category: "Pricing",
+    related: ["first-tattoo-guide", "small-tattoo-ideas-for-women"],
+    title: "Small Tattoo Cost in Kolkata: What Is Normal for a First Piece?",
+    metaTitle: "Small Tattoo Cost in Kolkata: What's Normal",
+    description:
+      "Small tattoo cost in Kolkata for first-timers: what counts as small, what fits at each size, why tiny pieces cost more per inch, and when to go bigger.",
+    excerpt:
+      "Is ₹1,000 normal for a small tattoo? Is ₹5,000? What counts as small, what fits at each size, and why the price is about more than inches.",
+    readingMinutes: 7,
+    publishedAt: "2026-11-01",
+    updatedAt: "2026-11-01",
+    image: "/img/tattoo16.jpg",
+    // Prices are deliberately left out of this post until confirmed. Each
+    // spot that needs one is marked <!-- TODO: Ankur to supply -->.
+    //
+    // TODO: when /tattoo-prices-kolkata goes live (noindex removed), restore
+    // links to it in this post: one at the end of the third paragraph ("For our
+    // current figures, see our tattoo prices page.") and one in the closing
+    // paragraph ("For current figures by size, see our tattoo prices page.").
+    // They were removed so readers do not land on the unpriced page.
+    blocks: [
+      {
+        type: "p",
+        text: "You want a small first tattoo, and you have no idea what it should cost. One studio says one number, a friend paid something completely different, and it is hard to find a straight answer. The honest answer is that small tattoo cost depends less on the inches and more on what you want to fit inside them.",
+      },
+      {
+        type: "p",
+        text: "So is ₹1,000 normal? Is ₹5,000? Neither number means much on its own. What matters is what the tattoo actually is: how big, how detailed, and where it goes.",
+      },
+      // <!-- TODO: Ankur to supply --> the typical small-tattoo price range here.
+      {
+        type: "p",
+        text: "This guide explains what counts as small, what realistically fits at each size, why tiny pieces cost more per inch than you might expect, and when a small tattoo is the wrong choice.",
+      },
+      {
+        type: "h2",
+        text: "What counts as a small tattoo",
+      },
+      {
+        type: "p",
+        text: "Size is measured along the longest side of the design. We treat anything up to about 3 inches as small.",
+      },
+      {
+        type: "p",
+        text: "But a 3-inch tattoo is not one fixed thing. A 3-inch word in script is a thin line of lettering. A 3-inch rose is a solid shape with petals, leaves and shading. Both are small. They are very different amounts of work, and they will not cost the same.",
+      },
+      {
+        type: "h2",
+        text: "What fits at each size",
+      },
+      {
+        type: "p",
+        text: "Here is a rough guide to what works well at each size, assuming clean, simple linework. Detail and shading need more room than this.",
+      },
+      {
+        type: "h3",
+        text: "Under 1 inch",
+      },
+      // <!-- TODO: Ankur to supply --> typical price for under 1 inch.
+      {
+        type: "p",
+        text: "A single initial, a dot, a tiny heart, star or moon outline. Keep it to one simple shape with open space inside. Pieces this small are charged at our starting price, because the setup costs the same however tiny the tattoo is.",
+      },
+      {
+        type: "h3",
+        text: "1 to 2 inches",
+      },
+      // <!-- TODO: Ankur to supply --> typical price for 1 to 2 inches.
+      {
+        type: "p",
+        text: "A short word, a date in numerals, a small outline flower, a simple symbol or a minimal line drawing. This is a comfortable size for a first tattoo.",
+      },
+      {
+        type: "h3",
+        text: "2 to 3 inches",
+      },
+      // <!-- TODO: Ankur to supply --> typical price for 2 to 3 inches.
+      {
+        type: "p",
+        text: "A name or a short phrase in script, a single-stem floral, a small geometric shape or a simple animal outline. There is room for a little fine detail here, but not much shading.",
+      },
+      {
+        type: "h3",
+        text: "3 to 4 inches",
+      },
+      // <!-- TODO: Ankur to supply --> typical price for 3 to 4 inches.
+      {
+        type: "p",
+        text: "This is where small starts to blur into medium. A small floral with light shading, a line drawing with a few elements, or a short quote on one line. If your idea feels crowded at 3 inches, this is often the size it actually needs.",
+      },
+      {
+        type: "note",
+        text: "Before you decide on a size, hold a ruler against your skin where you want the tattoo. An inch on skin is often smaller than you imagine.",
+      },
+      {
+        type: "h2",
+        text: "Why tiny tattoos cost more per inch than you expect",
+      },
+      {
+        type: "p",
+        text: "If a 3-inch tattoo costs a certain amount, it seems natural that a 1-inch one would cost a third of that. It does not, and the reasons are practical.",
+      },
+      {
+        type: "h3",
+        text: "The setup is the same",
+      },
+      {
+        type: "p",
+        text: "Before any tattoo, the station is covered in barrier film, a fresh needle and ink caps are opened, and the stencil is prepared. Afterwards, everything single-use is thrown away and the station is cleaned down. That takes the same time and the same materials whether the tattoo is one inch or four. On a tiny piece, the setup can be most of the job.",
+      },
+      {
+        type: "h3",
+        text: "Needle changes",
+      },
+      {
+        type: "p",
+        text: "In tattooing generally, outlines, solid fill and soft shading are done with different needle groupings, and every needle used should be fresh and sterile. So even a tiny design with an outline, a filled area and a little shading can call for as many needles as a much bigger piece.",
+      },
+      {
+        type: "h3",
+        text: "Fine line is harder at small scale",
+      },
+      {
+        type: "p",
+        text: "If your small design is fine line, there is no room for error. There is no bold outline to hide a wobble. The depth has to be exact: too shallow and the line drops out as it heals, too deep and it blurs under the skin. Lettering is the hardest of all, because a slight shake changes the shape of a letter. That control takes time, even on a tattoo the size of a coin.",
+      },
+      {
+        type: "h3",
+        text: "Design time does not shrink",
+      },
+      {
+        type: "p",
+        text: "A tiny design still has to be drawn, sized to your body and adjusted until it looks right. Getting a small piece to read clearly often takes more care in the drawing, not less.",
+      },
+      {
+        type: "h2",
+        text: "How placement changes the price",
+      },
+      {
+        type: "p",
+        text: "The same small design can be quick or slow depending on where it goes.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Inner forearm, outer arm, back of the upper arm and collarbone: flat, stable skin that is easy to work on. Usually the simplest placements for a small piece.",
+          "Fingers, hands and feet: the skin is thin and moves a lot, and these spots fade and blur faster than anywhere else, so fine detail there is a risk.",
+          "Ribs, sternum and the inside of the ankle: thinner skin over bone, more breaks and slower work.",
+          "Behind the ear and the nape of the neck: curved and awkward to reach, and the angle has to be right for the tattoo to sit straight.",
+        ],
+      },
+      {
+        type: "p",
+        text: "On a very simple piece, placement may make little difference. Once the design has any detail, a harder placement takes longer to tattoo well. Mention the placement when you ask for a quote.",
+      },
+      {
+        type: "h2",
+        text: "When a small tattoo is a bad idea",
+      },
+      {
+        type: "p",
+        text: "Some designs simply do not work small, and getting them anyway is a reliable way to end up unhappy with a tattoo you paid for.",
+      },
+      {
+        type: "p",
+        text: "Tattoo ink spreads very slightly in the skin over the years. It is slow and gradual, and it happens to every tattoo. Sun speeds it up, and so do placements where the skin moves and rubs a lot, like the hands, fingers and feet. On a large tattoo you never notice. On a tiny one there is no spare space for the spread to go, so lines that once sat apart slowly meet, and fine detail softens into a blur.",
+      },
+      {
+        type: "p",
+        text: "Here are the warning signs, what each one tends to look like a few years on, and what to do instead.",
+      },
+      {
+        type: "h3",
+        text: "Lines that sit too close together",
+      },
+      {
+        type: "p",
+        text: "If the gap between two lines is narrower than the lines themselves, there is nothing to stop them meeting as the ink spreads. On the day it looks crisp. A few years on, the gap has filled in, and two fine lines read as one thicker, slightly fuzzy line. A delicate fern frond turns into a dark stalk, and a detailed mandala loses its pattern and reads as a solid disc.",
+      },
+      {
+        type: "p",
+        text: "Instead, leave more space between lines than looks necessary, take some of the lines out, or go bigger so the gaps can stay open.",
+      },
+      {
+        type: "h3",
+        text: "Lettering with closed loops",
+      },
+      {
+        type: "p",
+        text: "Letters like a, e, o and g, and numbers like 6, 8, 9 and 0, have small enclosed spaces inside them. At a very small size those spaces are tiny, and they are the first thing to fill in. A few years on, an e can look like a dot and an a like a smudge, and a date can read as a row of dark blobs. A name you could read clearly in the studio becomes something only you can make out.",
+      },
+      {
+        type: "p",
+        text: "Instead, make the lettering bigger, choose a simple, open font with generous space between the letters, or write a date in Roman numerals, which have no enclosed loops at all.",
+      },
+      {
+        type: "h3",
+        text: "Shading packed into a small area",
+      },
+      {
+        type: "p",
+        text: "Soft shading works by placing lighter and darker areas side by side. In a small space those areas sit very close together, and as the ink spreads they merge. A few years on, a gradient that looked soft and rounded has flattened into one dark patch, and the small highlights where bare skin showed through have closed up.",
+      },
+      {
+        type: "p",
+        text: "Instead, keep a small piece to clean linework, use solid black fill, which holds its shape better than shading, or give the shading the room it needs by going bigger.",
+      },
+      {
+        type: "h3",
+        text: "A face, portrait or realistic animal shrunk down",
+      },
+      {
+        type: "p",
+        text: "A face depends on tiny details: the shape of an eye, the corner of a mouth, the light in a pupil. Shrunk to a couple of inches, those details are made of marks a fraction of a millimetre apart, and they are the first thing to go. A few years on, the face loses its expression and stops looking like the person, and a realistic animal becomes a dark silhouette with a blurred middle.",
+      },
+      {
+        type: "p",
+        text: "Instead, give a portrait real size if you want it to last. If you want it small, choose a simple line drawing or a silhouette, which keeps its shape even as the detail softens.",
+      },
+      {
+        type: "h3",
+        text: "A long quote in a short space",
+      },
+      {
+        type: "p",
+        text: "Every extra word in the same space makes each letter smaller and pushes the letters closer together, so a long quote runs into both of the problems above at once. A few years on, it reads as a band of texture rather than words, legible only up close, if at all.",
+      },
+      {
+        type: "p",
+        text: "Instead, cut the quote down to the few words that matter most, choose a placement with more length, such as along the forearm or down the side of the ribs, or make it bigger.",
+      },
+      {
+        type: "h3",
+        text: "A simple test before you commit",
+      },
+      {
+        type: "p",
+        text: "Print your design at its real size, hold it at arm's length, then look at it slightly out of focus. If it still reads clearly, it is far more likely to age well. If it turns into a smudge, that gives you an idea of where a few years of ink spread will take it.",
+      },
+      {
+        type: "p",
+        text: "Every fix above comes down to the same three options: go a bit bigger, simplify the design, or choose a placement with more room. If we suggest going bigger, it is because of how the tattoo will age, not to raise the price.",
+      },
+      {
+        type: "note",
+        text: "If you love a detailed design, keep the detail and make it bigger. If you need it small, keep the size and simplify. Trying to have both is where small tattoos go wrong.",
+      },
+      {
+        type: "h2",
+        text: "Getting an accurate price for a small tattoo",
+      },
+      {
+        type: "p",
+        text: "A real quote needs three things: your reference or idea, a rough size in inches, and the placement. Send those on WhatsApp and you will get a figure for that exact piece, not a guess. For what to ask any studio about a quote, see our guide to tattoo prices.",
+        links: [{ text: "guide to tattoo prices", href: "/blog/what-should-a-tattoo-cost" }],
+      },
+      // <!-- TODO: Ankur to supply --> a one-line starting price before the prices page link.
+      {
+        type: "p",
+        text: "If this is your first tattoo, our first tattoo guide covers what happens before, during and after the session.",
+        links: [{ text: "first tattoo guide", href: "/blog/first-tattoo-guide" }],
+      },
+    ],
+    faq: [
+      {
+        // <!-- TODO: Ankur to supply --> the typical small-tattoo price range.
+        question: "How much does a small tattoo cost?",
+        answer:
+          "It depends on the size, how much detail is inside it and where it goes. A simple tiny piece sits at the lower end, and a small but detailed design can cost as much as something twice its size. Send your idea, a rough size and the placement on WhatsApp for a figure for your exact piece.",
+      },
+      {
+        question: "Why are tattoo charges so high for tiny tattoos?",
+        answer:
+          "Because the fixed parts of the job do not shrink with the tattoo. Setup, fresh needles and ink, design time and the care needed for fine lines at small scale cost much the same on a one-inch tattoo as on a three-inch one.",
+      },
+      {
+        question: "Is a 1-inch tattoo a good idea?",
+        answer:
+          "For a simple shape, an initial or a small symbol, yes. For anything with detail, shading or more than a letter or two, 1 inch is usually too small to stay clear over the years.",
+      },
+      {
+        question: "Does placement change how much a small tattoo costs?",
+        answer:
+          "It can. Fingers, hands, feet, ribs and the area behind the ear are slower to work on than the forearm or upper arm, and the difference shows more once a design has any detail.",
+      },
+    ],
+  },
+
   {
     slug: "tattoo-aftercare-guide-kolkata",
     category: "Aftercare",
@@ -157,162 +1978,6 @@ export const posts: Post[] = [
         question: "When can I go back to the gym after a tattoo?",
         answer:
           "Give it about a week for most placements. The concerns are sweat on an open wound, stretching the healing skin, and shared equipment carrying bacteria. Light activity that does not involve the tattooed area can resume sooner.",
-      },
-    ],
-  },
-
-  {
-    slug: "tattoo-price-in-kolkata",
-    category: "Pricing",
-    related: [
-      "how-to-choose-a-tattoo-artist-in-kolkata",
-      "tattoo-cover-up-and-removal-options",
-    ],
-    title: "What Does a Tattoo Cost in Kolkata?",
-    metaTitle: "Tattoo Price in Kolkata: How Pricing Actually Works",
-    description: `Small tattoos start at ${siteConfig.startingPrice.display} at The Ink Room, Kolkata. An honest breakdown of what actually drives tattoo pricing (size, detail, placement and session time) and why the cheapest quote is usually the most expensive one.`,
-    excerpt: `Pieces start at ${siteConfig.startingPrice.display}. Why two artists quote wildly different prices for the same design, what actually drives the cost, and how to read a quote properly.`,
-    readingMinutes: 6,
-    publishedAt: "2026-08-15",
-    updatedAt: "2026-08-15",
-    image: "/img/tattoo6.jpg",
-    blocks: [
-      {
-        type: "p",
-        text: "Tattoo pricing confuses people because it is not priced like a product. Two artists in Kolkata can quote very different numbers for what looks like the same design, and neither is necessarily overcharging. Here is what is actually being priced.",
-      },
-      {
-        type: "h2",
-        text: "What you are actually paying for",
-      },
-      {
-        type: "p",
-        text: "A tattoo quote covers four separate things, and understanding the split makes any quote easier to read.",
-      },
-      {
-        type: "ul",
-        items: [
-          "Design time. A custom piece is drawn before you arrive, often revised two or three times. That work happens whether or not you eventually book.",
-          "Session time. The actual tattooing, which is the most visible part but rarely the largest cost on small pieces.",
-          "Consumables. Needles, ink, grips, tips, barrier film, and stencil supplies are single-use. All of it is discarded after your session.",
-          "Skill and risk. Fine line work, script and lettering, and anything on difficult skin or awkward placement demand a level of control that takes years to build and cannot be rushed.",
-        ],
-      },
-      {
-        type: "h2",
-        text: "The factors that move the number",
-      },
-      {
-        type: "h3",
-        text: "Size",
-      },
-      {
-        type: "p",
-        text: "The obvious one, but it is not linear. Doubling the dimensions of a design roughly quadruples the area to be filled, so a piece twice as wide is not twice the price.",
-      },
-      {
-        type: "h3",
-        text: "Detail density",
-      },
-      {
-        type: "p",
-        text: "This matters more than size. A palm-sized piece of dense fine line work with heavy shading can take longer than a much larger, simpler design. Realism and micro-detail sit at the expensive end for exactly this reason.",
-      },
-      {
-        type: "h3",
-        text: "Placement",
-      },
-      {
-        type: "p",
-        text: "Ribs, sternum, feet, hands, elbows and the inside of the arm are slower to work on: the skin moves, it is thinner, and the client needs more breaks. A forearm or outer shoulder piece of identical design will usually cost less than the same thing on the ribs.",
-      },
-      {
-        type: "h3",
-        text: "Colour versus black and grey",
-      },
-      {
-        type: "p",
-        text: "Colour work takes longer, uses more consumables, and often needs a second pass for saturation. Black and grey is generally quicker for equivalent coverage.",
-      },
-      {
-        type: "h2",
-        text: "Minimum charges",
-      },
-      {
-        type: "p",
-        text: "Almost every serious studio has a minimum. It surprises people asking about a tiny design, but the logic is simple: a fresh needle, fresh ink, a sterile setup and a full station breakdown cost the same whether the tattoo is one inch or four. Below a certain point, the setup is the job.",
-      },
-      {
-        type: "note",
-        text: "If an artist quotes you well below the local minimum for a piece, ask what they are reusing. That is usually where the saving comes from.",
-      },
-      {
-        type: "h2",
-        text: "Why the cheapest quote is usually the most expensive",
-      },
-      {
-        type: "p",
-        text: "Cover-ups and laser removal both cost several times what the original tattoo did, and laser is a multi-session process that is painful and never guaranteed to be complete. A badly done tattoo is not a small loss you can absorb. It is a permanent problem on your body that costs far more to solve than to avoid.",
-      },
-      {
-        type: "p",
-        text: "The realistic risks at the very bottom of the market are blown-out lines that spread and blur within a year, patchy healing from poor needle depth, wobbly linework that no amount of touch-up fixes, and (the serious one) hygiene shortcuts. Reused needles and unsterilised equipment carry genuine bloodborne infection risk.",
-      },
-      {
-        type: "h2",
-        text: "Questions worth asking before you book",
-      },
-      {
-        type: "ol",
-        items: [
-          "Is the quote for the whole piece, or per hour? Both are normal; you just need to know which.",
-          "Does the price include the design and any revisions?",
-          "Are touch-ups included, and for how long after the session?",
-          "Are needles single-use and opened in front of the client?",
-          "Can I see healed photos, not just fresh ones? Fresh tattoos all look sharp. Healed work is the real test of an artist.",
-        ],
-      },
-      {
-        type: "p",
-        text: "That last question is the most useful one on the list, and the one fewest people ask.",
-      },
-      {
-        type: "h2",
-        text: "Getting a quote from us",
-      },
-      {
-        type: "p",
-        text: `At The Ink Room, small minimal pieces start at ${siteConfig.startingPrice.display}. From there the number scales with everything covered above. A large, detailed custom piece running across multiple sittings sits at the opposite end of the range entirely. That spread is not evasiveness; it genuinely is the difference between a two-inch script tattoo and a full sleeve.`,
-      },
-      {
-        type: "p",
-        text: "We quote per piece rather than on a fixed rate card, because the same design can be a very different job depending on size and placement. Message us on WhatsApp with your reference or idea, a rough size in inches, and where on the body you want it. That is enough to give you a real number rather than a vague range. The quote covers the design, the session and the consumables, and nothing is added afterwards.",
-      },
-    ],
-    faq: [
-      {
-        question: "How much does a small tattoo cost in Kolkata?",
-        answer: `At The Ink Room, small minimal pieces start at ${siteConfig.startingPrice.display} ${siteConfig.startingPrice.note}. Anything larger is quoted per piece, since size, detail density and placement change the job substantially, so send your reference and a rough size on WhatsApp for a real number.`,
-      },
-      {
-        question: "Why do tattoo artists charge a minimum price?",
-        answer:
-          "Because the sterile setup costs the same regardless of tattoo size. Fresh needles, ink, grips, barrier film, and full station breakdown and sterilisation are required for a one-inch tattoo just as much as for a large piece.",
-      },
-      {
-        question: "Is it cheaper to get a tattoo without colour?",
-        answer:
-          "Usually, yes. Black and grey work generally takes less time than colour for the same coverage, since colour often needs additional passes to reach full saturation and uses more consumables.",
-      },
-      {
-        question: "Do you charge extra for at-home tattoo sessions?",
-        answer:
-          "Travel is factored into the quote for at-home appointments, and it depends on the area: Tollygunge is a very different trip from New Town. Whatever it comes to is confirmed on WhatsApp before you book, and nothing is added after the session.",
-      },
-      {
-        question: "Are touch-ups charged separately?",
-        answer:
-          "Message us to confirm for your specific piece. Touch-ups needed because of normal healing variation are treated differently from reworking a tattoo that was not cared for during healing, which is why the aftercare guidance matters.",
       },
     ],
   },
@@ -921,7 +2586,7 @@ export const posts: Post[] = [
   {
     slug: "how-to-choose-a-tattoo-artist-in-kolkata",
     category: "Choosing an artist",
-    related: ["tattoo-price-in-kolkata", "first-tattoo-guide"],
+    related: ["first-tattoo-guide"],
     title: "How to Choose a Tattoo Artist in Kolkata",
     metaTitle: "How to Choose a Tattoo Artist in Kolkata: A Checklist",
     description:
@@ -1081,7 +2746,7 @@ export const posts: Post[] = [
   {
     slug: "tattoo-cover-up-and-removal-options",
     category: "Planning",
-    related: ["tattoo-price-in-kolkata", "how-to-choose-a-tattoo-artist-in-kolkata"],
+    related: ["how-to-choose-a-tattoo-artist-in-kolkata"],
     title: "Covering Up or Removing a Tattoo: Your Real Options",
     metaTitle: "Tattoo Cover-Up vs Removal: What Actually Works",
     description:

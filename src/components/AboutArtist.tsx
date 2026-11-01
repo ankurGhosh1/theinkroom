@@ -57,6 +57,12 @@ export const AboutArtist = () => {
 
             <div className="flex flex-wrap gap-4 mt-9">
               <Link
+                href="/female-tattoo-artist-kolkata"
+                className="px-6 py-3 text-neutral-200 border border-neutral-700 hover:border-red-600 hover:text-red-500 transition-colors rounded-md"
+              >
+                Why a female artist
+              </Link>
+              <Link
                 href="/blog/first-tattoo-guide"
                 className="px-6 py-3 text-neutral-200 border border-neutral-700 hover:border-red-600 hover:text-red-500 transition-colors rounded-md"
               >

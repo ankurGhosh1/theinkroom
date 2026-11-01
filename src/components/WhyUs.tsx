@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Container } from "@/components/Container";
 
 const features = [
@@ -48,6 +49,17 @@ export const WhyUs = () => {
             </div>
           ))}
         </div>
+
+        <p className="mt-16 text-center text-neutral-400 leading-relaxed">
+          Looking to cover a scar? Read about{" "}
+          <Link
+            href="/scar-cover-up-tattoos-kolkata"
+            className="text-red-500 hover:text-red-400 transition-colors"
+          >
+            scar cover-up tattoos
+          </Link>
+          .
+        </p>
       </Container>
     </section>
   );

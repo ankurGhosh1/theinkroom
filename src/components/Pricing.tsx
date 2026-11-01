@@ -1,28 +1,9 @@
-import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Cta } from "@/components/Cta";
-import { siteConfig } from "@/data/site";
-
-const { pricing } = siteConfig;
+import { rateCard } from "@/lib/pricing";
 
 // Rows without a value yet are dropped rather than rendered empty.
-const rates = [
-  { title: "Minimum charge", value: pricing.minimumCharge },
-  { title: "Small pieces (up to 3 inches)", value: pricing.small },
-  { title: "Medium pieces (3-6 inches)", value: pricing.medium },
-  { title: "Large / custom work", value: "Quoted after consultation" },
-  {
-    title: "At-home session",
-    value: pricing.atHomeMinimum && `${pricing.atHomeMinimum} minimum`,
-  },
-  {
-    title: "Deposit",
-    value:
-      pricing.deposit &&
-      `${pricing.deposit}, non-refundable, adjusted against the final price`,
-  },
-  { title: "Reschedule policy", value: pricing.reschedule },
-].filter((rate) => rate.value);
+const rates = rateCard().filter((rate) => rate.value);
 
 export const Pricing = () => {
   return (
@@ -52,16 +33,8 @@ export const Pricing = () => {
           ))}
         </div>
 
-        <div className="mt-16 text-center space-y-3">
+        <div className="mt-16 text-center">
           <p className="text-neutral-100">Consultation is free.</p>
-          <p>
-            <Link
-              href="/blog/tattoo-price-in-kolkata"
-              className="text-red-500 hover:text-red-400 transition-colors"
-            >
-              How tattoo pricing works in Kolkata
-            </Link>
-          </p>
         </div>
       </Container>
 

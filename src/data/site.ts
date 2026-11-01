@@ -34,6 +34,30 @@ export const siteConfig = {
     bio: "Soniya is the founder and resident artist at The Ink Room, a custom tattoo studio in Behala, Kolkata. She works primarily in fine line, floral, script and minimal styles, and designs every piece from scratch in consultation with the client.",
   },
 
+  /**
+   * How sessions run, for /female-tattoo-artist-kolkata. Blank values are
+   * left out of the page rather than guessed.
+   */
+  studio: {
+    // "The consultation usually takes ___." e.g. "about twenty minutes".
+    consultationLength: "", // TODO: Ankur to supply
+    // A full sentence answering "Can I bring a friend?". The FAQ question is
+    // hidden until this is filled in.
+    companionPolicy: "", // TODO: Ankur to supply
+  },
+
+  /**
+   * /scar-cover-up-tattoos-kolkata. Blank values are left out of the page
+   * rather than guessed.
+   */
+  scarCoverUp: {
+    // Studio policy, if there is one: "As a minimum, we ask that a scar is at
+    // least ___ old." e.g. "a year". Leave blank to defer entirely to the doctor.
+    minimumScarAge: "", // TODO: Ankur to supply
+    // A full sentence on how a follow-up session is charged, if one is needed.
+    followUpPricing: "", // TODO: Ankur to supply
+  },
+
   phone: "+918961248160",
   phoneDisplay: "+91 89612 48160",
   whatsapp: "8961248160",
@@ -83,25 +107,68 @@ export const siteConfig = {
    */
   priceRange: "₹₹",
 
-  /** ⚠️ CONFIRM: shown publicly on the pricing guide. */
   startingPrice: {
-    amount: 699,
+    amount: 599,
     currency: "INR",
-    display: "₹699",
-    note: "for a small, minimal piece",
+    display: "₹599",
+    note: "for a minimalist or tiny piece",
   },
 
   /**
-   * Homepage pricing section. ⚠️ TODO: fill in with the studio's real figures.
-   * Any value left blank is hidden on the page rather than shown empty.
+   * Published prices. The homepage pricing section reads the rate fields via
+   * lib/pricing; /tattoo-prices-kolkata reads `typicalRanges` and `deposit*`.
+   * Blank values are hidden rather than shown empty.
    */
   pricing: {
-    minimumCharge: "",
-    small: "", // up to 3 inches
-    medium: "", // 3-6 inches
+    minimumCharge: "", // TODO: Ankur to supply
+    small: "", // up to 3 inches. TODO: Ankur to supply
+    medium: "", // 3-6 inches. TODO: Ankur to supply
     atHomeMinimum: "₹999",
-    deposit: "",
-    reschedule: "", // e.g. "48 hours notice"
+    deposit: "", // homepage rate card. TODO: Ankur to supply
+    reschedule: "", // e.g. "48 hours notice". TODO: Ankur to supply
+    paymentMethods: "", // e.g. "UPI, cash or card". TODO: Ankur to supply
+    /** Typical ranges on the prices page. Not a fixed rate card. */
+    typicalRanges: [
+      { label: "Minimalist / tiny pieces", value: "₹599 – ₹799" },
+      { label: "1 inch", value: "From ₹599" },
+      { label: "Up to 3 inches", value: "Around ₹1,500" },
+      { label: "Larger or custom work", value: "Quoted after consultation" },
+    ],
+    /** Pieces above this size need a deposit. */
+    depositThreshold: "20 inches",
+    depositPercent: "30%",
+
+    // Prices page fields below. Blank values are left out of the page rather
+    // than guessed. Write each one to fit the sentence shown in its comment.
+    //
+    // "Soniya draws your piece from scratch, with ___." e.g. "two rounds of changes".
+    designRevisions: "", // TODO: Ankur to supply
+    // "You leave with aftercare instructions ___." e.g. "in person and in writing on WhatsApp".
+    aftercareFormat: "", // TODO: Ankur to supply
+    // "Travel is charged ___." e.g. "at ₹X within Y km of the studio".
+    atHomeTravel: "", // TODO: Ankur to supply
+    // "Your quote stays valid for ___." e.g. "30 days".
+    quoteValidity: "", // TODO: Ankur to supply
+    // A full sentence on whether pieces at or under the threshold need a deposit.
+    depositBelowThreshold: "", // TODO: Ankur to supply
+    // "If you need to reschedule, please give us ___." e.g. "48 hours notice".
+    // (`reschedule` above is the same value, shown on the homepage rate card.)
+    // A full sentence on what happens to a deposit if you reschedule or cancel late.
+    depositOnReschedule: "", // TODO: Ankur to supply
+
+    /**
+     * "Recent pieces and what they cost" on the prices page. Placement is
+     * filled from what each photo shows; confirm it. Size and price are blank
+     * and show as "To be confirmed" until supplied.
+     */
+    recentPieces: [
+      { image: "/img/tattoo16.jpg", title: "Single-line dancing couple", alt: "Single-line fine line tattoo of a dancing couple on the ribs", placement: "Side of the ribs", size: "", price: "" }, // TODO: Ankur to supply size and price; confirm placement
+      { image: "/img/tattoo2.jpg", title: "Three small dragons", alt: "Three small black dragons tattooed across the collarbone", placement: "Collarbone", size: "", price: "" }, // TODO: Ankur to supply size and price; confirm placement
+      { image: "/img/tattoo15.jpg", title: "Crescent moon and floral garland", alt: "Crescent moon and floral garland tattoo on the back of the neck", placement: "Back of the neck", size: "", price: "" }, // TODO: Ankur to supply size and price; confirm placement
+      { image: "/img/tattoo4.jpg", title: "Hourglass landscape", alt: "Hourglass landscape tattoo in black linework on the forearm", placement: "Forearm", size: "", price: "" }, // TODO: Ankur to supply size and price; confirm placement
+      { image: "/img/tattoo13.jpg", title: "Watercolour hummingbird", alt: "Watercolour-style hummingbird tattoo on the chest", placement: "Chest, below the collarbone", size: "", price: "" }, // TODO: Ankur to supply size and price; confirm placement
+      { image: "/img/tattoo14.jpg", title: "Snake and rose", alt: "Snake and rose colour tattoo running from the hand up the arm", placement: "Hand and forearm", size: "", price: "" }, // TODO: Ankur to supply size and price; confirm placement
+    ],
   },
 
   social: [

@@ -78,7 +78,13 @@ export default function Home() {
       <WhyUs />
       <Pricing />
       <Testimonials />
-      <BlogTeaser />
+      <BlogTeaser
+        featured={[
+          "first-tattoo-guide",
+          "tattoo-aftercare-guide-kolkata",
+          "small-tattoo-cost-kolkata",
+        ]}
+      />
 
       <FaqSection items={homeFaq} id="faqs" />
 

@@ -119,6 +119,34 @@ export function businessAreaServed(areas: string[]) {
   };
 }
 
+/**
+ * A specific service the business offers, provided by the site-wide business
+ * entity. No `offers`: prices change, and stale price markup causes Search
+ * Console errors.
+ */
+export function serviceSchema({
+  name,
+  serviceType,
+  path,
+  description,
+}: {
+  name: string;
+  serviceType: string;
+  path: string;
+  description: string;
+}) {
+  return {
+    "@type": "Service",
+    "@id": `${siteConfig.url}${path}#service`,
+    name,
+    serviceType,
+    description,
+    url: `${siteConfig.url}${path}`,
+    provider: { "@id": `${siteConfig.url}/#business` },
+    areaServed: { "@type": "City", name: "Kolkata" },
+  };
+}
+
 /** Identifies the current page and ties it back to the business. */
 export function webPageSchema({
   name,
