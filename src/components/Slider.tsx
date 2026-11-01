@@ -80,7 +80,7 @@ export default function HeroSlider({
       {/* <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center text-white px-6">
         <h1 className="text-5xl md:text-7xl font-bold mb-4">The Ink Room</h1>
         <p className="text-xl md:text-3xl max-w-2xl">
-          Best Female Tattoo Artist in Kolkata • Behala
+          Custom Tattoo Studio • Behala, Kolkata
         </p>
       </div> */}
     </div>

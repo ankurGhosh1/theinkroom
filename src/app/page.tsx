@@ -2,6 +2,7 @@ import { Hero } from "@/components/Hero";
 import { Stats } from "@/components/Stats";
 import { Gallery } from "@/components/Gallery";
 import { AboutArtist } from "@/components/AboutArtist";
+import { Services } from "@/components/Services";
 import { WhyUs } from "@/components/WhyUs";
 import { Pricing } from "@/components/Pricing";
 import { Testimonials } from "@/components/Testimonials";
@@ -17,7 +18,9 @@ import { siteConfig } from "@/data/site";
 export const metadata = createPageMetadata({
   // The root segment does not inherit the layout's title template, so the
   // brand is written out in full here.
-  title: "Soniya | Female Tattoo Artist in Kolkata | The Ink Room",
+  // "Female tattoo artist in Kolkata" is owned by /female-tattoo-artist-kolkata,
+  // so the homepage targets the studio itself.
+  title: "The Ink Room | Custom Tattoo Studio in Behala, Kolkata",
   description: siteConfig.description,
   image: "/img/tattoo16.jpg",
   url: "/",
@@ -75,6 +78,7 @@ export default function Home() {
       <Stats />
       <Gallery />
       <AboutArtist />
+      <Services />
       <WhyUs />
       <Pricing />
       <Testimonials />

@@ -39,10 +39,9 @@ export const AboutArtist = () => {
                 whoever happens to be free that afternoon.
               </p>
               <p>
-                As one of the few women running her own tattoo studio in
-                Kolkata, Soniya works with a lot of clients getting their first
-                piece, and with women who would simply rather be tattooed by
-                another woman. That shapes how sessions run: more time on the
+                As a woman running her own tattoo studio in Kolkata, Soniya
+                works with clients getting their first piece, and with women
+                who would simply rather be tattooed by another woman. That shapes how sessions run: more time on the
                 consultation, no pressure to size up, and a genuine
                 conversation about placement before a needle is anywhere near
                 your skin.

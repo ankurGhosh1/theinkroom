@@ -14,27 +14,15 @@ import { faqSchema, jsonLdGraph } from "@/lib/schema";
 const { pricing } = siteConfig;
 const depositRule = `For tattoos above ${pricing.depositThreshold}, we take a ${pricing.depositPercent} deposit, which is deducted from the final amount.`;
 
-// Sentences built from values still to be supplied in siteConfig.pricing.
-// Each is empty until its value is filled in, so nothing half-written shows.
-const travelSentence = pricing.atHomeTravel
-  ? `Travel is charged ${pricing.atHomeTravel}.`
-  : "";
-const validitySentence = pricing.quoteValidity
-  ? `Your quote stays valid for ${pricing.quoteValidity}.`
-  : "";
-const rescheduleSentence = pricing.reschedule
-  ? `If you need to reschedule, please give us ${pricing.reschedule}.`
-  : "";
+// Show the price columns only once at least one piece has a price.
+const piecesHavePrices = pricing.recentPieces.some((piece) => piece.price);
 
 export const metadata = createPageMetadata({
   title: "Tattoo Price in Kolkata | Typical Costs",
   description:
-    "Tattoo price in Kolkata at The Ink Room: tiny pieces ₹599 to ₹799, up to 3 inches around ₹1,500. Why we quote per piece and what changes the cost.",
+    "Tattoo price in Kolkata at The Ink Room: tiny pieces ₹599 to ₹799, up to 3 inches around ₹1,500. What a session includes and how to get a quote.",
   image: "/img/tattoo9.jpg",
   url: "/tattoo-prices-kolkata",
-  // Kept out of search until the prices are final. Remove this, add the page
-  // to the sitemap, and link it from the homepage and footer in one commit.
-  noindex: true,
 });
 
 const priceFaq: FaqItem[] = [
@@ -47,8 +35,6 @@ const priceFaq: FaqItem[] = [
     question: "Do I need to pay a deposit?",
     answer: `${depositRule} No deposit is taken over chat before the design is agreed.`,
   },
-  // TODO: Ankur to supply siteConfig.pricing.paymentMethods. Until then this
-  // question is left out rather than answered with a guess.
   ...(pricing.paymentMethods
     ? [
         {
@@ -69,8 +55,7 @@ const priceFaq: FaqItem[] = [
   },
   {
     question: "Is there an extra charge for at-home sessions?",
-    // TODO: Ankur to supply siteConfig.pricing.atHomeTravel.
-    answer: `At-home sessions have a minimum spend of ${pricing.atHomeMinimum}.${travelSentence ? ` ${travelSentence}` : ""} Your full quote is confirmed on WhatsApp before you book.`,
+    answer: `At-home sessions have a minimum spend of ${pricing.atHomeMinimum}. Your full quote is confirmed on WhatsApp before you book.`,
   },
 ];
 
@@ -175,18 +160,18 @@ export default function TattooPricesKolkata() {
             <li className={bullet}>Consultation is free.</li>
           </ul>
 
-          {/* Recent pieces: the most important section on the page. */}
-          <h2 className={h2}>Recent pieces and what they cost</h2>
+          {/* Recent pieces. Prices are optional per piece; the heading and
+              copy only talk about cost once some are filled in. */}
+          <h2 className={h2}>
+            {piecesHavePrices ? "Recent pieces and what they cost" : "Recent pieces"}
+          </h2>
           <p className={p}>
-            A few pieces from the studio, each with its size, placement and
-            what it cost. Use them as a reference point for your own idea. Your
-            quote depends on your design, so a similar-looking piece can still
-            be priced differently.
+            {piecesHavePrices
+              ? "A few pieces from the studio, with their placement and what they cost. Use them as a reference point for your own idea. Your quote depends on your design, so a similar-looking piece can still be priced differently."
+              : "A few pieces from the studio and where they sit on the body. Every piece is quoted on its own design, so send yours on WhatsApp for a figure."}
           </p>
         </div>
 
-        {/* TODO: Ankur to supply size and price for each piece in
-            siteConfig.pricing.recentPieces. */}
         <div className="max-w-5xl mx-auto mb-6">
           <RecentPieces pieces={pricing.recentPieces} />
         </div>
@@ -207,9 +192,7 @@ export default function TattooPricesKolkata() {
             </li>
             <li className={bullet}>
               <span className={lead}>A custom design.</span> Soniya draws your
-              piece from scratch
-              {/* TODO: Ankur to supply siteConfig.pricing.designRevisions */}
-              {pricing.designRevisions && `, with ${pricing.designRevisions}`}.
+              piece from scratch, with {pricing.designRevisions}.
               You see the design and can ask for changes before the session.
             </li>
             <li className={bullet}>
@@ -225,9 +208,7 @@ export default function TattooPricesKolkata() {
             </li>
             <li className={bullet}>
               <span className={lead}>Aftercare instructions.</span> You leave
-              knowing how to look after the tattoo
-              {/* TODO: Ankur to supply siteConfig.pricing.aftercareFormat */}
-              {pricing.aftercareFormat && `, ${pricing.aftercareFormat}`}. Our{" "}
+              knowing how to look after the tattoo. Our{" "}
               <Link href="/blog/tattoo-aftercare-guide-kolkata" className={link}>
                 aftercare guide for Kolkata weather
               </Link>{" "}
@@ -257,10 +238,8 @@ export default function TattooPricesKolkata() {
             ))}
           </ol>
           <p className={p}>
-            {/* TODO: Ankur to supply siteConfig.pricing.quoteValidity */}
-            {validitySentence && `${validitySentence} `}If you decide on the day
-            to change the size, the detail or the placement, you are told the
-            new figure before the needle starts.
+            If you decide on the day to change the size, the detail or the
+            placement, you are told the new figure before the needle starts.
           </p>
           <p className={p}>
             For how studios price tattoos in general, what a fair quote
@@ -295,33 +274,20 @@ export default function TattooPricesKolkata() {
           </p>
           <p className={p}>
             The minimum spend for an at-home session is {pricing.atHomeMinimum}.
-            {/* TODO: Ankur to supply siteConfig.pricing.atHomeTravel */}
-            {travelSentence && ` ${travelSentence}`} Your full quote is
-            confirmed on WhatsApp before you book.
+            Your full quote is confirmed on WhatsApp before you book.
           </p>
 
-          {/* Deposit and rescheduling */}
-          <h2 className={h2}>Deposits and rescheduling</h2>
+          {/* Deposits */}
+          <h2 className={h2}>Deposits</h2>
           <p className={p}>
             {depositRule} It is only taken once the design is agreed, never over
             chat before that.
-            {/* TODO: Ankur to supply siteConfig.pricing.depositBelowThreshold */}
-            {pricing.depositBelowThreshold && ` ${pricing.depositBelowThreshold}`}
           </p>
-          {/* TODO: Ankur to supply siteConfig.pricing.reschedule and
-              siteConfig.pricing.depositOnReschedule */}
-          {(rescheduleSentence || pricing.depositOnReschedule) && (
-            <p className={p}>
-              {[rescheduleSentence, pricing.depositOnReschedule]
-                .filter(Boolean)
-                .join(" ")}
-            </p>
-          )}
 
           <div className="my-8 border-l-2 border-red-600 bg-neutral-900/60 px-6 py-5 rounded-r-lg">
             <p className="text-neutral-200 leading-relaxed">
               Every piece here is designed and tattooed by Soniya, a{" "}
-              <Link href="/" className={link}>
+              <Link href="/female-tattoo-artist-kolkata" className={link}>
                 female tattoo artist in Kolkata
               </Link>
               , so the person who quotes you is the person who does the work.

@@ -10,6 +10,237 @@ import type { Post } from "./types";
  */
 export const posts: Post[] = [
   {
+    slug: "tattoo-ideas-for-slim-arms",
+    category: "Styles",
+    related: [
+      "fine-line-tattoos-guide",
+      "small-tattoo-cost-kolkata",
+      "tattoo-pain-chart-by-placement",
+    ],
+    title: "Tattoos for Skinny Arms: Designs and Placements That Fit",
+    metaTitle: "Tattoos for Skinny Arms: What Works",
+    description:
+      "Tattoos for skinny arms: what works on a narrow canvas, wrap-around vs flat designs, which fine line styles hold up small, and the placements that suit.",
+    excerpt:
+      "A slim arm is a narrow, curved canvas. Which shapes fit it, when to wrap a design rather than keep it flat, and the placements that suit.",
+    readingMinutes: 8,
+    publishedAt: "2026-11-01",
+    updatedAt: "2026-11-01",
+    // Hero: a tall, narrow design on the forearm. Captions describe the
+    // designs only, never the wearer's arm.
+    image: "/img/tattoo4.jpg",
+    blocks: [
+      {
+        type: "p",
+        text: "Tattoos for skinny arms work best when the design is shaped for the arm rather than shrunk to fit it. A slim arm is a narrow, curved canvas: there is plenty of length but not much flat width, so designs that run lengthways, or that wrap around the arm, sit better than wide ones. Here is how to choose a shape, a style and a placement that suit it.",
+      },
+      {
+        type: "h2",
+        text: "What changes on a narrow canvas",
+      },
+      {
+        type: "p",
+        text: "On a slim arm, the flat area across the front of the forearm or upper arm is narrow, and the arm curves away quickly on either side. That has three practical effects.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Width runs out before length does. A design can grow along the arm far more easily than across it.",
+          "Wide designs bend. Anything wider than the flat strip curves around the sides of the arm, so you never see it straight on, and shapes like circles can look stretched or squashed from the front.",
+          "There is less room side by side. Detail placed next to other detail has less space, so it needs more care to stay clear as it ages.",
+        ],
+      },
+      {
+        type: "p",
+        text: "None of this rules anything out. It changes which shapes work best, and where they go.",
+      },
+      {
+        type: "h2",
+        text: "Flat designs vs wrap-around designs",
+      },
+      {
+        type: "h3",
+        text: "Flat designs",
+      },
+      {
+        type: "p",
+        text: "A flat design sits on the front-facing strip of the arm and is seen whole from one angle. On a slim arm, keep its width within that strip and let it grow in length instead: a vertical stem, a feather, a line of script running down the forearm, or a tall, narrow composition.",
+      },
+      {
+        type: "p",
+        text: "Flat designs suit pieces you want to read clearly, like a word or a single motif. Their limit is width. Once a design needs to be wider than the flat strip, it is time to think about wrapping it.",
+      },
+      {
+        type: "h3",
+        text: "Wrap-around designs",
+      },
+      {
+        type: "p",
+        text: "A wrap-around design works with the curve of the arm instead of fighting it: a thin band, a vine or a snake that spirals up the arm, or florals that travel around rather than across. On a slim arm, wrapping can be how a larger design fits at all.",
+      },
+      {
+        type: "image",
+        src: "/img/tattoo14.jpg",
+        alt: "Snake and rose colour tattoo running from the hand up the arm",
+        caption: "A snake winding from the hand up the arm: a design that wraps around the arm instead of sitting flat on it.",
+      },
+      {
+        type: "p",
+        text: "The trade-off is that a wrap-around piece is never seen in full from one angle, and it depends on careful placement. Check the stencil with your arm relaxed and in a few positions, because a band that looks straight with your arm raised can tilt when it hangs. Our guide to what to expect at your appointment covers how the stencil is placed and moved.",
+        links: [
+          {
+            text: "what to expect at your appointment",
+            href: "/blog/female-tattoo-artist-what-to-expect",
+          },
+        ],
+      },
+      {
+        type: "h3",
+        text: "Choosing between them",
+      },
+      {
+        type: "p",
+        text: "If the design has a clear front, like a word or a single motif, keep it flat and narrow. If it is a pattern or a flowing composition, consider wrapping it. Some designs do both: a flat main motif with a few leaves or lines that curl around the sides of the arm.",
+      },
+      {
+        type: "h2",
+        text: "Shapes that suit a slim arm",
+      },
+      {
+        type: "ul",
+        items: [
+          "Long, narrow compositions: stems, feathers, arrows, a vertical row of small motifs, or script running lengthways.",
+          "Compact single motifs: a small moon, a star or a simple symbol, sized to fit the flat strip.",
+          "Thin bands and wraps: a fine line band, a vine or a chain of small elements around the wrist or upper arm.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The shapes that struggle are wide and square: a broad horizontal piece across the forearm, a large circle or mandala wider than the flat strip, or a rectangular scene. These can still work, but by going bigger and wrapping rather than by shrinking to fit.",
+      },
+      {
+        type: "h2",
+        text: "Styles that hold up as fine line at small scale",
+      },
+      {
+        type: "p",
+        text: "If your design is small and in fine line, these styles keep their shape best over the years:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Single-line and minimal outlines: open shapes with space inside them.",
+          "Botanical stems and sprigs: organic lines that look natural as they soften, rather than damaged.",
+          "Script, with room: a short word in an open font, running lengthways so each letter gets its own space.",
+          "Simple geometric shapes: lines, dots and basic forms, without dense patterns.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/img/tattoo9.jpg",
+        alt: "Minimal crescent moon and stars tattoo on the forearm",
+        caption: "Crescent moon and stars on the forearm: a compact fine line design with plenty of open space around it.",
+      },
+      {
+        type: "p",
+        text: "The styles that struggle at small scale are the ones packed with detail: dense shading, micro-realism, tiny portraits and long quotes. Our guide to when a small tattoo is a bad idea shows what each of those tends to look like after a few years.",
+        links: [
+          {
+            text: "when a small tattoo is a bad idea",
+            href: "/blog/small-tattoo-cost-kolkata",
+          },
+        ],
+      },
+      {
+        type: "p",
+        text: "Fine line also softens over the years and needs protecting from the sun. Our fine line tattoo guide covers how to plan for that.",
+        links: [{ text: "fine line tattoo guide", href: "/blog/fine-line-tattoos-guide" }],
+      },
+      {
+        type: "h2",
+        text: "Placements that suit a slim arm",
+      },
+      {
+        type: "ul",
+        items: [
+          "Inner forearm: a flat, even strip that you can see yourself. It suits vertical designs and script.",
+          "Outer forearm: a little more curved than the inner side, and among the easier spots in terms of pain.",
+          "Side of the forearm: a long, narrow line from wrist to elbow that suits stems, feathers and script.",
+          "Back of the upper arm: a flat area with a little more width than the forearm.",
+          "Inner bicep: flat and discreet, but the skin is thinner, so it is more sensitive.",
+          "Wrist and upper arm: natural places for thin bands, vines and small wrap-around designs.",
+        ],
+      },
+      {
+        type: "p",
+        text: "How much each spot hurts is covered in our tattoo pain chart by placement.",
+        links: [{ text: "tattoo pain chart by placement", href: "/blog/tattoo-pain-chart-by-placement" }],
+      },
+      {
+        type: "p",
+        text: "If you would rather a woman designed and tattooed it, our page on finding a female tattoo artist in Kolkata explains how sessions run here.",
+        links: [
+          {
+            text: "female tattoo artist in Kolkata",
+            href: "/female-tattoo-artist-kolkata",
+          },
+        ],
+      },
+      {
+        type: "h2",
+        text: "Sizing a tattoo for a slim arm",
+      },
+      {
+        type: "p",
+        text: "Measure the arm, not the design. With a soft tape or a ruler, measure the width of the flat strip where you want the tattoo, then the length you are happy for it to cover. Size the design to that length, and keep its width inside the strip unless you want it to wrap.",
+      },
+      {
+        type: "p",
+        text: "Then check the design at its real size before you commit. Our guide to small tattoo cost in Kolkata includes a simple test for this.",
+        links: [
+          { text: "guide to small tattoo cost in Kolkata", href: "/blog/small-tattoo-cost-kolkata" },
+        ],
+      },
+      {
+        type: "h2",
+        text: "Getting it designed",
+      },
+      {
+        type: "p",
+        text: "A design shaped for your arm starts from your measurements, not a template. Send your reference, the placement and a rough size on WhatsApp, and mention that you want it shaped for a slim arm. The design can then be drawn to your proportions, and the stencil checked on your arm before anything starts. For what a piece like this costs, see our tattoo prices in Kolkata.",
+        links: [{ text: "tattoo prices in Kolkata", href: "/tattoo-prices-kolkata" }],
+      },
+    ],
+    faq: [
+      {
+        question: "What tattoos look good on skinny arms?",
+        answer:
+          "Designs that run lengthways or wrap around the arm: stems, feathers, script running down the forearm, thin bands and vines. Wide, square designs are harder to fit without wrapping them.",
+      },
+      {
+        question: "Should a tattoo on a slim arm wrap around?",
+        answer:
+          "It depends on the design. A word or a single motif is easiest to read flat and narrow on the front of the arm. Patterns and flowing designs can fit better wrapping around it.",
+      },
+      {
+        question: "Can I get a detailed tattoo on a thin forearm?",
+        answer:
+          "Yes, if the detail has room. Give it length rather than width, keep space between the lines, and avoid packing dense shading or tiny faces into a small area.",
+      },
+      {
+        question: "Where should I put a tattoo on a skinny arm?",
+        answer:
+          "The inner forearm is the flattest strip. The outer forearm and the side of the forearm suit long, narrow designs, and the back of the upper arm has a little more width. Thin bands suit the wrist and upper arm.",
+      },
+      {
+        question: "Will a tattoo on a slim arm change if my arm does?",
+        answer:
+          "A tattoo moves with your skin, so if your arm changes over the years, the tattoo changes with it. Organic designs such as florals and stems hide that better than precise geometry, where any distortion is easier to see.",
+      },
+    ],
+  },
+
+  {
     slug: "bohemian-tattoo-ideas",
     category: "Styles",
     related: [
@@ -33,9 +264,6 @@ export const posts: Post[] = [
     // floral garland) show boho motifs. tattoo16 is used only to illustrate
     // fine line linework and is captioned as exactly that. There are no
     // feathers, arrows, dreamcatchers or mandalas in /img, so none are shown.
-    //
-    // TODO: when /tattoo-prices-kolkata goes live (noindex removed), add a link
-    // to it in the final section, in the paragraph that begins "When you are ready".
     blocks: [
       {
         type: "p",
@@ -214,8 +442,11 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "When you are ready, send your references, a rough size in inches and the placement on WhatsApp. Our first tattoo guide covers what to expect if this is your first piece.",
-        links: [{ text: "first tattoo guide", href: "/blog/first-tattoo-guide" }],
+        text: "When you are ready, send your references, a rough size in inches and the placement on WhatsApp. Our first tattoo guide covers what to expect if this is your first piece, and our tattoo prices in Kolkata show typical costs.",
+        links: [
+          { text: "first tattoo guide", href: "/blog/first-tattoo-guide" },
+          { text: "tattoo prices in Kolkata", href: "/tattoo-prices-kolkata" },
+        ],
       },
     ],
     faq: [
@@ -269,7 +500,7 @@ export const posts: Post[] = [
     // might want a female artist; this post walks through the appointment.
     // Choosing an artist safely lives in how-to-choose-a-tattoo-artist-in-kolkata.
     // Durations: only the small-piece range already published in the first
-    // tattoo guide is used. Anything else is marked <!-- TODO: Ankur to supply -->.
+    // tattoo guide, and the consultation length, are stated.
     blocks: [
       {
         type: "p",
@@ -306,10 +537,9 @@ export const posts: Post[] = [
         type: "h2",
         text: "The consultation",
       },
-      // <!-- TODO: Ankur to supply --> how long a consultation typically takes (same value as siteConfig.studio.consultationLength).
       {
         type: "p",
-        text: "The consultation is a conversation about the tattoo before anything is booked. It covers:",
+        text: "The consultation is a conversation about the tattoo before anything is booked. It usually takes 20 to 30 minutes and covers:",
       },
       {
         type: "ul",
@@ -330,10 +560,9 @@ export const posts: Post[] = [
         type: "h2",
         text: "Approving the design",
       },
-      // <!-- TODO: Ankur to supply --> how many rounds of changes are included (same value as siteConfig.pricing.designRevisions).
       {
         type: "p",
-        text: "Soniya draws the design from scratch after the consultation. You see it before the session and can ask for changes: thicker or thinner lines, a different size, a detail added or taken out. Nothing is tattooed until you have approved the final version.",
+        text: "Soniya draws the design from scratch after the consultation. You see it before the session and can ask for one round of changes: thicker or thinner lines, a different size, a detail added or taken out. Nothing is tattooed until you have approved the final version.",
       },
       {
         type: "p",
@@ -428,7 +657,6 @@ export const posts: Post[] = [
         type: "h2",
         text: "During the session",
       },
-      // <!-- TODO: Ankur to supply --> typical tattooing time for medium and larger pieces.
       {
         type: "p",
         text: "How long the tattooing takes depends on the size, the detail and the placement. A small, simple piece typically takes around 30 to 60 minutes of needle time, though it varies, and the full appointment runs longer once the stencil and setup are included. Larger pieces take longer and may be split across sittings.",
@@ -450,7 +678,6 @@ export const posts: Post[] = [
         type: "p",
         text: "You can stop at any point, for any reason, and you do not have to explain why. When you say stop, the needle stops, and the area is cleaned and covered. What happens next depends on how far along the tattoo is.",
       },
-      // <!-- TODO: Ankur to supply --> how an unfinished session is charged.
       {
         type: "ul",
         items: [
@@ -466,7 +693,6 @@ export const posts: Post[] = [
         type: "h2",
         text: "The aftercare handover",
       },
-      // <!-- TODO: Ankur to supply --> how aftercare instructions are given (same value as siteConfig.pricing.aftercareFormat).
       {
         type: "p",
         text: "Before you leave, the tattoo is cleaned and covered, either with a wrap or with a breathable adhesive film. You are told how to look after it: when to take the covering off, how to wash it, what to put on it and what to avoid.",
@@ -495,7 +721,6 @@ export const posts: Post[] = [
     ],
     faq: [
       {
-        // <!-- TODO: Ankur to supply --> typical tattooing time for larger pieces, if wanted here.
         question: "How long does a tattoo appointment take?",
         answer:
           "It varies with the size, detail and placement of the piece. A small, simple tattoo typically takes around 30 to 60 minutes of needle time, and the full appointment runs longer once the stencil and setup are included. Larger pieces take longer and may be split across sittings.",
@@ -545,7 +770,7 @@ export const posts: Post[] = [
     // antiseptic products named, no prescriptions, no healing timelines, and
     // nothing on treating a possible infection beyond "see a doctor". This post
     // is about products; the healing process lives in the aftercare guide.
-    // Any cost figure is marked <!-- TODO: Ankur to supply -->.
+    // No product prices are given.
     blocks: [
       {
         type: "p",
@@ -600,7 +825,6 @@ export const posts: Post[] = [
         type: "h3",
         text: "Cleanser",
       },
-      // <!-- TODO: Ankur to supply --> typical cost of a fragrance-free cleanser in India.
       {
         type: "ul",
         items: [
@@ -614,7 +838,6 @@ export const posts: Post[] = [
         type: "h3",
         text: "Moisturiser",
       },
-      // <!-- TODO: Ankur to supply --> typical cost of an unscented moisturiser in India.
       {
         type: "ul",
         items: [
@@ -632,7 +855,6 @@ export const posts: Post[] = [
         type: "h3",
         text: "Sunscreen, for later",
       },
-      // <!-- TODO: Ankur to supply --> typical cost of a broad-spectrum sunscreen in India.
       {
         type: "p",
         text: "Sunscreen goes on only once the tattoo has fully healed and the skin is no longer broken or flaking. Look for a broad-spectrum sunscreen, which protects against both types of UV, ideally fragrance-free. This is the product that matters most for how the tattoo looks in the long run.",
@@ -641,7 +863,6 @@ export const posts: Post[] = [
         type: "h3",
         text: "Dedicated tattoo aftercare products",
       },
-      // <!-- TODO: Ankur to supply --> typical cost of a dedicated tattoo aftercare balm in India.
       {
         type: "p",
         text: "You will also find balms and lotions sold specifically for tattoos, usually online. Some are perfectly good. They are not essential, though, and a plain unscented moisturiser does the same basic job. If you buy one, run the same label checks as above.",
@@ -678,7 +899,6 @@ export const posts: Post[] = [
         type: "p",
         text: "If someone at the chemist suggests an antiseptic or an antibiotic cream for a new tattoo, it is fine to say no. A tattoo that is healing normally does not need medicine, and one that might be infected needs a doctor rather than an over-the-counter guess.",
       },
-      // <!-- TODO: Ankur to supply --> typical total cost of the basic kit below.
       {
         type: "p",
         text: "A basic kit does not need to be expensive. A fragrance-free cleanser, an unscented moisturiser and, later on, a sunscreen cover almost everything.",
@@ -798,15 +1018,17 @@ export const posts: Post[] = [
     // The pricing pillar: all generic pricing-model education lives here and
     // only here. The prices page and the other pricing posts link to it.
     //
-    // No price figures anywhere in this post. Each spot that needs one is
-    // marked <!-- TODO: Ankur to supply -->. A commented-out link to
-    // /tattoo-prices-kolkata waits at the end of the final section.
+    // Price figures here are approximate national ranges, worded as rough
+    // guides. Our own prices live on /tattoo-prices-kolkata.
     blocks: [
       {
         type: "p",
         text: "Tattoo prices are not a fixed list. Every quote you get is a pricing model applied to a particular design, and once you know which model a studio is using and what it covers, you can tell whether the quote is fair. That tells you far more than any single number.",
       },
-      // <!-- TODO: Ankur to supply --> a sourced national price range, if one is wanted here.
+      {
+        type: "p",
+        text: "As a rough guide, a small, simple tattoo in India typically costs somewhere between ₹500 and ₹3,000, a palm-sized piece with some shading ₹3,000 to ₹10,000, and large custom work well beyond that. These are approximate figures, and prices vary widely between cities and studios.",
+      },
       {
         type: "p",
         text: "If you have searched how much do tattoos cost and found answers that are wildly far apart, this is why. Studios charge in different ways, include different things, and price different amounts of risk. This guide explains how each pricing model works, what you are actually paying for, the red and green flags in a quote, and the questions to ask before you book. It is written for anyone comparing studios, wherever you are.",
@@ -823,10 +1045,9 @@ export const posts: Post[] = [
         type: "h3",
         text: "Minimum charge",
       },
-      // <!-- TODO: Ankur to supply --> sourced typical minimum charge range.
       {
         type: "p",
-        text: "A minimum charge is the lowest amount a studio will take for any tattoo, however small. It covers the fixed cost of setting up and breaking down a sterile station. Above the minimum, the studio prices in one of the other ways below.",
+        text: "A minimum charge is the lowest amount a studio will take for any tattoo, however small. It covers the fixed cost of setting up and breaking down a sterile station. As a rough guide, minimum charges in India tend to sit somewhere between ₹500 and ₹1,500. Above the minimum, the studio prices in one of the other ways below.",
       },
       {
         type: "ul",
@@ -857,10 +1078,9 @@ export const posts: Post[] = [
         type: "h3",
         text: "Hourly rate",
       },
-      // <!-- TODO: Ankur to supply --> sourced typical hourly rate range.
       {
         type: "p",
-        text: "You pay for the time the artist spends tattooing, at an agreed rate per hour.",
+        text: "You pay for the time the artist spends tattooing, at an agreed rate per hour. As a rough guide, hourly rates in India run from around ₹1,500 to ₹5,000, and higher for artists in high demand.",
       },
       {
         type: "ul",
@@ -875,10 +1095,9 @@ export const posts: Post[] = [
         type: "h3",
         text: "Per-session or day rate",
       },
-      // <!-- TODO: Ankur to supply --> sourced typical half-day and full-day rates.
       {
         type: "p",
-        text: "You book a block of time, such as a half day or a full day, for a fixed price, and the artist works on your piece for as long as the session allows. It suits large work spread over several visits.",
+        text: "You book a block of time, such as a half day or a full day, for a fixed price, and the artist works on your piece for as long as the session allows. It suits large work spread over several visits. As a rough guide, a full day can run from around ₹10,000 to ₹30,000 or more.",
       },
       {
         type: "ul",
@@ -1216,7 +1435,7 @@ export const posts: Post[] = [
       {
         type: "p",
         text: "We are a one-artist custom studio in Behala, Kolkata. Every piece is designed and tattooed by Soniya, a female tattoo artist in Kolkata, and priced as a flat quote per piece after a free consultation.",
-        links: [{ text: "female tattoo artist in Kolkata", href: "/" }],
+        links: [{ text: "female tattoo artist in Kolkata", href: "/female-tattoo-artist-kolkata" }],
       },
       {
         type: "p",
@@ -1228,21 +1447,17 @@ export const posts: Post[] = [
           },
         ],
       },
-      // TODO: uncomment when /tattoo-prices-kolkata goes live (noindex
-      // removed). Kept out until then so readers do not land on the unpriced
-      // page.
-      // {
-      //   type: "p",
-      //   text: "For what we charge, see our tattoo prices in Kolkata.",
-      //   links: [{ text: "tattoo prices in Kolkata", href: "/tattoo-prices-kolkata" }],
-      // },
+      {
+        type: "p",
+        text: "For what we charge, see our tattoo prices in Kolkata.",
+        links: [{ text: "tattoo prices in Kolkata", href: "/tattoo-prices-kolkata" }],
+      },
     ],
     faq: [
       {
-        // <!-- TODO: Ankur to supply --> sourced national price range, if wanted.
         question: "How much do tattoos cost?",
         answer:
-          "It depends on the design, the size, the placement and how the studio prices its work, so the useful question is what a specific design costs at a specific studio. Send the same brief to two or three studios and compare what each quote includes, not just the figure.",
+          "As a rough guide, a small, simple tattoo in India typically costs between ₹500 and ₹3,000, and larger custom work far more. It depends on the design, the size, the placement and how the studio prices its work, so the useful question is what a specific design costs at a specific studio. Send the same brief to two or three studios and compare what each quote includes, not just the figure.",
       },
       {
         question: "Is it better to pay hourly or a flat price for a tattoo?",
@@ -1283,63 +1498,31 @@ export const posts: Post[] = [
     title: "Permanent Tattoo Cost in India: What You Are Actually Paying For",
     metaTitle: "Permanent Tattoo Cost in India Explained",
     description:
-      "Permanent tattoo cost in India explained: permanent vs semi-permanent, what drives the price, metro vs smaller cities, studio tiers and the hidden costs.",
+      "Permanent tattoo cost in India explained: why metro and smaller-city prices differ, what you get at each kind of studio, and the costs not in the quote.",
     excerpt:
-      "How much do tattoos cost in India? What permanent really means, why city and studio change the price, and the costs that never appear in the quote.",
+      "How much do tattoos cost in India? Why the city and the kind of studio change the price, and the costs that never appear in the quote.",
     readingMinutes: 8,
     publishedAt: "2026-11-01",
     updatedAt: "2026-11-01",
     image: "/img/tattoo6.jpg",
-    // No price figures anywhere in this post: there is no sourced national
-    // pricing data. Each spot that needs one is marked
-    // <!-- TODO: Ankur to supply -->.
-    //
-    // TODO: when /tattoo-prices-kolkata goes live (noindex removed), add a link
-    // to it in the Kolkata section, in the paragraph that ends "rather than a
-    // flat rate."
+    // Price figures here are approximate national ranges, worded as rough
+    // guides. The Kolkata section uses our own published prices.
     blocks: [
       {
         type: "p",
         text: "If you are trying to work out the permanent tattoo cost in India, the honest answer is that there is no single national price. A small, simple tattoo and a large custom piece are very different amounts of money, and the same design can be priced differently in Mumbai, in Indore and in Kolkata. What stays the same everywhere is what you are paying for.",
       },
-      // <!-- TODO: Ankur to supply --> a sourced national price range here.
       {
         type: "p",
-        text: "This guide explains what a permanent tattoo actually is, what drives the price anywhere in India, why big cities and smaller towns charge differently, what you get at different kinds of studio, and the costs that never show up in the quote.",
-      },
-      {
-        type: "h2",
-        text: "What a permanent tattoo actually is",
+        text: "As a rough guide, a small, simple tattoo in India typically costs somewhere between ₹500 and ₹3,000, a palm-sized piece with some shading ₹3,000 to ₹10,000, and large custom work well beyond that. These are approximate figures, and prices vary widely between cities and studios.",
       },
       {
         type: "p",
-        text: "A permanent tattoo is ink placed by needle into the dermis, the layer of skin beneath the surface that does not shed. That is why it lasts. It softens slightly over the years, but it does not fade away on its own. Removing it means laser treatment, which takes several sessions and is not guaranteed to clear it completely.",
+        text: "People add the word permanent to separate real tattooing from henna and other temporary options. This guide is about real tattoos, done with a needle by a tattoo artist, and what they cost across India.",
       },
       {
         type: "p",
-        text: "Several other things get called tattoos, and it is easy to mix them up:",
-      },
-      {
-        type: "ul",
-        items: [
-          "Henna or mehndi: a plant dye that stains the top layer of skin and fades as that layer sheds. It is temporary decoration, not a tattoo.",
-          "Black henna: sold at some markets and beaches. It can contain a chemical dye that causes skin reactions in some people. If your skin reacts after black henna, see a doctor.",
-          "Plant-based surface inks, sometimes sold as semi-permanent: these stain the surface of the skin and wear off as it renews. They are a useful way to try out a design and placement.",
-          "Stick-on transfers and airbrush tattoos: printed or sprayed onto the surface, and gone in a matter of days.",
-          "Cosmetic tattooing, such as microblading for eyebrows: pigment placed shallowly so it fades over time. It is a cosmetic procedure with its own pricing, and this guide does not cover it.",
-        ],
-      },
-      {
-        type: "note",
-        text: "Be wary of anything sold as a semi-permanent tattoo that is applied with a needle. If ink goes into your skin with a needle, treat it as permanent. There is no reliable way to make needle-placed ink fade on schedule.",
-      },
-      {
-        type: "p",
-        text: "If you are not sure you want something for life, a surface option is an inexpensive way to live with a design and placement for a while first.",
-      },
-      {
-        type: "p",
-        text: "The factors that set the price of any tattoo, from size and detail to how a studio charges, are the same wherever you are. Our guide to tattoo prices covers them in full. The rest of this guide is about what changes across India.",
+        text: "It covers why big cities and smaller towns charge differently, what you get at different kinds of studio, and the costs that never show up in the quote. The factors that set the price of any tattoo, from size and detail to how a studio charges, are the same wherever you are. Our guide to tattoo prices covers them in full. The rest of this guide is about what changes across India.",
         links: [{ text: "guide to tattoo prices", href: "/blog/what-should-a-tattoo-cost" }],
       },
       {
@@ -1348,9 +1531,8 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "The same tattoo can be priced differently in a metro and in a smaller city. The figures vary, but the reasons behind them are worth understanding.",
+        text: "The same tattoo can be priced differently in a metro and in a smaller city. As a rough guide, a small piece at a custom studio might start around ₹1,000 to ₹2,000 in a metro and closer to ₹500 to ₹1,000 in a smaller city. The figures vary, but the reasons behind them are worth understanding.",
       },
-      // <!-- TODO: Ankur to supply --> sourced metro vs smaller-city price comparison.
       {
         type: "h3",
         text: "Rent",
@@ -1389,9 +1571,8 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Tattooing in India happens in a few broad kinds of setting. Price is only part of the difference. Here is what you are paying for at each.",
+        text: "Tattooing in India happens in a few broad kinds of setting. As a rough guide for a small tattoo, informal setups may charge a few hundred rupees, walk-in flash shops roughly ₹500 to ₹2,000, custom studios roughly ₹1,000 to ₹3,000, and artists with a waiting list considerably more. Price is only part of the difference. Here is what you are paying for at each.",
       },
-      // <!-- TODO: Ankur to supply --> sourced typical price for each tier below.
       {
         type: "h3",
         text: "Informal setups",
@@ -1448,7 +1629,6 @@ export const posts: Post[] = [
         type: "h3",
         text: "Touch-ups",
       },
-      // <!-- TODO: Ankur to supply --> sourced typical touch-up cost.
       {
         type: "p",
         text: "Some tattoos need a small touch-up once healed, particularly fine line work and pieces on the hands, fingers and feet, which fade faster than anywhere else. Ask whether touch-ups are included and for how long. If they are not, that is an extra visit to plan and pay for.",
@@ -1457,7 +1637,6 @@ export const posts: Post[] = [
         type: "h3",
         text: "Aftercare products",
       },
-      // <!-- TODO: Ankur to supply --> sourced cost of a basic aftercare kit.
       {
         type: "p",
         text: "You will need a fragrance-free soap and an unscented moisturiser for the healing weeks, and sunscreen afterwards to protect the tattoo from fading. You may already have some of these. Plain, unscented products are what matter, not specialist branding.",
@@ -1475,7 +1654,6 @@ export const posts: Post[] = [
         type: "h3",
         text: "Correcting cheap work later",
       },
-      // <!-- TODO: Ankur to supply --> sourced typical cover-up and laser removal costs.
       {
         type: "p",
         text: "This is the biggest hidden cost. A tattoo that heals with blurred lines, patchy shading or wobbly linework cannot simply be redone. The options are a cover-up, which has to be bigger and darker than the original, or laser removal, which takes several sessions and is not guaranteed to clear the ink. Either usually costs far more than doing it properly once. Our guide to cover-up and removal options explains both.",
@@ -1494,11 +1672,13 @@ export const posts: Post[] = [
         type: "p",
         text: "Everything above applies in Kolkata. The city has studios across these tiers, and where a studio sits, from the centre to the suburbs, shapes its costs like anywhere else.",
       },
-      // <!-- TODO: Ankur to supply --> sourced Kolkata price context.
       {
         type: "p",
-        text: "The Ink Room is a custom studio in Behala, run by Soniya, a female tattoo artist in Kolkata. We quote per piece after a free consultation, so the price reflects your design, size and placement rather than a flat rate.",
-        links: [{ text: "female tattoo artist in Kolkata", href: "/" }],
+        text: "The Ink Room is a custom studio in Behala, run by Soniya, a female tattoo artist in Kolkata. We quote per piece after a free consultation, so the price reflects your design, size and placement rather than a flat rate. Here, a minimalist or tiny piece typically costs ₹599 to ₹799, and a piece up to 3 inches around ₹1,500. Our tattoo prices in Kolkata have the full detail.",
+        links: [
+          { text: "female tattoo artist in Kolkata", href: "/female-tattoo-artist-kolkata" },
+          { text: "tattoo prices in Kolkata", href: "/tattoo-prices-kolkata" },
+        ],
       },
       {
         type: "p",
@@ -1513,15 +1693,9 @@ export const posts: Post[] = [
     ],
     faq: [
       {
-        // <!-- TODO: Ankur to supply --> sourced national price range.
         question: "How much do tattoos cost in India?",
         answer:
-          "There is no single answer. The price depends on size, detail, placement, colour, the city and the kind of studio. Ask for a quote for your exact design rather than relying on an average.",
-      },
-      {
-        question: "Is there such a thing as a semi-permanent tattoo?",
-        answer:
-          "Not one placed with a needle. If ink goes into your skin with a needle, treat it as permanent. Surface options such as henna, plant-based inks and transfers are temporary and fade on their own.",
+          "As a rough guide, a small, simple tattoo in India typically costs between ₹500 and ₹3,000, and larger custom work far more. The price depends on size, detail, placement, colour, the city and the kind of studio. Ask for a quote for your exact design rather than relying on an average.",
       },
       {
         question: "Why do tattoos cost more in big cities?",
@@ -1555,14 +1729,7 @@ export const posts: Post[] = [
     publishedAt: "2026-11-01",
     updatedAt: "2026-11-01",
     image: "/img/tattoo16.jpg",
-    // Prices are deliberately left out of this post until confirmed. Each
-    // spot that needs one is marked <!-- TODO: Ankur to supply -->.
-    //
-    // TODO: when /tattoo-prices-kolkata goes live (noindex removed), restore
-    // links to it in this post: one at the end of the third paragraph ("For our
-    // current figures, see our tattoo prices page.") and one in the closing
-    // paragraph ("For current figures by size, see our tattoo prices page.").
-    // They were removed so readers do not land on the unpriced page.
+    // Prices are our own published typical figures, not fixed rates.
     blocks: [
       {
         type: "p",
@@ -1572,10 +1739,14 @@ export const posts: Post[] = [
         type: "p",
         text: "So is ₹1,000 normal? Is ₹5,000? Neither number means much on its own. What matters is what the tattoo actually is: how big, how detailed, and where it goes.",
       },
-      // <!-- TODO: Ankur to supply --> the typical small-tattoo price range here.
       {
         type: "p",
-        text: "This guide explains what counts as small, what realistically fits at each size, why tiny pieces cost more per inch than you might expect, and when a small tattoo is the wrong choice.",
+        text: "At The Ink Room, a minimalist or tiny piece typically costs ₹599 to ₹799, and a piece up to 3 inches is usually around ₹1,500. These are typical figures, not fixed rates: the final price is confirmed at consultation.",
+      },
+      {
+        type: "p",
+        text: "This guide explains what counts as small, what realistically fits at each size, why tiny pieces cost more per inch than you might expect, and when a small tattoo is the wrong choice. For the full picture, see our tattoo prices in Kolkata.",
+        links: [{ text: "tattoo prices in Kolkata", href: "/tattoo-prices-kolkata" }],
       },
       {
         type: "h2",
@@ -1601,37 +1772,33 @@ export const posts: Post[] = [
         type: "h3",
         text: "Under 1 inch",
       },
-      // <!-- TODO: Ankur to supply --> typical price for under 1 inch.
       {
         type: "p",
-        text: "A single initial, a dot, a tiny heart, star or moon outline. Keep it to one simple shape with open space inside. Pieces this small are charged at our starting price, because the setup costs the same however tiny the tattoo is.",
+        text: "A single initial, a dot, a tiny heart, star or moon outline. Keep it to one simple shape with open space inside. Pieces this small are charged at our starting price, typically ₹599 to ₹799, because the setup costs the same however tiny the tattoo is.",
       },
       {
         type: "h3",
         text: "1 to 2 inches",
       },
-      // <!-- TODO: Ankur to supply --> typical price for 1 to 2 inches.
       {
         type: "p",
-        text: "A short word, a date in numerals, a small outline flower, a simple symbol or a minimal line drawing. This is a comfortable size for a first tattoo.",
+        text: "A short word, a date in numerals, a small outline flower, a simple symbol or a minimal line drawing. This is a comfortable size for a first tattoo, and prices typically start from ₹599, depending on the detail.",
       },
       {
         type: "h3",
         text: "2 to 3 inches",
       },
-      // <!-- TODO: Ankur to supply --> typical price for 2 to 3 inches.
       {
         type: "p",
-        text: "A name or a short phrase in script, a single-stem floral, a small geometric shape or a simple animal outline. There is room for a little fine detail here, but not much shading.",
+        text: "A name or a short phrase in script, a single-stem floral, a small geometric shape or a simple animal outline. There is room for a little fine detail here, but not much shading. A piece in this range is typically around ₹1,500.",
       },
       {
         type: "h3",
         text: "3 to 4 inches",
       },
-      // <!-- TODO: Ankur to supply --> typical price for 3 to 4 inches.
       {
         type: "p",
-        text: "This is where small starts to blur into medium. A small floral with light shading, a line drawing with a few elements, or a short quote on one line. If your idea feels crowded at 3 inches, this is often the size it actually needs.",
+        text: "This is where small starts to blur into medium. A small floral with light shading, a line drawing with a few elements, or a short quote on one line. If your idea feels crowded at 3 inches, this is often the size it actually needs. Pieces from this size up are quoted after a consultation, because the detail varies so much.",
       },
       {
         type: "note",
@@ -1799,7 +1966,11 @@ export const posts: Post[] = [
         text: "A real quote needs three things: your reference or idea, a rough size in inches, and the placement. Send those on WhatsApp and you will get a figure for that exact piece, not a guess. For what to ask any studio about a quote, see our guide to tattoo prices.",
         links: [{ text: "guide to tattoo prices", href: "/blog/what-should-a-tattoo-cost" }],
       },
-      // <!-- TODO: Ankur to supply --> a one-line starting price before the prices page link.
+      {
+        type: "p",
+        text: "Small pieces here start at ₹599, and our tattoo prices in Kolkata set out the typical ranges by size.",
+        links: [{ text: "tattoo prices in Kolkata", href: "/tattoo-prices-kolkata" }],
+      },
       {
         type: "p",
         text: "If this is your first tattoo, our first tattoo guide covers what happens before, during and after the session.",
@@ -1808,10 +1979,9 @@ export const posts: Post[] = [
     ],
     faq: [
       {
-        // <!-- TODO: Ankur to supply --> the typical small-tattoo price range.
         question: "How much does a small tattoo cost?",
         answer:
-          "It depends on the size, how much detail is inside it and where it goes. A simple tiny piece sits at the lower end, and a small but detailed design can cost as much as something twice its size. Send your idea, a rough size and the placement on WhatsApp for a figure for your exact piece.",
+          "At The Ink Room, a minimalist or tiny piece typically costs ₹599 to ₹799, and a piece up to 3 inches around ₹1,500. Beyond that, it depends on the size, how much detail is inside it and where it goes. A simple tiny piece sits at the lower end, and a small but detailed design can cost as much as something twice its size. Send your idea, a rough size and the placement on WhatsApp for a figure for your exact piece.",
       },
       {
         question: "Why are tattoo charges so high for tiny tattoos?",
@@ -1868,7 +2038,8 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Once the wrap is off, wash the tattoo with clean lukewarm water and a fragrance-free soap, using your hand rather than a cloth or loofah. Pat it dry with a clean paper towel, not the family bath towel, which carries bacteria and lint. Let it air-dry for fifteen minutes before applying anything.",
+        text: "Once the wrap is off, wash the tattoo with clean lukewarm water and a fragrance-free soap, using your hand rather than a cloth or loofah. Pat it dry with a clean paper towel, not the family bath towel, which carries bacteria and lint. Let it air-dry for fifteen minutes before applying anything. Our guide to aftercare products covers what to buy.",
+        links: [{ text: "guide to aftercare products", href: "/blog/tattoo-aftercare-products-india" }],
       },
       {
         type: "h2",

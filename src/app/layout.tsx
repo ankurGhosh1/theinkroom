@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
 
   title: {
-    default: "The Ink Room | Female Tattoo Artist in Kolkata",
+    default: "The Ink Room | Custom Tattoo Studio in Kolkata",
     template: `%s | ${siteConfig.name}`,
   },
   description:

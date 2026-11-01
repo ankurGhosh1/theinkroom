@@ -1,7 +1,7 @@
 import { Container } from "@/components/Container";
 
 const stats = [
-  { value: "500+", label: "Tattoos Done" },
+  { value: "80+", label: "Tattoos Done" },
   { value: "5★", label: "Google Rating" },
   { value: "7+", label: "Years Experience" },
   { value: "100%", label: "Custom Designs" },

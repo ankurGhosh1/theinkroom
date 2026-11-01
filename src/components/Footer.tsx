@@ -62,6 +62,7 @@ export function Footer() {
 
   const services = [
     { label: "Tattoo Parlour in Kolkata", href: "/tattoo-parlour-in-kolkata" },
+    { label: "Tattoo Prices", href: "/tattoo-prices-kolkata" },
     { label: "Female Tattoo Artist", href: "/female-tattoo-artist-kolkata" },
     { label: "Scar Cover-Ups", href: "/scar-cover-up-tattoos-kolkata" },
     { label: "Tattoo Course", href: "/tattoo-course" },

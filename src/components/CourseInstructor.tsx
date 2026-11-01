@@ -25,7 +25,7 @@ export const CourseInstructor = () => {
             </h2>
             <p className="text-neutral-400 leading-relaxed mb-4">
               Soniya is a female tattoo artist based in Behala, Kolkata, with
-              7+ years of experience and 500+ tattoos across fine line,
+              7+ years of experience and 80+ tattoos across fine line,
               realism, neo-traditional, geometric, floral, and script styles.
             </p>
             <p className="text-neutral-400 leading-relaxed">
@@ -36,7 +36,7 @@ export const CourseInstructor = () => {
 
             <div className="grid grid-cols-3 gap-6 mt-10">
               <div>
-                <p className="text-3xl font-serif font-bold text-red-500">500+</p>
+                <p className="text-3xl font-serif font-bold text-red-500">80+</p>
                 <p className="mt-2 uppercase tracking-widest text-xs text-neutral-400">Tattoos Done</p>
               </div>
               <div>

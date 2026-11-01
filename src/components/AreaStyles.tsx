@@ -37,7 +37,7 @@ export const AreaStyles = ({ area }: Readonly<AreaStylesProps>) => {
         <p className="max-w-2xl mx-auto mt-16 text-center text-neutral-400 leading-relaxed">
           Every piece is designed and tattooed by Soniya, a{" "}
           <Link
-            href="/"
+            href="/female-tattoo-artist-kolkata"
             className="text-red-500 hover:text-red-400 transition-colors"
           >
             female tattoo artist in Kolkata

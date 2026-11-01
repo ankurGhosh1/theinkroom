@@ -36,7 +36,6 @@ export const metadata = createPageMetadata({
 const scarFaq: FaqItem[] = [
   {
     question: "How old does a scar need to be before it can be tattooed?",
-    // TODO: Ankur to supply siteConfig.scarCoverUp.minimumScarAge, if there is a studio minimum.
     answer: `It needs to be fully healed and settled, and the right time varies by scar and by person. ${doctorLine}${minimumAgeSentence ? ` ${minimumAgeSentence}` : ""}`,
   },
   {
@@ -56,7 +55,6 @@ const scarFaq: FaqItem[] = [
   },
   {
     question: "How are scar cover-ups priced?",
-    // TODO: Ankur to supply siteConfig.scarCoverUp.followUpPricing.
     answer: `Like all our work, they are quoted per piece after a free consultation, based on the design, the size, the placement and the time it needs.${scarCoverUp.followUpPricing ? ` ${scarCoverUp.followUpPricing}` : ""}`,
   },
   {
@@ -215,7 +213,8 @@ export default function ScarCoverUpTattoosKolkata() {
           <h2 className={h2}>The consultation</h2>
           <p className={p}>
             Every scar cover-up starts with a free, private consultation. It is
-            just you and Soniya, and there is no pressure to book.
+            just you and Soniya, plus anyone you choose to bring, and there is
+            no pressure to book.
           </p>
           <ul className="mb-8 space-y-4">
             <li className={bullet}>
@@ -253,7 +252,6 @@ export default function ScarCoverUpTattoosKolkata() {
             A scar needs to be fully healed and settled before it is tattooed.
             There is no single timeline that suits every scar or every person,
             so this page does not set one.
-            {/* TODO: Ankur to supply siteConfig.scarCoverUp.minimumScarAge */}
             {minimumAgeSentence && ` ${minimumAgeSentence}`}
           </p>
           <div className="my-8 border-l-2 border-red-600 bg-neutral-900/60 px-6 py-5 rounded-r-lg">
@@ -286,8 +284,8 @@ export default function ScarCoverUpTattoosKolkata() {
             harder than the tattoo itself.
           </p>
           <p className={p}>
-            In a one-artist studio where the only other person in the room is a
-            woman, that conversation can be easier. You do not have to share the
+            In a one-artist studio where the artist is a woman, that
+            conversation can be easier. You do not have to share the
             story behind the scar to get a good design, only what affects the
             tattoo. More on how sessions run is on our{" "}
             <Link href="/female-tattoo-artist-kolkata" className={link}>

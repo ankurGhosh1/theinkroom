@@ -1,10 +1,9 @@
-import Link from "next/link";
 import { Container } from "@/components/Container";
 
 const features = [
   {
-    title: "Best Female Tattoo Artist",
-    desc: "Soniya brings years of experience, artistic precision, and a deep understanding of what clients truly want, from delicate fine-line work to bold statement pieces.",
+    title: "One Female Artist, Start to Finish",
+    desc: "Soniya designs and tattoos every piece herself, from delicate fine-line work to bold statement pieces, so the person you talk to is the person who does the work.",
   },
   {
     title: "Hygiene & Safety First",
@@ -49,17 +48,6 @@ export const WhyUs = () => {
             </div>
           ))}
         </div>
-
-        <p className="mt-16 text-center text-neutral-400 leading-relaxed">
-          Looking to cover a scar? Read about{" "}
-          <Link
-            href="/scar-cover-up-tattoos-kolkata"
-            className="text-red-500 hover:text-red-400 transition-colors"
-          >
-            scar cover-up tattoos
-          </Link>
-          .
-        </p>
       </Container>
     </section>
   );

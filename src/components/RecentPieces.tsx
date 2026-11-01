@@ -9,13 +9,10 @@ export type RecentPiece = {
   price: string;
 };
 
-/** Shown in place of any value not yet supplied in siteConfig. */
-const PENDING = "To be confirmed";
-
 /**
- * A grid of real pieces with their size, placement and price, so a visitor
- * can see what a comparable tattoo cost. Values come from
- * siteConfig.pricing.recentPieces.
+ * A grid of real pieces with their placement, and size and price where given,
+ * so a visitor can see comparable work. Values come from
+ * siteConfig.pricing.recentPieces; blank values are not shown.
  */
 export const RecentPieces = ({ pieces }: Readonly<{ pieces: readonly RecentPiece[] }>) => {
   return (
@@ -38,19 +35,19 @@ export const RecentPieces = ({ pieces }: Readonly<{ pieces: readonly RecentPiece
             <p className="text-lg font-serif font-bold text-neutral-100 mb-4">
               {piece.title}
             </p>
-            <dl className="grid grid-cols-3 gap-3 text-sm">
+            <dl className="flex flex-wrap gap-x-6 gap-y-3 text-sm">
               {[
                 ["Size", piece.size],
                 ["Placement", piece.placement],
                 ["Price", piece.price],
-              ].map(([label, value]) => (
-                <div key={label} className="border-t border-neutral-800 pt-3">
-                  <dt className="text-neutral-500 mb-1">{label}</dt>
-                  <dd className={value ? "text-neutral-100" : "text-neutral-500"}>
-                    {value || PENDING}
-                  </dd>
-                </div>
-              ))}
+              ]
+                .filter(([, value]) => value)
+                .map(([label, value]) => (
+                  <div key={label} className="flex-1 min-w-[5rem] border-t border-neutral-800 pt-3">
+                    <dt className="text-neutral-500 mb-1">{label}</dt>
+                    <dd className="text-neutral-100">{value}</dd>
+                  </div>
+                ))}
             </dl>
           </figcaption>
         </figure>

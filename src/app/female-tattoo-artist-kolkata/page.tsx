@@ -43,17 +43,15 @@ const artistFaq: FaqItem[] = [
   {
     question: "Is the session private?",
     answer:
-      "Yes. Sessions are by appointment, one client at a time, and nobody else is in the room. Only the area being tattooed needs to be uncovered, and you can ask for whatever helps you feel comfortable.",
+      "Yes. Sessions are by appointment, one client at a time, and nobody else is in the room apart from anyone you choose to bring. Only the area being tattooed needs to be uncovered, and you can ask for whatever helps you feel comfortable.",
   },
-  // TODO: Ankur to supply siteConfig.studio.companionPolicy. Until then this
-  // question is left out rather than answered with a guess.
   ...(studio.companionPolicy
     ? [{ question: "Can I bring a friend?", answer: studio.companionPolicy }]
     : []),
   {
     question: "I want a tattoo on my ribs, hip or chest. Will I be comfortable?",
     answer:
-      "Nobody else is in the room, only the area being tattooed needs to be uncovered, and you can pause whenever you need to. If you are unsure about the placement, talk it through at the free consultation before anything is booked.",
+      "Nobody else is in the room unless you bring someone, only the area being tattooed needs to be uncovered, and you can pause whenever you need to. If you are unsure about the placement, talk it through at the free consultation before anything is booked.",
   },
   {
     question: "How do I book?",
@@ -116,7 +114,8 @@ export default function FemaleTattooArtistKolkata() {
               Yes, there is one. Soniya is a female tattoo artist in Kolkata,
               and The Ink Room is her studio in Behala. It is a one-artist,
               appointment-only studio, so the woman you talk to about your idea
-              is the woman who tattoos it, and nobody else is in the room.
+              is the woman who tattoos it. Nobody else is in the room unless
+              you bring someone with you.
             </p>
             <p className="text-neutral-400 text-lg leading-relaxed mb-8">
               If you have been searching for a lady tattoo artist near you, or a
@@ -202,15 +201,12 @@ export default function FemaleTattooArtistKolkata() {
             <li className={bullet}>
               <span className={lead}>The consultation.</span> Before anything is
               booked, you talk through your idea, the placement and the size
-              with Soniya.{" "}
-              {/* TODO: Ankur to supply siteConfig.studio.consultationLength */}
-              {studio.consultationLength &&
-                `It usually takes ${studio.consultationLength}. `}
-              There is no pressure to decide on the spot.
+              with Soniya. It usually takes {studio.consultationLength}. There
+              is no pressure to decide on the spot.
             </li>
             <li className={bullet}>
               <span className={lead}>Privacy.</span> Nobody else is in the room
-              during your session. Only the area being tattooed needs to be
+              during your session, apart from anyone you choose to bring. Only the area being tattooed needs to be
               uncovered, and you can ask for whatever helps you feel
               comfortable.
             </li>
@@ -259,17 +255,13 @@ export default function FemaleTattooArtistKolkata() {
             </Link>
             .
           </p>
-          {/* TODO: link to /tattoo-prices-kolkata here when it goes live
-              (noindex removed), e.g. "For what a tattoo costs here, see our
-              tattoo prices." Left out so readers do not land on the unpriced
-              page.
           <p className={p}>
             For what a tattoo costs here, see our{" "}
             <Link href="/tattoo-prices-kolkata" className={link}>
               tattoo prices
             </Link>
             .
-          </p> */}
+          </p>
 
           {/* Styles */}
           <h2 className={h2}>Styles Soniya works in</h2>
