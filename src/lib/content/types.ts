@@ -1,16 +1,24 @@
 import type { FaqItem } from "@/components/Faq";
 
 /**
+ * An inline link: `text` must appear verbatim in the block's text, and links
+ * must be listed in the order they appear. Mirrors Prismic's hyperlink spans.
+ */
+export type InlineLink = { text: string; href: string };
+
+/**
  * Rich-text block. Kept intentionally close to Prismic's rich-text model so
  * the mapping later is mechanical rather than a rewrite.
  */
 export type PostBlock =
-  | { type: "p"; text: string }
+  | { type: "p"; text: string; links?: InlineLink[] }
   | { type: "h2"; text: string }
   | { type: "h3"; text: string }
   | { type: "ul"; items: string[] }
   | { type: "ol"; items: string[] }
-  | { type: "note"; text: string };
+  | { type: "note"; text: string; links?: InlineLink[] }
+  /** An inline image from /img. The caption must describe what is actually in the photo. */
+  | { type: "image"; src: string; alt: string; caption?: string };
 
 export type PostCategory =
   | "Planning"

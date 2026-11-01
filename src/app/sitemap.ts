@@ -11,6 +11,9 @@ import { siteConfig } from "@/data/site";
  */
 const CORE_PAGES_UPDATED = "2026-08-15";
 const AREA_PAGES_UPDATED = "2026-08-15";
+const ARTIST_PAGE_UPDATED = "2026-11-01";
+const SCAR_PAGE_UPDATED = "2026-11-01";
+const PRICES_PAGE_UPDATED = "2026-11-01";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = siteConfig.url;
@@ -28,6 +31,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: CORE_PAGES_UPDATED,
       changeFrequency: "monthly",
       priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/tattoo-prices-kolkata`,
+      lastModified: PRICES_PAGE_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/female-tattoo-artist-kolkata`,
+      lastModified: ARTIST_PAGE_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/scar-cover-up-tattoos-kolkata`,
+      lastModified: SCAR_PAGE_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/tattoo-course`,

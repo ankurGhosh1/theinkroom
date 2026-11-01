@@ -26,4 +26,10 @@ export const getRelatedPosts = (
   limit?: number
 ): Promise<PostSummary[]> => source.getRelated(slug, limit);
 
-export type { Post, PostBlock, PostSummary, PostCategory } from "./types";
+export type {
+  InlineLink,
+  Post,
+  PostBlock,
+  PostSummary,
+  PostCategory,
+} from "./types";

@@ -39,10 +39,9 @@ export const AboutArtist = () => {
                 whoever happens to be free that afternoon.
               </p>
               <p>
-                As one of the few women running her own tattoo studio in
-                Kolkata, Soniya works with a lot of clients getting their first
-                piece, and with women who would simply rather be tattooed by
-                another woman. That shapes how sessions run: more time on the
+                As a woman running her own tattoo studio in Kolkata, Soniya
+                works with clients getting their first piece, and with women
+                who would simply rather be tattooed by another woman. That shapes how sessions run: more time on the
                 consultation, no pressure to size up, and a genuine
                 conversation about placement before a needle is anywhere near
                 your skin.
@@ -56,6 +55,12 @@ export const AboutArtist = () => {
             </div>
 
             <div className="flex flex-wrap gap-4 mt-9">
+              <Link
+                href="/female-tattoo-artist-kolkata"
+                className="px-6 py-3 text-neutral-200 border border-neutral-700 hover:border-red-600 hover:text-red-500 transition-colors rounded-md"
+              >
+                Why a female artist
+              </Link>
               <Link
                 href="/blog/first-tattoo-guide"
                 className="px-6 py-3 text-neutral-200 border border-neutral-700 hover:border-red-600 hover:text-red-500 transition-colors rounded-md"

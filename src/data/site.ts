@@ -3,9 +3,9 @@
  * verification IDs. Everything that Google cross-checks between your site,
  * your Google Business Profile and your social accounts lives here.
  *
- * ⚠️ Fields marked TODO are intentionally left blank — they are omitted from
- * the JSON-LD until filled in, so nothing false ships to Google. Fill them in
- * with the EXACT same values used on your Google Business Profile.
+ * Blank fields are omitted from the page and the JSON-LD rather than shown
+ * empty, so nothing false ships to Google. Keep business details identical to
+ * the Google Business Profile.
  */
 
 export type OpeningHours = {
@@ -34,11 +34,33 @@ export const siteConfig = {
     bio: "Soniya is the founder and resident artist at The Ink Room, a custom tattoo studio in Behala, Kolkata. She works primarily in fine line, floral, script and minimal styles, and designs every piece from scratch in consultation with the client.",
   },
 
+  /**
+   * How sessions run, for /female-tattoo-artist-kolkata. Blank values are
+   * left out of the page rather than guessed.
+   */
+  studio: {
+    // "The consultation usually takes ___."
+    consultationLength: "20 to 30 minutes",
+    // Answers "Can I bring a friend?".
+    companionPolicy:
+      "Yes. You are welcome to bring someone with you to the session.",
+  },
+
+  /** /scar-cover-up-tattoos-kolkata. */
+  scarCoverUp: {
+    // "As a minimum, we ask that a scar is at least ___ old." The commonly
+    // used minimum; the doctor's clearance still applies on top of it.
+    minimumScarAge: "a year",
+    // Prices are quoted per piece, never fixed, so this describes the approach.
+    followUpPricing:
+      "If a follow-up session is needed, it is quoted the same way, once the first session has healed and Soniya can see what it needs.",
+  },
+
   phone: "+918961248160",
   phoneDisplay: "+91 89612 48160",
   whatsapp: "8961248160",
 
-  // TODO: add a business email if you have one (helps trust + contact schema)
+  // No business email; left blank so it is omitted from the footer and schema.
   email: "",
 
   address: {
@@ -83,25 +105,49 @@ export const siteConfig = {
    */
   priceRange: "₹₹",
 
-  /** ⚠️ CONFIRM: shown publicly on the pricing guide. */
   startingPrice: {
-    amount: 699,
+    amount: 599,
     currency: "INR",
-    display: "₹699",
-    note: "for a small, minimal piece",
+    display: "₹599",
+    note: "for a minimalist or tiny piece",
   },
 
   /**
-   * Homepage pricing section. ⚠️ TODO: fill in with the studio's real figures.
-   * Any value left blank is hidden on the page rather than shown empty.
+   * Published prices. Every tattoo is quoted per piece: these are typical
+   * ranges, never a fixed rate card. Used by the homepage pricing section and
+   * /tattoo-prices-kolkata.
    */
   pricing: {
-    minimumCharge: "",
-    small: "", // up to 3 inches
-    medium: "", // 3-6 inches
     atHomeMinimum: "₹999",
-    deposit: "",
-    reschedule: "", // e.g. "48 hours notice"
+    // "You can pay by ___."
+    paymentMethods: "UPI or cash",
+    /** Typical ranges, not fixed rates. */
+    typicalRanges: [
+      { label: "Minimalist / tiny pieces", value: "₹599 – ₹799" },
+      { label: "1 inch", value: "From ₹599" },
+      { label: "1 to 3 inches", value: "Around ₹1,500" },
+      { label: "Larger or custom work", value: "Quoted after consultation" },
+    ],
+    /** Pieces above this size need a deposit. */
+    depositThreshold: "20 inches",
+    depositPercent: "30%",
+
+    // "Soniya draws your piece from scratch, with ___."
+    designRevisions: "one round of changes",
+
+    /**
+     * Recent pieces on the prices page. Size and price are optional: when
+     * blank they are simply not shown, and the section is titled "Recent
+     * pieces" rather than "Recent pieces and what they cost".
+     */
+    recentPieces: [
+      { image: "/img/tattoo16.jpg", title: "Single-line dancing couple", alt: "Single-line fine line tattoo of a dancing couple on the ribs", placement: "Side of the ribs", size: "", price: "" },
+      { image: "/img/tattoo2.jpg", title: "Three small dragons", alt: "Three small black dragons tattooed across the collarbone", placement: "Collarbone", size: "", price: "" },
+      { image: "/img/tattoo15.jpg", title: "Crescent moon and floral garland", alt: "Crescent moon and floral garland tattoo on the back of the neck", placement: "Back of the neck", size: "", price: "" },
+      { image: "/img/tattoo4.jpg", title: "Hourglass landscape", alt: "Hourglass landscape tattoo in black linework on the forearm", placement: "Forearm", size: "", price: "" },
+      { image: "/img/tattoo13.jpg", title: "Watercolour hummingbird", alt: "Watercolour-style hummingbird tattoo on the chest", placement: "Chest, below the collarbone", size: "", price: "" },
+      { image: "/img/tattoo14.jpg", title: "Snake and rose", alt: "Snake and rose colour tattoo running from the hand up the arm", placement: "Hand and forearm", size: "", price: "" },
+    ],
   },
 
   social: [

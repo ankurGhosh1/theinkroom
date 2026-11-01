@@ -1,4 +1,29 @@
-import type { PostBlock } from "@/lib/content";
+import Image from "next/image";
+import Link from "next/link";
+import type { InlineLink, PostBlock } from "@/lib/content";
+
+/** Wraps each link's text, in order, in a Link. Unmatched links are skipped. */
+function withLinks(text: string, links: InlineLink[] = []) {
+  const parts: React.ReactNode[] = [];
+  let rest = text;
+  links.forEach((link, i) => {
+    const at = rest.indexOf(link.text);
+    if (at === -1) return;
+    parts.push(
+      rest.slice(0, at),
+      <Link
+        key={i}
+        href={link.href}
+        className="text-red-500 hover:text-red-400 transition-colors"
+      >
+        {link.text}
+      </Link>
+    );
+    rest = rest.slice(at + link.text.length);
+  });
+  parts.push(rest);
+  return parts;
+}
 
 export const PostBody = ({ blocks }: Readonly<{ blocks: PostBlock[] }>) => {
   return (
@@ -29,7 +54,7 @@ export const PostBody = ({ blocks }: Readonly<{ blocks: PostBlock[] }>) => {
                 key={index}
                 className="text-neutral-300 text-lg leading-relaxed mb-6"
               >
-                {block.text}
+                {withLinks(block.text, block.links)}
               </p>
             );
           case "ul":
@@ -64,8 +89,29 @@ export const PostBody = ({ blocks }: Readonly<{ blocks: PostBlock[] }>) => {
                 key={index}
                 className="my-8 border-l-2 border-red-600 bg-neutral-900/60 px-6 py-5 rounded-r-lg"
               >
-                <p className="text-neutral-200 leading-relaxed">{block.text}</p>
+                <p className="text-neutral-200 leading-relaxed">
+                  {withLinks(block.text, block.links)}
+                </p>
               </div>
+            );
+          case "image":
+            return (
+              <figure key={index} className="my-10">
+                <div className="relative h-96 sm:h-[28rem] rounded-2xl overflow-hidden">
+                  <Image
+                    src={block.src}
+                    alt={block.alt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 672px"
+                    className="object-cover"
+                  />
+                </div>
+                {block.caption && (
+                  <figcaption className="mt-3 text-sm text-neutral-500 leading-relaxed">
+                    {block.caption}
+                  </figcaption>
+                )}
+              </figure>
             );
           default:
             return null;

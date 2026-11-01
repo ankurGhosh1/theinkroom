@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import HeroSlider from "@/components/Slider";
 
 const heroImages = [
@@ -34,10 +35,17 @@ export const Hero = () => {
           Behala · Kolkata
         </p>
         <h1 className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-serif font-bold text-white leading-tight mb-6">
-          Female Tattoo<br />Artist in<br />Kolkata
+          Custom Tattoo<br />Studio in<br />Kolkata
         </h1>
         <p className="text-neutral-300 text-lg md:text-xl mb-10 max-w-xl mx-auto leading-relaxed">
-          Custom tattoos by Soniya, where your vision becomes permanent art.
+          A one-artist studio in Behala, run by Soniya, a{" "}
+          <Link
+            href="/female-tattoo-artist-kolkata"
+            className="text-white underline decoration-red-500 underline-offset-4 hover:text-red-400 transition-colors"
+          >
+            female tattoo artist in Kolkata
+          </Link>
+          .
         </p>
         <a
           href="https://wa.me/8961248160?text=Hey%20I%20need%20a%20tattoo"

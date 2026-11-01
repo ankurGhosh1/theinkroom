@@ -5,25 +5,10 @@ import { siteConfig } from "@/data/site";
 
 const { pricing } = siteConfig;
 
-// Rows without a value yet are dropped rather than rendered empty.
-const rates = [
-  { title: "Minimum charge", value: pricing.minimumCharge },
-  { title: "Small pieces (up to 3 inches)", value: pricing.small },
-  { title: "Medium pieces (3-6 inches)", value: pricing.medium },
-  { title: "Large / custom work", value: "Quoted after consultation" },
-  {
-    title: "At-home session",
-    value: pricing.atHomeMinimum && `${pricing.atHomeMinimum} minimum`,
-  },
-  {
-    title: "Deposit",
-    value:
-      pricing.deposit &&
-      `${pricing.deposit}, non-refundable, adjusted against the final price`,
-  },
-  { title: "Reschedule policy", value: pricing.reschedule },
-].filter((rate) => rate.value);
-
+/**
+ * Homepage pricing: typical ranges only. Every tattoo is quoted per piece, so
+ * this never presents fixed rates.
+ */
 export const Pricing = () => {
   return (
     <section className="py-24" id="pricing">
@@ -43,23 +28,29 @@ export const Pricing = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
-          {rates.map((rate) => (
-            <div key={rate.title} className="border-t border-neutral-800 pt-8">
-              <h3 className="text-xl font-serif font-bold text-neutral-100 mb-3">{rate.title}</h3>
-              <p className="text-neutral-400 leading-relaxed">{rate.value}</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-12">
+          {pricing.typicalRanges.map((range) => (
+            <div key={range.label} className="border-t border-neutral-800 pt-8">
+              <h3 className="text-xl font-serif font-bold text-neutral-100 mb-3">{range.label}</h3>
+              <p className="text-neutral-400 leading-relaxed">{range.value}</p>
             </div>
           ))}
         </div>
 
-        <div className="mt-16 text-center space-y-3">
+        <div className="max-w-2xl mx-auto mt-16 text-center space-y-3">
+          <p className="text-neutral-400 leading-relaxed">
+            These are typical ranges, not fixed rates. Anything else depends on
+            the design, size and colour, and your final price is confirmed at
+            consultation. At-home sessions have a minimum of{" "}
+            {pricing.atHomeMinimum}.
+          </p>
           <p className="text-neutral-100">Consultation is free.</p>
           <p>
             <Link
-              href="/blog/tattoo-price-in-kolkata"
+              href="/tattoo-prices-kolkata"
               className="text-red-500 hover:text-red-400 transition-colors"
             >
-              How tattoo pricing works in Kolkata
+              See tattoo prices and recent pieces
             </Link>
           </p>
         </div>
