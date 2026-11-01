@@ -125,7 +125,7 @@ export const siteConfig = {
     typicalRanges: [
       { label: "Minimalist / tiny pieces", value: "₹599 – ₹799" },
       { label: "1 inch", value: "From ₹599" },
-      { label: "Up to 3 inches", value: "Around ₹1,500" },
+      { label: "1 to 3 inches", value: "Around ₹1,500" },
       { label: "Larger or custom work", value: "Quoted after consultation" },
     ],
     /** Pieces above this size need a deposit. */

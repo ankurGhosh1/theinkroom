@@ -1674,7 +1674,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "The Ink Room is a custom studio in Behala, run by Soniya, a female tattoo artist in Kolkata. We quote per piece after a free consultation, so the price reflects your design, size and placement rather than a flat rate. Here, a minimalist or tiny piece typically costs ₹599 to ₹799, and a piece up to 3 inches around ₹1,500. Our tattoo prices in Kolkata have the full detail.",
+        text: "The Ink Room is a custom studio in Behala, run by Soniya, a female tattoo artist in Kolkata. We quote per piece after a free consultation, so the price reflects your design, size and placement rather than a flat rate. Here, a minimalist or tiny piece typically costs ₹599 to ₹799, and a piece of 1 to 3 inches around ₹1,500. Our tattoo prices in Kolkata have the full detail.",
         links: [
           { text: "female tattoo artist in Kolkata", href: "/female-tattoo-artist-kolkata" },
           { text: "tattoo prices in Kolkata", href: "/tattoo-prices-kolkata" },
@@ -1741,7 +1741,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "At The Ink Room, a minimalist or tiny piece typically costs ₹599 to ₹799, and a piece up to 3 inches is usually around ₹1,500. These are typical figures, not fixed rates: the final price is confirmed at consultation.",
+        text: "At The Ink Room, a minimalist or tiny piece typically costs ₹599 to ₹799, and a piece of 1 to 3 inches is usually around ₹1,500. These are typical figures, not fixed rates: the final price is confirmed at consultation.",
       },
       {
         type: "p",
@@ -1782,7 +1782,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "A short word, a date in numerals, a small outline flower, a simple symbol or a minimal line drawing. This is a comfortable size for a first tattoo, and prices typically start from ₹599, depending on the detail.",
+        text: "A short word, a date in numerals, a small outline flower, a simple symbol or a minimal line drawing. This is a comfortable size for a first tattoo. A 1-inch piece starts from ₹599, and pieces between 1 and 3 inches are typically around ₹1,500.",
       },
       {
         type: "h3",
@@ -1981,7 +1981,7 @@ export const posts: Post[] = [
       {
         question: "How much does a small tattoo cost?",
         answer:
-          "At The Ink Room, a minimalist or tiny piece typically costs ₹599 to ₹799, and a piece up to 3 inches around ₹1,500. Beyond that, it depends on the size, how much detail is inside it and where it goes. A simple tiny piece sits at the lower end, and a small but detailed design can cost as much as something twice its size. Send your idea, a rough size and the placement on WhatsApp for a figure for your exact piece.",
+          "At The Ink Room, a minimalist or tiny piece typically costs ₹599 to ₹799, and a piece of 1 to 3 inches around ₹1,500. Beyond that, it depends on the size, the colour, how much detail is inside it and where it goes. A simple tiny piece sits at the lower end, and a small but detailed design can cost as much as something twice its size. Send your idea, a rough size and the placement on WhatsApp for a figure for your exact piece.",
       },
       {
         question: "Why are tattoo charges so high for tiny tattoos?",

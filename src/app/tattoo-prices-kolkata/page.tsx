@@ -20,7 +20,7 @@ const piecesHavePrices = pricing.recentPieces.some((piece) => piece.price);
 export const metadata = createPageMetadata({
   title: "Tattoo Price in Kolkata | Typical Costs",
   description:
-    "Tattoo price in Kolkata at The Ink Room: tiny pieces ₹599 to ₹799, up to 3 inches around ₹1,500. What a session includes and how to get a quote.",
+    "Tattoo price in Kolkata at The Ink Room: tiny pieces ₹599 to ₹799, 1 to 3 inches around ₹1,500. What a session includes and how to get a quote.",
   image: "/img/tattoo9.jpg",
   url: "/tattoo-prices-kolkata",
 });
@@ -94,7 +94,7 @@ export default function TattooPricesKolkata() {
             </h1>
             <p className="text-neutral-300 text-lg leading-relaxed mb-6">
               A minimalist or tiny tattoo at The Ink Room typically costs ₹599
-              to ₹799. A piece up to 3 inches is usually around ₹1,500, and
+              to ₹799. A piece of 1 to 3 inches is usually around ₹1,500, and
               anything larger or custom is quoted after a free consultation.
               These are typical ranges, not fixed rates. Your final price is
               confirmed at consultation, once the design, size and placement

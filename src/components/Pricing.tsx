@@ -39,8 +39,9 @@ export const Pricing = () => {
 
         <div className="max-w-2xl mx-auto mt-16 text-center space-y-3">
           <p className="text-neutral-400 leading-relaxed">
-            These are typical ranges, not fixed rates. Your final price is
-            confirmed at consultation. At-home sessions have a minimum of{" "}
+            These are typical ranges, not fixed rates. Anything else depends on
+            the design, size and colour, and your final price is confirmed at
+            consultation. At-home sessions have a minimum of{" "}
             {pricing.atHomeMinimum}.
           </p>
           <p className="text-neutral-100">Consultation is free.</p>
